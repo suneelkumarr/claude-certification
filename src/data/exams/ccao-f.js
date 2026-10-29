@@ -54,7 +54,7 @@ export const CONCEPTS_DATA = [
       "good": "Generate exactly 8 campaign ideas for our product launch. Group them across our 4 predefined customer segments (2 ideas per segment). For each idea, specify the budget band (Low, Mid, High) and expected timeline.",
       "goodReason": "Exact count (8), clear segments (4), budget bands define hain. Output 100% structured aur predictable hoga."
     },
-    "examRule": "Inconsistency = Under-specification! Missing element = Task statement mein explicitly enumerate karo! Constraints hamesha prompt ke andar hone chahiye!"
+    "examRule": "Inconsistency = Under-specification! Missing element = Task statement mein explicitly enumerate karein. Constraints ko clear context aur output boundaries ke sath define karein."
   },
   {
     "id": "context-windows",
@@ -194,7 +194,7 @@ export const CONCEPTS_DATA = [
       "good": "Using Code Execution so Claude runs python script to sum exact columns.",
       "goodReason": "Produces 100% mathematically verifiable totals."
     },
-    "examRule": "Deterministic calculations, multi-tab workbooks, exact statistics & charts = HAMESHA 'Code Execution'!"
+    "examRule": "Deterministic calculations, multi-tab workbooks, exact statistics & charts ke liye Code Execution use karein kyunki LLM linguistic generation math mein drift ho sakti hai."
   },
   {
     "id": "primary-source",
@@ -568,7 +568,7 @@ export const QUESTIONS_DATA = [
       "C": "Yeh execution order galat hai; source documents pehle gather aur label hone chahiye, uske baad Claude ko prompt bheja jata hai.",
       "D": "Yeh execution order galat hai; source documents pehle gather aur label hone chahiye, uske baad Claude ko prompt bheja jata hai."
     },
-    "examTip": "Exam Tip: Workflow Decomposition questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Source materials must be gathered and labeled first (4), then submitted to Claude (3), then grouped/flagged (1), validated against sources (2), and finally documented (5)."
   },
   {
     "num": 2,
@@ -589,7 +589,7 @@ export const QUESTIONS_DATA = [
       "B": "'Request a single recommended option with strong reasoning' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "C": "'Request multiple distinct options ordered by Claude’s assessment of feasibility' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Prompt Clarity questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: At the ideation / breadth stage the goal is to surface diverse options with explicit trade-offs."
   },
   {
     "num": 3,
@@ -611,7 +611,7 @@ export const QUESTIONS_DATA = [
       "C": "'Document the final scoring rubric and reviewer comments for the audit trail.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Promote the approved output into the downstream production process.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Workflow Decomposition questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Before any scoring can occur you must first define what “good” looks like (evaluation criteria) and the pass/fail threshold."
   },
   {
     "num": 4,
@@ -634,7 +634,7 @@ export const QUESTIONS_DATA = [
       "B": "Model vendor turant badalna disruptive aur last-resort action hai.",
       "C": "Poori chat discard karke scratch se shuru karna time waste karta hai."
     },
-    "examTip": "Exam Tip: Degraded Conversations questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: The least disruptive and most efficient first recovery is to summarize the current state and issue a focused follow-up prompt."
   },
   {
     "num": 5,
@@ -657,7 +657,7 @@ export const QUESTIONS_DATA = [
       "C": "Sonnet mid-tier hai, par jab task genuinely deep reasoning maange toh Opus recommended hota hai.",
       "D": "One-off complex task mein latency secondary hoti hai, quality primary hoti hai."
     },
-    "examTip": "Exam Tip: Context Windows questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Opus is Anthropic’s highest-capability model and is the recommended choice when the task truly needs deep, multi-step reasoning."
   },
   {
     "num": 6,
@@ -679,7 +679,7 @@ export const QUESTIONS_DATA = [
       "B": "Contradictory instructions ko bina resolve kiye merge karne se prompt mein conflict paida hota hai aur model erratic output deta hai.",
       "E": "Claude ke output ko blindly accept karna human accountability aur review governance ke rule ko todta hai."
     },
-    "examTip": "Exam Tip: Iteration Diminishing questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Productive responses map feedback to concrete changes and clarify ambiguity before acting."
   },
   {
     "num": 7,
@@ -700,7 +700,7 @@ export const QUESTIONS_DATA = [
       "C": "'Specify only the preferred output structure for lesson outlines' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Name Claude’s role as a course designer and require alignment to the organiza...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Project Config questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Project-level custom instructions should lock in role, mandatory standards, and the expected output format so every conversation inherits the same guardrails without repetition."
   },
   {
     "num": 8,
@@ -721,7 +721,7 @@ export const QUESTIONS_DATA = [
       "C": "'Refine the drafted instructions based on observed gaps from validation runs.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "Bina project ke exact scope aur boundaries freeze kiye doosre project ka template uthana scope drift aur misaligned instructions introduce karta hai."
     },
-    "examTip": "Exam Tip: Project Config questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Purpose and boundaries must be defined first; they are the foundation for every subsequent drafting, validation, and refinement step."
   },
   {
     "num": 9,
@@ -742,7 +742,7 @@ export const QUESTIONS_DATA = [
       "B": "Human oversight aur known limitations ko proactively disclose karna chahiye, stakeholder ke poochne ka intezar nahi karna chahiye.",
       "D": "Capabilities ko artificially undersell karna stakeholder expectations ko miscalibrate karta hai aur product adoption rokta hai."
     },
-    "examTip": "Exam Tip: Human Oversight questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Description requires balanced, calibrated communication: reliable capabilities, known limitations, and the human oversight that remains."
   },
   {
     "num": 10,
@@ -763,7 +763,7 @@ export const QUESTIONS_DATA = [
       "B": "'The associate’s permissions on the document allow access only to the prior ve...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "C": "'The connector retrieved both versions' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Project Config questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Connectors rely on an index that is refreshed periodically."
   },
   {
     "num": 11,
@@ -785,7 +785,7 @@ export const QUESTIONS_DATA = [
       "C": "'drafting a legal summary an attorney reviews before sharing with a client' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "E": "'summarizing performance review notes to determine promotion decisions across ...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Human Oversight questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Internal training summaries from approved docs and aggregated, non-identifying customer-feedback synthesis are low-risk, fully human-supervised tasks."
   },
   {
     "num": 12,
@@ -806,7 +806,7 @@ export const QUESTIONS_DATA = [
       "B": "'Use a checklist that the reviewer fills in for every output' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Define explicit criteria for what Claude produces and leave the reviewer’s ch...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Human Oversight questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Clear, documented criteria for both the model’s output and the human’s review responsibilities create a reliable, auditable hand-off."
   },
   {
     "num": 13,
@@ -830,7 +830,7 @@ export const QUESTIONS_DATA = [
       "D": "Dash style formatting issue hai.",
       "E": "Calendar invite typo clerical mistake hai."
     },
-    "examTip": "Exam Tip: Human Oversight questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Employment decisions without human accountability and systematic bias against protected groups are high-severity ethical risks."
   },
   {
     "num": 14,
@@ -851,7 +851,7 @@ export const QUESTIONS_DATA = [
       "B": "'Rewrite the prototype from scratch incorporating the two specific concerns.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Address the two specific concerns and also revise unrelated sections to maint...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Iteration Diminishing questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Targeted fixes preserve the already-accepted content and keep the change set small and reviewable."
   },
   {
     "num": 15,
@@ -874,7 +874,7 @@ export const QUESTIONS_DATA = [
       "C": "Ad-hoc chats use karna signal hai, par outputs mein outdated guidance direct evidence hai.",
       "D": "Output length increase hona direct quality-drift signal nahi hai."
     },
-    "examTip": "Exam Tip: Project Config questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Outdated terminology or sources is a direct quality-drift signal that the Project’s knowledge or instructions no longer match current reality."
   },
   {
     "num": 16,
@@ -897,7 +897,7 @@ export const QUESTIONS_DATA = [
       "B": "Context window koi user-adjustable slider nahi hota jo per chat change ho.",
       "D": "Model khud se subset select karke context limit cross nahi kar sakta; hard token budget hota hai."
     },
-    "examTip": "Exam Tip: Context Windows questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: The context window is a fixed token budget that includes everything the model can see in a single turn: system prompt, history, attachments, and the latest user message."
   },
   {
     "num": 17,
@@ -920,7 +920,7 @@ export const QUESTIONS_DATA = [
       "B": "Naye output ko compare tab karoge jab naya output bane; pehle current ki kami samjho.",
       "D": "Prompt tab tak modify nahi kar sakte jab tak weak points diagnose na hon."
     },
-    "examTip": "Exam Tip: Iteration Diminishing questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: You cannot usefully revise a prompt until you know exactly what is wrong with the current output."
   },
   {
     "num": 18,
@@ -941,7 +941,7 @@ export const QUESTIONS_DATA = [
       "C": "'Redact sensitive fields and replace them with appropriate placeholders.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Review the redacted document with a peer to confirm the redaction is complete.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Data Privacy questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Classification comes first: you must know what is sensitive before you can redact it, review the redaction, or submit anything to the model."
   },
   {
     "num": 19,
@@ -962,7 +962,7 @@ export const QUESTIONS_DATA = [
       "C": "'Apply consistent headings' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Tighten wording for executive scannability and verify each fact against sourc...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Workflow Decomposition questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Board-level documents require scannable structure, verified facts, and organization-standard language."
   },
   {
     "num": 20,
@@ -985,7 +985,7 @@ export const QUESTIONS_DATA = [
       "B": "Non-determinism sach hai, lekin inconsistency accept kar lena galat practice hai; prompt improve karke variance khatam ki ja sakti hai.",
       "D": "Input ka format structured hai, problem prompt ke under-specification mein hai, inputs mein nahi."
     },
-    "examTip": "Exam Tip: Prompt Clarity questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: When the same prompt yields different structural or tonal results, the most common root cause is insufficient specification of the required elements."
   },
   {
     "num": 21,
@@ -1006,7 +1006,7 @@ export const QUESTIONS_DATA = [
       "B": "'Adopt the changes that worked' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Roll out the approach as piloted and address the two opportunities in a separ...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Iteration Diminishing questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: When the pilot already succeeded, the practical next step is to incorporate the improvements and proceed to broader rollout with close monitoring rather than delaying for another full pilot cycle."
   },
   {
     "num": 22,
@@ -1029,7 +1029,7 @@ export const QUESTIONS_DATA = [
       "B": "Published press releases already public information hain.",
       "C": "Company public org chart ke job titles public hain."
     },
-    "examTip": "Exam Tip: Data Privacy questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Government IDs and full payment-card numbers linked to individuals are highly sensitive PII/PCI data and must be redacted or excluded before any model interaction."
   },
   {
     "num": 23,
@@ -1050,7 +1050,7 @@ export const QUESTIONS_DATA = [
       "B": "'Configurations should be left alone if the team is satisfied with current out...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Configurations should be updated only when output quality visibly degrades' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Project Config questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Projects drift as the real world changes."
   },
   {
     "num": 24,
@@ -1071,7 +1071,7 @@ export const QUESTIONS_DATA = [
       "C": "'Remove the entire customer-segment description from the brief' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Keep the description as written for the internal brief' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Human Oversight questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Best practice is to replace demographic generalizations with observable, data-backed behaviors."
   },
   {
     "num": 25,
@@ -1094,7 +1094,7 @@ export const QUESTIONS_DATA = [
       "C": "Sequence merge karne se narrative flow solve nahi hota.",
       "D": "Headings add karne se underlying fragmentation theek nahi hoti."
     },
-    "examTip": "Exam Tip: Workflow Decomposition questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Over-decomposition fragments related content."
   },
   {
     "num": 26,
@@ -1117,7 +1117,7 @@ export const QUESTIONS_DATA = [
       "C": "Investigation close hone se pehle enter karne ki planning policy bypass nahi kar sakti.",
       "D": "Paraphrasing karke details chupana explicit ban ko bypass nahi karta."
     },
-    "examTip": "Exam Tip: Data Privacy questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: When policy expressly prohibits a class of data, the only compliant action is not to enter it and to escalate for an approved alternative."
   },
   {
     "num": 27,
@@ -1140,7 +1140,7 @@ export const QUESTIONS_DATA = [
       "B": "Written description chart ka substitute nahi hai.",
       "C": "Brief preview se estimate karna hallucination aur errors create karta hai."
     },
-    "examTip": "Exam Tip: Code Execution questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Deterministic numeric work and chart generation belong in the Code Execution environment, followed by human verification of the results against the source data."
   },
   {
     "num": 28,
@@ -1161,7 +1161,7 @@ export const QUESTIONS_DATA = [
       "C": "'Notify the user community that the output contains a hallucinated claim.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "Poori chat history ko discard karna wasteful hai; jo progress ho chuki hai use state summary se preserve karke continue karna behtar hai."
     },
-    "examTip": "Exam Tip: Primary Source questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: The first action is always localization: identify exactly which claim lacks support."
   },
   {
     "num": 29,
@@ -1182,7 +1182,7 @@ export const QUESTIONS_DATA = [
       "B": "'Approve' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "C": "'Compare the proposed use case against the applicable policy provisions.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Human Oversight questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: You must first determine which policy clauses are relevant before you can compare the use case against them or reach a decision."
   },
   {
     "num": 30,
@@ -1203,7 +1203,7 @@ export const QUESTIONS_DATA = [
       "C": "'Memory imports overwrite all prior memories on completion' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'The import transfers every detail as a rule' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Context Windows questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Anthropic documents Memory imports as experimental; incomplete incorporation is a known possibility, and the recommended recovery path is manual addition via Settings."
   },
   {
     "num": 31,
@@ -1224,7 +1224,7 @@ export const QUESTIONS_DATA = [
       "B": "'Apply organizational AI policies during onboarding as a foundational training...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "C": "'Defer all policy application to a centralized compliance team' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Human Oversight questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Diligence is an ongoing professional habit of aligning one’s own practice with policy, spotting gaps, and closing them—not a one-time onboarding checkbox or something delegated away."
   },
   {
     "num": 32,
@@ -1247,7 +1247,7 @@ export const QUESTIONS_DATA = [
       "C": "Lighter models per request kam rate limit consume karte hain.",
       "D": "Speed aur rate limit model capability se completely linked hain, independent nahi hain."
     },
-    "examTip": "Exam Tip: Context Windows questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Higher-capability models (Opus) are slower and consume more of the rate limit; lighter models (Haiku) are faster and cheaper per request."
   },
   {
     "num": 33,
@@ -1270,7 +1270,7 @@ export const QUESTIONS_DATA = [
       "C": "Do conflicting dates ka average nikalna guessing hai, verification nahi.",
       "D": "Lamba citation hona factual accuracy ki guarantee nahi hai."
     },
-    "examTip": "Exam Tip: Primary Source questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: When secondary sources conflict, resolve the discrepancy by consulting a primary or authoritative source rather than heuristics such as recency or citation length."
   },
   {
     "num": 34,
@@ -1294,7 +1294,7 @@ export const QUESTIONS_DATA = [
       "B": "1000 words reach karna ek arbitrary quota hai; prompt jitna concise aur clear ho utna behtar hota hai.",
       "E": "Department ke sabhi logon ke naam daalna irrelevant clutter hai."
     },
-    "examTip": "Exam Tip: Prompt Clarity questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: A high-quality prompt must state a clear task/deliverable and supply the context (audience, goal, constraints) needed to produce a useful result."
   },
   {
     "num": 35,
@@ -1317,7 +1317,7 @@ export const QUESTIONS_DATA = [
       "C": "Highest figure choose karna false representation hai.",
       "D": "Source attribution hatakar common knowledge bolna intellectual dishonesty hai."
     },
-    "examTip": "Exam Tip: Primary Source questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Secondary repetition is not verification."
   },
   {
     "num": 36,
@@ -1338,7 +1338,7 @@ export const QUESTIONS_DATA = [
       "C": "'Generate the procedure as the chat response and copy the text into the team’s...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Generate the procedure as a series of numbered steps in the chat and keep the...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Project Config questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Artifacts are designed to be durable, editable, versionable documents—exactly the properties needed for a living operating procedure that will be reused and updated."
   },
   {
     "num": 37,
@@ -1359,7 +1359,7 @@ export const QUESTIONS_DATA = [
       "C": "'Validate the gathered information against authoritative external sources.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Generate a final research report combining every Claude output produced.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Human Oversight questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Research begins with clear questions."
   },
   {
     "num": 38,
@@ -1380,7 +1380,7 @@ export const QUESTIONS_DATA = [
       "B": "'Describe Claude’s capabilities in technical terms so the sponsor understands ...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "C": "'Describe what Claude does well and tie it to the project outcomes' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Human Oversight questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Balanced framing presents both strengths and the human-managed limitations in the same narrative, always linked to the outcomes the sponsor cares about."
   },
   {
     "num": 39,
@@ -1402,7 +1402,7 @@ export const QUESTIONS_DATA = [
       "D": "'deciding promotion outcomes for staff based solely on the model’s judgment' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "E": "'issuing legally binding contractual commitments on behalf of the company' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Human Oversight questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Drafting status updates and synthesizing literature are classic high-value, human-supervised Claude tasks."
   },
   {
     "num": 40,
@@ -1423,7 +1423,7 @@ export const QUESTIONS_DATA = [
       "C": "'The response is a casual rephrasing of an internal team status update.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'The response is a brief internal announcement about an upcoming team all-hand...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Human Oversight questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: An external customer-facing draft that contains a service-level commitment carries material commercial and reputational risk and therefore warrants escalation before release."
   },
   {
     "num": 41,
@@ -1444,7 +1444,7 @@ export const QUESTIONS_DATA = [
       "B": "'Replace “be empathetic and casual” with “match the brand voice guide' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "C": "'Move the brand voice guide and the goodwill-credit policy into the Project kn...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Project Config questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Explicit, concrete instructions that encode the brand attributes, length expectation, and the policy-gated credit rule give the model clear, enforceable constraints instead of relying on it to “consult” documents."
   },
   {
     "num": 42,
@@ -1465,7 +1465,7 @@ export const QUESTIONS_DATA = [
       "C": "'The report’s completeness cannot be assessed from the deliverable specificati...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'The report does not meet the deliverable specification because a section that...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Workflow Decomposition questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Presence of a section is not enough when the specification requires multi-dimensional coverage."
   },
   {
     "num": 43,
@@ -1488,7 +1488,7 @@ export const QUESTIONS_DATA = [
       "B": "Output format ko Claude par chhodna aur bhi risky hai, isse Claude dobara koi section chhod sakta hai.",
       "C": "Subject matter ka background context badhane se missing task solve nahi hota."
     },
-    "examTip": "Exam Tip: Prompt Clarity questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: When the model skips a required element, the most direct fix is to make that element an explicit, non-optional part of the task statement."
   },
   {
     "num": 44,
@@ -1512,7 +1512,7 @@ export const QUESTIONS_DATA = [
       "B": "Team member ki seniority authority se judi hai, task appropriateness se nahi.",
       "C": "Process kitna purana hai ye delegation safety decide nahi karta."
     },
-    "examTip": "Exam Tip: Human Oversight questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Delegation decisions turn on whether the step requires uniquely human capabilities and on the risk profile (reversibility × consequence)."
   },
   {
     "num": 45,
@@ -1533,7 +1533,7 @@ export const QUESTIONS_DATA = [
       "B": "'Configure the Project with custom instructions that describe a different work...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Add the Skill and the supporting knowledge sources to the Project' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Project Config questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Skills, knowledge, and custom instructions work best when they are deliberately aligned and cross-referenced so the model receives a coherent set of guidance for the intended workflow."
   },
   {
     "num": 46,
@@ -1554,7 +1554,7 @@ export const QUESTIONS_DATA = [
       "C": "Yeh execution order galat hai; source documents pehle gather aur label hone chahiye, uske baad Claude ko prompt bheja jata hai.",
       "D": "Yeh execution order galat hai; source documents pehle gather aur label hone chahiye, uske baad Claude ko prompt bheja jata hai."
     },
-    "examTip": "Exam Tip: Human Oversight questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Requirements must be defined first (3), then a candidate chosen (4), then measured on a representative sample (1), then the lightest model that still meets the bar selected (2), with periodic retesting (5)."
   },
   {
     "num": 47,
@@ -1575,7 +1575,7 @@ export const QUESTIONS_DATA = [
       "C": "'The prompt asks for a comprehensive response' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'The prompt asks Claude to act as a researcher rather than a writer.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Primary Source questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: When the model invents facts, the most direct cause is the absence of an explicit constraint to stay inside the provided source material."
   },
   {
     "num": 48,
@@ -1596,7 +1596,7 @@ export const QUESTIONS_DATA = [
       "C": "'Lead with a chronological recap of the quarter’s events' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Lead with the quarter’s operational highlights' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Workflow Decomposition questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Time-constrained investors need the bottom-line result first, then the concise drivers that explain it, then the forward view."
   },
   {
     "num": 49,
@@ -1618,7 +1618,7 @@ export const QUESTIONS_DATA = [
       "C": "'total word count of the output relative to industry benchmarks for business b...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'consistency of the writing style with the organization’s established tone gui...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Workflow Decomposition questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Factual accuracy against sources and fidelity to the requested format/length are core quality criteria."
   },
   {
     "num": 50,
@@ -1641,7 +1641,7 @@ export const QUESTIONS_DATA = [
       "B": "Bina budget constraint ke generate karke baad mein filter karna prompt ki responsibility shift kar deta hai aur effort waste karta hai.",
       "D": "Budget ko unconstrained chhodna non-compliant ideas produce karega."
     },
-    "examTip": "Exam Tip: Prompt Clarity questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: When the constraints are part of the success criteria, they belong in the prompt itself and each idea should explicitly declare how it satisfies them."
   },
   {
     "num": 51,
@@ -1664,7 +1664,7 @@ export const QUESTIONS_DATA = [
       "B": "Research feature web/docs gather karta hai, multi-sheet calculation nahi.",
       "C": "Artifacts UI document render karta hai par backend calculation sandbox Code Execution hai."
     },
-    "examTip": "Exam Tip: Code Execution questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Deterministic multi-tab calculations belong in the Code Execution sandbox, where actual code runs against the file and results can be verified, rather than relying on the language model’s arithmetic."
   },
   {
     "num": 52,
@@ -1685,7 +1685,7 @@ export const QUESTIONS_DATA = [
       "B": "'Ask Claude to choose terminology it judges most appropriate' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Ask Claude to review the response for consistent terminology without providin...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Project Config questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Supplying the glossary and explicitly requiring its exclusive use is the most direct way to eliminate terminology drift at generation time."
   },
   {
     "num": 53,
@@ -1706,7 +1706,7 @@ export const QUESTIONS_DATA = [
       "C": "'Use Claude to interview each team member who works on the intake process and ...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Generate an optimized version of the intake process based on industry benchmarks' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Workflow Decomposition questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Claude is most useful as an analytical partner that maps the as-is process, surfaces data-backed bottleneck hypotheses, and generates options for humans to evaluate—not as an autonomous optimizer or interviewer."
   },
   {
     "num": 54,
@@ -1728,7 +1728,7 @@ export const QUESTIONS_DATA = [
       "B": "'employee ID numbers and hire dates for the team roster included to help Claud...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "E": "'accommodation request notes from an employee’s HR file needed to draft a role...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Data Privacy questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Anonymized policy text and already-redacted job descriptions are appropriate inputs."
   },
   {
     "num": 55,
@@ -1749,7 +1749,7 @@ export const QUESTIONS_DATA = [
       "C": "'Use a divergent brainstorming approach to generate a wide range of possible c...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Use an open conversational strategy that explores competitor pricing iterativ...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Human Oversight questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: A structured research strategy that captures sources and confidence levels matches the clarified goal of an actionable competitor-pricing summary rather than ideation or open-ended exploration."
   },
   {
     "num": 56,
@@ -1770,7 +1770,7 @@ export const QUESTIONS_DATA = [
       "B": "'a bulleted list of observations grouped by region without consistent metrics ...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'a series of regional narrative briefs' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Workflow Decomposition questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: When the underlying data are tabular, a structured table preserves comparability, enables sorting/filtering, and communicates volume far more clearly than prose narratives."
   },
   {
     "num": 57,
@@ -1792,7 +1792,7 @@ export const QUESTIONS_DATA = [
       "C": "'a friendly' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "E": "'a short personal anecdote to make the prompt feel more conversational' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Prompt Clarity questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Every effective business prompt needs a clear task statement and the context (audience, goal, constraints) required to execute it well."
   },
   {
     "num": 58,
@@ -1815,7 +1815,7 @@ export const QUESTIONS_DATA = [
       "C": "Familiar content decomposition demand nahi karta.",
       "D": "Single structured document single prompt se ho sakta hai."
     },
-    "examTip": "Exam Tip: Workflow Decomposition questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Decomposition is indicated when the request comprises several distinct deliverables that benefit from separate focus, sequencing, or quality criteria."
   },
   {
     "num": 59,
@@ -1837,7 +1837,7 @@ export const QUESTIONS_DATA = [
       "B": "'updating the team’s shared workspace name to reflect the new workflow process' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'labeling each workflow step with descriptive names to improve readability for...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Workflow Decomposition questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: A quality gate before downstream use and the elimination of repeated reference material via a Project are substantive process improvements."
   },
   {
     "num": 60,
@@ -1860,7 +1860,7 @@ export const QUESTIONS_DATA = [
       "C": "Task silently abandon karna unprofessional hai.",
       "D": "Kharab output accept kar lena quality standard ko compromise karta hai."
     },
-    "examTip": "Exam Tip: Iteration Diminishing questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: When quality has stopped improving across multiple iterations, further prompting is unlikely to help."
   },
   {
     "num": 61,
@@ -1881,7 +1881,7 @@ export const QUESTIONS_DATA = [
       "C": "'Ask Claude to generate one roadmap and then iteratively refine it based on im...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Request a single comprehensive roadmap that already balances all known constr...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Human Oversight questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: When the goal is breadth and later human debate, the model should surface distinct options with trade-offs rather than collapsing to a single recommendation."
   },
   {
     "num": 62,
@@ -1902,7 +1902,7 @@ export const QUESTIONS_DATA = [
       "C": "'Delete the entire Project configuration and start over.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Increase the temperature setting to encourage more varied responses.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Degraded Conversations questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Context degradation is best addressed by compressing history and re-anchoring the model with a clear, current goal before more drastic measures."
   },
   {
     "num": 63,
@@ -1923,7 +1923,7 @@ export const QUESTIONS_DATA = [
       "C": "'Approve the use case for fully automated publication without review.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Require the FAQs to be written only by a licensed attorney using Claude as a ...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Human Oversight questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Internal FAQs drawn from approved sources are low-to-moderate risk and are typically allowed when a human reviews the output before distribution."
   },
   {
     "num": 64,
@@ -1945,7 +1945,7 @@ export const QUESTIONS_DATA = [
       "C": "'Whether the email exceeds 400 words regardless of content.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "E": "'Whether Claude spontaneously added an upsell offer.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Workflow Decomposition questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Accuracy against source material and adherence to brand/compliance requirements are core quality criteria; stylistic preferences and unsolicited upsells are secondary or out of scope."
   },
   {
     "num": 65,
@@ -1968,7 +1968,7 @@ export const QUESTIONS_DATA = [
       "C": "Slack channel external reminder hai, model ko directly govern nahi karta.",
       "D": "12 alag Projects banana team fragmentation aur maintenance nightmare banata hai."
     },
-    "examTip": "Exam Tip: Project Config questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Project-level custom instructions ensure every conversation inherits the same role, structure, tone, and constraints without relying on individual memory or external reminders."
   },
   {
     "num": 66,
@@ -1989,7 +1989,7 @@ export const QUESTIONS_DATA = [
       "C": "'Convert the spreadsheet to a PDF so Claude cannot extract numbers precisely.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Ask Claude to confirm it will not store the data after the chat ends.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Data Privacy questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Only the minimum necessary data should be provided; confidential or personally identifiable values that are not required for the task must be redacted or omitted."
   },
   {
     "num": 67,
@@ -2010,7 +2010,7 @@ export const QUESTIONS_DATA = [
       "C": "'Users are deliberately pasting the old guide into every prompt.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'The temperature setting is too high' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Project Config questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Persistent citation of retired guidance almost always means the Project still contains that material in its knowledge or instructions; updating the configuration resolves the drift."
   },
   {
     "num": 68,
@@ -2031,7 +2031,7 @@ export const QUESTIONS_DATA = [
       "C": "'Claude generates a self-checklist that the human is free to ignore.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'The human only reviews the final paragraph for tone.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Human Oversight questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Documented, dual-sided criteria create an auditable, consistent hand-off; ad-hoc or partial review leaves gaps."
   },
   {
     "num": 69,
@@ -2052,7 +2052,7 @@ export const QUESTIONS_DATA = [
       "B": "'Artifacts only.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Memory import of previous calculations.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Code Execution questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Deterministic calculations belong in the Code Execution sandbox where actual code runs against the data; the language model alone is not reliable for precise multi-file arithmetic."
   },
   {
     "num": 70,
@@ -2073,7 +2073,7 @@ export const QUESTIONS_DATA = [
       "C": "'Add three new example outputs to the prompt.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Switch to a more capable model before changing anything else.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Iteration Diminishing questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Diagnosis precedes intervention: you must know exactly what failed before you can target the prompt changes effectively."
   },
   {
     "num": 71,
@@ -2095,7 +2095,7 @@ export const QUESTIONS_DATA = [
       "D": "'Slight variations in email signature formatting.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "E": "'Occasional use of a slightly longer greeting.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Human Oversight questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Material employment impact without accountability and systematic bias against protected groups are high-severity ethical and legal risks; formatting issues are not."
   },
   {
     "num": 72,
@@ -2116,7 +2116,7 @@ export const QUESTIONS_DATA = [
       "C": "'“Claude is experimental and should not be relied upon.”' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'“Claude replaces the need for junior analysts.”' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Human Oversight questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Balanced framing names both the productive contribution and the continuing human accountability."
   },
   {
     "num": 73,
@@ -2139,7 +2139,7 @@ export const QUESTIONS_DATA = [
       "C": "Constraints hata dena task ki core requirement ko tod deta hai.",
       "D": "Unbounded list se Claude ko choose karne kehna random result deta hai."
     },
-    "examTip": "Exam Tip: Prompt Clarity questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: When constraints define success, they belong in the prompt and each output item should explicitly demonstrate compliance."
   },
   {
     "num": 74,
@@ -2160,7 +2160,7 @@ export const QUESTIONS_DATA = [
       "C": "'Delay rollout indefinitely until both opportunities are fully solved.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Discard the pilot results and start research from scratch.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Iteration Diminishing questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Positive core results justify advancing; remaining improvements can be addressed during monitored rollout rather than blocking progress."
   },
   {
     "num": 75,
@@ -2183,7 +2183,7 @@ export const QUESTIONS_DATA = [
       "C": "User-adjustable slider nahi hota.",
       "D": "Claude limit se exceed nahi kar sakta."
     },
-    "examTip": "Exam Tip: Context Windows questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: The context window is a hard token limit on everything the model can attend to in a single turn."
   },
   {
     "num": 76,
@@ -2204,7 +2204,7 @@ export const QUESTIONS_DATA = [
       "C": "'Use Incognito mode so the data is not retained.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Ask Claude to anonymize the data after it has been uploaded.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Data Privacy questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Named compensation data is highly sensitive; only the minimum necessary non-identifying policy information should be supplied."
   },
   {
     "num": 77,
@@ -2228,7 +2228,7 @@ export const QUESTIONS_DATA = [
       "D": "800 words se lamba hona koi quality benchmark nahi hai.",
       "E": "Har team member ka email address prompt mein unnecessary noise hai."
     },
-    "examTip": "Exam Tip: Prompt Clarity questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Clear task/deliverable and sufficient context are foundational; length quotas and personal flourishes are not quality criteria."
   },
   {
     "num": 78,
@@ -2249,7 +2249,7 @@ export const QUESTIONS_DATA = [
       "C": "'Average the three slightly different numbers reported.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Remove the citation and present the figure as common knowledge.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Primary Source questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Secondary repetition is not verification; the primary source must be checked."
   },
   {
     "num": 79,
@@ -2270,7 +2270,7 @@ export const QUESTIONS_DATA = [
       "C": "'A series of numbered steps left only inside the original chat.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'A PDF screenshot of the chat window.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Project Config questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Artifacts are designed to be durable, editable working documents—exactly what a living procedure requires."
   },
   {
     "num": 80,
@@ -2291,7 +2291,7 @@ export const QUESTIONS_DATA = [
       "B": "'Document the decision in the compliance register.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Compare the use case against every policy document in the company.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Human Oversight questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: You must first determine relevance before comparison or decision-making can occur."
   },
   {
     "num": 81,
@@ -2312,7 +2312,7 @@ export const QUESTIONS_DATA = [
       "C": "'Completeness cannot be judged without customer feedback.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'The missing dimensions can be ignored because the rest of the report is strong.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Human Oversight questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Presence of a section is insufficient when the specification requires multi-dimensional coverage; the gap must be closed."
   },
   {
     "num": 82,
@@ -2334,7 +2334,7 @@ export const QUESTIONS_DATA = [
       "C": "'How long the current process has existed unchanged.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "E": "'The job title of the person who currently performs the step.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Human Oversight questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Delegation decisions turn on uniquely human capabilities and on risk (reversibility × impact), not on diagram aesthetics or tenure."
   },
   {
     "num": 83,
@@ -2355,7 +2355,7 @@ export const QUESTIONS_DATA = [
       "C": "'The temperature setting was left at the default.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'The role “senior researcher” forces invention of new facts.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Primary Source questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Without a source-boundary constraint, the model will fill gaps with trained knowledge or plausible invention."
   },
   {
     "num": 84,
@@ -2376,7 +2376,7 @@ export const QUESTIONS_DATA = [
       "C": "'Lead with operational anecdotes' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Present only the forward outlook and omit historical results.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Workflow Decomposition questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Investors need the bottom line first, then the concise explanation, then the forward view."
   },
   {
     "num": 85,
@@ -2398,7 +2398,7 @@ export const QUESTIONS_DATA = [
       "C": "'Presence of the author’s favorite transitional phrase.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "E": "'Whether Claude added an unsolicited competitive analysis.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Workflow Decomposition questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Accuracy against sources and fidelity to the requested format/length are core; stylistic idiosyncrasies and unsolicited extras are not."
   },
   {
     "num": 86,
@@ -2419,7 +2419,7 @@ export const QUESTIONS_DATA = [
       "B": "'Research feature.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "C": "'Artifacts only.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Code Execution questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Only Code Execution provides actual deterministic computation on the file contents."
   },
   {
     "num": 87,
@@ -2440,7 +2440,7 @@ export const QUESTIONS_DATA = [
       "C": "'Ask Claude to choose whatever terminology it prefers.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Ignore the inconsistency because the facts are correct.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Project Config questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Supplying the authoritative glossary and requiring exclusive use prevents terminology drift at generation time."
   },
   {
     "num": 88,
@@ -2461,7 +2461,7 @@ export const QUESTIONS_DATA = [
       "C": "'Interview every team member via Claude and rewrite the process from those int...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Generate an industry-benchmark process and force the team to adopt it.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Human Oversight questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Claude is most effective as an analytical partner that surfaces options; humans retain design and implementation authority."
   },
   {
     "num": 89,
@@ -2483,7 +2483,7 @@ export const QUESTIONS_DATA = [
       "D": "'Accommodation request notes from a personnel file.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "E": "'Full employee ID numbers and home addresses.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Data Privacy questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Anonymized policy text and already-redacted job descriptions are appropriate; named compensation and sensitive personnel data are not."
   },
   {
     "num": 90,
@@ -2504,7 +2504,7 @@ export const QUESTIONS_DATA = [
       "C": "'Open-ended conversation that lets structure emerge organically.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Comparative analysis against a single competitor only.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Human Oversight questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: A structured research approach with sources and confidence levels matches the clarified goal of an actionable summary."
   },
   {
     "num": 91,
@@ -2525,7 +2525,7 @@ export const QUESTIONS_DATA = [
       "C": "'A bulleted list of free-form observations without aligned metrics.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Separate narrative briefs for each region with no common structure.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Workflow Decomposition questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Tabular data is most clearly communicated in a consistent table that supports comparison and sorting."
   },
   {
     "num": 92,
@@ -2549,7 +2549,7 @@ export const QUESTIONS_DATA = [
       "D": "Personal anecdote prompt ko friendly dikha sakti hai par quality nahi badhati.",
       "E": "Har audience ke liye casual tone force karna unprofessional aur wrong constraint hai."
     },
-    "examTip": "Exam Tip: Prompt Clarity questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Task clarity and relevant context are essential; exhaustive catalogs and personal stories are usually noise."
   },
   {
     "num": 93,
@@ -2570,7 +2570,7 @@ export const QUESTIONS_DATA = [
       "C": "'The request can be ignored because it is too large.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'The request should be handled entirely by Code Execution.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Workflow Decomposition questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Multiple distinct deliverables benefit from decomposition so each can receive focused attention and quality criteria."
   },
   {
     "num": 94,
@@ -2592,7 +2592,7 @@ export const QUESTIONS_DATA = [
       "D": "'Changing the font of the workflow document.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "E": "'Reordering section headings without changing content or controls.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Workflow Decomposition questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: A quality gate and elimination of repeated reference material are substantive improvements; cosmetic changes are not."
   },
   {
     "num": 95,
@@ -2613,7 +2613,7 @@ export const QUESTIONS_DATA = [
       "C": "'Accept the current output without further human review.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Abandon the task silently.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Iteration Diminishing questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Continued prompting after a clear plateau wastes effort; human judgment or a new strategy is required."
   },
   {
     "num": 96,
@@ -2634,7 +2634,7 @@ export const QUESTIONS_DATA = [
       "C": "'Yes' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Yes' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Human Oversight questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: High-visibility external communications carry reputational and legal risk and must retain human accountability."
   },
   {
     "num": 97,
@@ -2655,7 +2655,7 @@ export const QUESTIONS_DATA = [
       "B": "'Completing a one-time policy acknowledgment at onboarding and never revisitin...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Delegating all policy questions to a central team and taking no personal resp...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Human Oversight questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Diligence is a sustained habit of alignment, gap detection, and corrective action."
   },
   {
     "num": 98,
@@ -2676,7 +2676,7 @@ export const QUESTIONS_DATA = [
       "C": "'Have identical speed and rate-limit consumption' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Require multiple passes to match lighter-model quality.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Context Windows questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Higher capability comes with higher latency and greater rate-limit consumption—the fundamental trade-off."
   },
   {
     "num": 99,
@@ -2697,7 +2697,7 @@ export const QUESTIONS_DATA = [
       "B": "'Average the two dates.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Prefer the source with the longer citation.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Primary Source questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Conflicts between secondary sources are resolved by consulting a primary or authoritative source."
   },
   {
     "num": 100,
@@ -2718,7 +2718,7 @@ export const QUESTIONS_DATA = [
       "C": "'Move the policies into the knowledge base and leave the original instructions...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Disable custom instructions entirely.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Project Config questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Explicit, enforceable constraints outperform vague instructions plus a hope that the model will consult documents."
   },
   {
     "num": 101,
@@ -2739,7 +2739,7 @@ export const QUESTIONS_DATA = [
       "C": "'Restate the current goal clearly.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Trim irrelevant history before the next turn.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Degraded Conversations questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Switching vendors is a heavy, last-resort step; lighter recovery actions should be tried first."
   },
   {
     "num": 102,
@@ -2760,7 +2760,7 @@ export const QUESTIONS_DATA = [
       "C": "'Yes' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Only if the user is new to Claude.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Workflow Decomposition questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Decomposition is indicated by multiple distinct outputs or conflicting success criteria, not by default."
   },
   {
     "num": 103,
@@ -2781,7 +2781,7 @@ export const QUESTIONS_DATA = [
       "C": "'Imports overwrite all existing memories and cannot be partial.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Imported memories are stored in a completely inaccessible separate store.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Context Windows questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Anthropic documents Memory imports as experimental with possible incomplete incorporation; manual addition is the documented recovery path."
   },
   {
     "num": 104,
@@ -2802,7 +2802,7 @@ export const QUESTIONS_DATA = [
       "C": "'Only if the update will never be read by executives.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Only if Code Execution is used.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Human Oversight questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Synthesis and drafting under human review is precisely the kind of work Claude is well suited to support."
   },
   {
     "num": 105,
@@ -2825,7 +2825,7 @@ export const QUESTIONS_DATA = [
       "C": "Temperature badlane ya ghatane se task completeness guarantee nahi hoti.",
       "D": "System prompt lamba karne se specific task ki kami puri nahi hoti."
     },
-    "examTip": "Exam Tip: Prompt Clarity questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Missing required elements are most directly fixed by making those elements explicit and non-optional in the task statement."
   },
   {
     "num": 106,
@@ -2846,7 +2846,7 @@ export const QUESTIONS_DATA = [
       "C": "'Update only when a senior leader complains.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Create a new Project every month and abandon the old one.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Project Config questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Projects drift as policies, terminology, and source material evolve; periodic review keeps them current."
   },
   {
     "num": 107,
@@ -2867,7 +2867,7 @@ export const QUESTIONS_DATA = [
       "B": "'Add a disclaimer and leave the generalization unchanged.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Delete the entire segment description.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Human Oversight questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Replacing unsupported demographic generalizations with data-backed behavioral observations improves both accuracy and fairness."
   },
   {
     "num": 108,
@@ -2888,7 +2888,7 @@ export const QUESTIONS_DATA = [
       "C": "'Keep all fifteen steps but number them differently.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Switch to a lighter model.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Workflow Decomposition questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Re-grouping by conceptual cohesion restores narrative flow while still keeping the task manageable."
   },
   {
     "num": 109,
@@ -2909,7 +2909,7 @@ export const QUESTIONS_DATA = [
       "B": "'Use Incognito chat because it does not retain data.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Wait until the investigation closes and then enter the full history.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Data Privacy questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: An explicit prohibition leaves no room for work-arounds; escalation and non-entry is the only compliant path."
   },
   {
     "num": 110,
@@ -2931,6 +2931,6 @@ export const QUESTIONS_DATA = [
       "D": "'Average output length has increased by 10 percent.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "E": "'One user prefers a different greeting style.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Project Config questions mein primary source verification, prompt constraints, aur human accountability hamesha winning choices hoti hain."
+    "examTip": "Exam Takeaway: Outdated references and circumvention via ad-hoc chats are direct signals of configuration drift; volume or length changes are weaker indicators."
   }
 ];

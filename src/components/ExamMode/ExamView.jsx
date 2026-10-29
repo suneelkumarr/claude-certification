@@ -15,6 +15,14 @@ import {
   Zap
 } from 'lucide-react';
 import confetti from 'canvas-confetti';
+import { 
+  sampleExamQuestions, 
+  recordUserResponse, 
+  toggleReviewFlag, 
+  calculateExamScore, 
+  navigateQuestion,
+  checkTimerExpiration
+} from '../../utils/examEngine.js';
 
 export default function ExamView({ exam, onSwitchToStudy }) {
   const TOTAL_QUESTIONS = exam.quizQuestionCount || 60;
@@ -90,54 +98,15 @@ export default function ExamView({ exam, onSwitchToStudy }) {
     }
   }, [phase, examQuestions, currentIndex, userResponses, remainingSeconds, savedSessionKey]);
 
-  // Pick balanced questions across all concepts
+  // Pick weighted questions across all concepts using examEngine
   const initExamQuestions = () => {
-    const selected = [];
-    const questionsByConcept = {};
-
-    exam.concepts.forEach(c => {
-      questionsByConcept[c.id] = [];
-    });
-
-    exam.questions.forEach(q => {
-      const cId = q.conceptId || exam.concepts[0]?.id;
-      if (!questionsByConcept[cId]) questionsByConcept[cId] = [];
-      questionsByConcept[cId].push(q);
-    });
-
-    // Take balanced sample from each concept
-    const quotaPerTopic = Math.ceil(TOTAL_QUESTIONS / exam.concepts.length);
-    exam.concepts.forEach(c => {
-      const pool = [...(questionsByConcept[c.id] || [])];
-      shuffle(pool);
-      selected.push(...pool.slice(0, quotaPerTopic));
-    });
-
-    // Trim or fill up to TOTAL_QUESTIONS
-    if (selected.length < TOTAL_QUESTIONS) {
-      const remainingPool = exam.questions.filter(q => !selected.some(s => s.num === q.num));
-      shuffle(remainingPool);
-      while (selected.length < TOTAL_QUESTIONS && remainingPool.length > 0) {
-        selected.push(remainingPool.pop());
-      }
-    }
-
-    shuffle(selected);
-    const finalSet = selected.slice(0, TOTAL_QUESTIONS);
-
-    setExamQuestions(finalSet);
+    const { questions: sampled } = sampleExamQuestions(exam, TOTAL_QUESTIONS);
+    setExamQuestions(sampled);
     setCurrentIndex(0);
     setUserResponses({});
     setRemainingSeconds(TOTAL_SECONDS);
     setPhase('running');
     window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
-
-  const shuffle = (array) => {
-    for (let i = array.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [array[i], array[j]] = [array[j], array[i]];
-    }
   };
 
   // Timer countdown hook
@@ -146,7 +115,7 @@ export default function ExamView({ exam, onSwitchToStudy }) {
     if (phase === 'running' && remainingSeconds > 0) {
       timer = setInterval(() => {
         setRemainingSeconds(prev => {
-          if (prev <= 1) {
+          if (checkTimerExpiration(prev - 1)) {
             clearInterval(timer);
             handleFinishExam();
             return 0;
@@ -158,60 +127,36 @@ export default function ExamView({ exam, onSwitchToStudy }) {
     return () => clearInterval(timer);
   }, [phase, remainingSeconds]);
 
-  // Handle option select in exam
+  // Handle option select in exam using pure state updater
   const handleSelectOption = (idx, letter, isMulti) => {
-    const current = userResponses[idx] || { selected: [], markedReview: false };
-    let updatedSelected = [];
-
-    if (isMulti) {
-      if (current.selected.includes(letter)) {
-        updatedSelected = current.selected.filter(l => l !== letter);
-      } else {
-        updatedSelected = [...current.selected, letter];
-      }
-    } else {
-      updatedSelected = [letter];
-    }
-
-    setUserResponses({
-      ...userResponses,
-      [idx]: { ...current, selected: updatedSelected }
-    });
+    setUserResponses(prev => recordUserResponse(prev, idx, letter, isMulti));
   };
 
   // Toggle review flag
   const handleToggleReview = (idx) => {
-    const current = userResponses[idx] || { selected: [], markedReview: false };
-    setUserResponses({
-      ...userResponses,
-      [idx]: { ...current, markedReview: !current.markedReview }
-    });
+    setUserResponses(prev => toggleReviewFlag(prev, idx));
   };
 
   // Clear current response
   const handleClearCurrent = () => {
-    const current = userResponses[currentIndex] || { selected: [], markedReview: false };
-    setUserResponses({
-      ...userResponses,
-      [currentIndex]: { ...current, selected: [] }
+    setUserResponses(prev => {
+      const current = prev[currentIndex] || { selected: [], markedReview: false };
+      return {
+        ...prev,
+        [currentIndex]: { ...current, selected: [] }
+      };
     });
   };
 
-  // Finalize Exam
+  // Finalize Exam & Score Calculation
   const handleFinishExam = () => {
     setShowSubmitModal(false);
     setPhase('report');
     localStorage.removeItem(savedSessionKey);
     window.scrollTo({ top: 0, behavior: 'smooth' });
 
-    // Trigger celebratory confetti if passed!
-    const correctCount = examQuestions.reduce((acc, q, idx) => {
-      const correct = (q.correctAnswer.match(/[A-E]/g) || []).sort();
-      const user = [...(userResponses[idx]?.selected || [])].sort();
-      return JSON.stringify(correct) === JSON.stringify(user) ? acc + 1 : acc;
-    }, 0);
-
-    if (Math.round((correctCount / TOTAL_QUESTIONS) * 100) >= PASSING_PCT) {
+    const scoreMetrics = calculateExamScore(examQuestions, userResponses, PASSING_PCT, exam.concepts);
+    if (scoreMetrics.isPassed) {
       confetti({ particleCount: 110, spread: 75, origin: { y: 0.6 } });
     }
   };

@@ -442,7 +442,7 @@ export const QUESTIONS_DATA = [
       "B": "Human oversight aur known limitations ko proactively disclose karna chahiye, stakeholder ke poochne ka intezar nahi karna chahiye.",
       "D": "Capabilities ko artificially undersell karna stakeholder expectations ko miscalibrate karta hai aur product adoption rokta hai."
     },
-    "examTip": "Exam Tip: Governance Fluency questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: Description competency requires transparent, calibrated communication of capabilities, limitations, and residual human oversight."
   },
   {
     "num": 2,
@@ -463,7 +463,7 @@ export const QUESTIONS_DATA = [
       "C": "'Refine the drafted instructions based on observed gaps from validation runs.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "Bina project ke exact scope aur boundaries freeze kiye doosre project ka template uthana scope drift aur misaligned instructions introduce karta hai."
     },
-    "examTip": "Exam Tip: Prompt Boundaries Degradation questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: Purpose and boundaries must be established before any drafting or validation."
   },
   {
     "num": 3,
@@ -485,7 +485,7 @@ export const QUESTIONS_DATA = [
       "B": "Contradictory instructions ko bina resolve kiye merge karne se prompt mein conflict paida hota hai aur model erratic output deta hai.",
       "E": "Claude ke output ko blindly accept karna human accountability aur review governance ke rule ko todta hai."
     },
-    "examTip": "Exam Tip: Governance Fluency questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: Productive feedback handling requires traceability (map feedback to change) and clarification of ambiguity."
   },
   {
     "num": 4,
@@ -506,7 +506,7 @@ export const QUESTIONS_DATA = [
       "B": "Model vendor ko turant change karna extreme step hai; degradation context overflow ki wajah se hoti hai jise state summary cleanly solve karti hai.",
       "C": "Poori chat history ko discard karna wasteful hai; jo progress ho chuki hai use state summary se preserve karke continue karna behtar hai."
     },
-    "examTip": "Exam Tip: Prompt Boundaries Degradation questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: The least-disruptive first recovery is to re-anchor the model with a summary of state and a focused prompt."
   },
   {
     "num": 5,
@@ -527,7 +527,7 @@ export const QUESTIONS_DATA = [
       "C": "Yeh execution order galat hai; source documents pehle gather aur label hone chahiye, uske baad Claude ko prompt bheja jata hai.",
       "D": "Yeh execution order galat hai; source documents pehle gather aur label hone chahiye, uske baad Claude ko prompt bheja jata hai."
     },
-    "examTip": "Exam Tip: Evaluation Metrics Qa questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: Sources must be gathered and labeled first (4), then submitted to Claude (3), then grouped and conflict-flagged (1), validated (2), and finally documented (5)."
   },
   {
     "num": 6,
@@ -549,7 +549,7 @@ export const QUESTIONS_DATA = [
       "C": "'Lower sampling temperature globally to reduce the chance of off-policy comple...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "E": "Sirf ek system prompt par rely karna brittle hai; defense-in-depth ke liye runtime schema validation aur guardrails dono chahiye."
     },
-    "examTip": "Exam Tip: Guardrails Security Compliance questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: Defense-in-depth requires both schema validation of structured outputs and layered (prompt + runtime) checks."
   },
   {
     "num": 7,
@@ -570,7 +570,7 @@ export const QUESTIONS_DATA = [
       "C": "'No' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Yes' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Rag Retrieval Multitenancy questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: Dense handles paraphrase; sparse handles exact tokens; structured query fits relational filter/aggregate; hybrid is not identical to dense; random sampling is never a production retrieval strategy."
   },
   {
     "num": 8,
@@ -592,7 +592,7 @@ export const QUESTIONS_DATA = [
       "D": "'selecting the Claude model tier based on the architect's prior project experi...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "E": "'generating an initial prototype and iterating based on user reaction' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Governance Fluency questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: Structured discovery surfaces constraints early via workshops and defines measurable success/failure gates."
   },
   {
     "num": 9,
@@ -613,7 +613,7 @@ export const QUESTIONS_DATA = [
       "B": "Contradictory instructions ko bina resolve kiye merge karne se prompt mein conflict paida hota hai aur model erratic output deta hai.",
       "D": "'Add a priority-ordering instruction that tells the model to evaluate all avai...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Prompt Boundaries Degradation questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: Contradictory system-prompt instructions produce unreliable behavior."
   },
   {
     "num": 10,
@@ -634,7 +634,7 @@ export const QUESTIONS_DATA = [
       "C": "'at the retrieval layer' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'inside the system prompt as a natural-language instruction that names the spe...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Rag Retrieval Multitenancy questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: RBAC must be enforced at retrieval so restricted documents never enter the model context."
   },
   {
     "num": 11,
@@ -655,7 +655,7 @@ export const QUESTIONS_DATA = [
       "B": "'a project retrospective document' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "C": "'user-facing release notes' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Enterprise Tooling Mcp questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: Operational handoff requires living architecture artifacts, decision records, runbooks, and known limitations."
   },
   {
     "num": 12,
@@ -677,7 +677,7 @@ export const QUESTIONS_DATA = [
       "B": "'Schedule the remediation work with the engineering team based on the prioriti...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "E": "'Document the identified gaps along with recommended remediations and residual...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Guardrails Security Compliance questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: Before mapping flows to clauses you must confirm the regulation actually applies (C) and know what tooling/controls already exist (D)."
   },
   {
     "num": 13,
@@ -698,7 +698,7 @@ export const QUESTIONS_DATA = [
       "C": "'1-Input' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'1-Output' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Latency Cost Slos questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: Persistence and schema validation are output handling; ordering sections and moving stable content to a cacheable prefix are prompt construction; history summarization is also prompt construction; trimming retrieved passages is input preparation."
   },
   {
     "num": 14,
@@ -720,7 +720,7 @@ export const QUESTIONS_DATA = [
       "C": "'Select the lightest model that consistently meets the quality bar across the ...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "E": "'Retest the model choice when a new model version becomes available.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Evaluation Metrics Qa questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: You must first define the success criteria (quality/latency/volume) and shortlist candidates that match the profile."
   },
   {
     "num": 15,
@@ -741,7 +741,7 @@ export const QUESTIONS_DATA = [
       "C": "'Delegation scope should be set primarily by maximizing efficiency gains acros...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Delegation should be avoided in most cases wherever financial transactions oc...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Guardrails Security Compliance questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: Delegation competency requires retained human accountability for decisions that carry financial or customer-impact risk, even when individual amounts are small."
   },
   {
     "num": 16,
@@ -763,7 +763,7 @@ export const QUESTIONS_DATA = [
       "D": "'Package 2 → security and compliance reviewer' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "E": "'Package 1 → engineering implementation team' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Guardrails Security Compliance questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: Threat model / residual risk / control mapping belong to security & compliance."
   },
   {
     "num": 17,
@@ -784,7 +784,7 @@ export const QUESTIONS_DATA = [
       "B": "'Precompute and cache retrieval embeddings offline' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Switch to a smaller model for every turn in place of prompt caching.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Latency Cost Slos questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: Reducing retrieval depth to the historically sufficient top-k and caching the static system prompt directly cut tokens and latency while preserving quality on routine turns."
   },
   {
     "num": 18,
@@ -806,7 +806,7 @@ export const QUESTIONS_DATA = [
       "D": "'AI-generated pull requests should be rejected as a default policy across the ...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "E": "'The 50-line threshold should be raised to 200 lines instead to capture more c...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Enterprise Tooling Mcp questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: Diligence requires verification of AI output; removing review eliminates that control."
   },
   {
     "num": 19,
@@ -828,7 +828,7 @@ export const QUESTIONS_DATA = [
       "D": "'Embed the procedure text into each workflow's system prompt at integration time.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "E": "'Have each workflow team rewrite the procedure for that team's specific context.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Guardrails Security Compliance questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: A single Skill owned by compliance and referenced by every workflow guarantees identical application and central update."
   },
   {
     "num": 20,
@@ -849,7 +849,7 @@ export const QUESTIONS_DATA = [
       "B": "'Statement 1: Transformation' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "C": "'Statement 1: Productivity' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Latency Cost Slos questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: 3× throughput is efficiency; role elimination + redeployment is transformation; cost overrun is solution cost; SLA breach is performance."
   },
   {
     "num": 21,
@@ -871,7 +871,7 @@ export const QUESTIONS_DATA = [
       "B": "'Build the dashboards that surface metrics across slices at the cadence the te...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "E": "'Tune the alert thresholds based on observed normal-state distributions to red...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Enterprise Tooling Mcp questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: Before any instrumentation you must know what to measure (metrics + slices) and what success looks like (SLOs + error budgets)."
   },
   {
     "num": 22,
@@ -893,7 +893,7 @@ export const QUESTIONS_DATA = [
       "D": "'Limit session length to reduce the volume of queries processed per user per day.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "E": "'Log all model responses to a SIEM and route flagged records to a compliance r...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Guardrails Security Compliance questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: Prompt-level refusal categories plus an output classifier form a layered hard stop."
   },
   {
     "num": 23,
@@ -914,7 +914,7 @@ export const QUESTIONS_DATA = [
       "C": "'Place a human reviewer between each incoming request and the model so inputs ...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Place a human reviewer between the model's output and any action a confidence...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Governance Fluency questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: Human review is required where the consequence of error is high and irreversible."
   },
   {
     "num": 24,
@@ -935,7 +935,7 @@ export const QUESTIONS_DATA = [
       "C": "'Approve the ADR as written since the decision is documented' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Ask the author to link the design-discussion thread in place of a written alt...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Governance Fluency questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: A complete ADR records the decision, the alternatives examined, and the trade-offs accepted."
   },
   {
     "num": 25,
@@ -956,7 +956,7 @@ export const QUESTIONS_DATA = [
       "C": "Simple lookup ya triage workloads par Opus chalana unnecessary latency aur high token costs generate karta hai.",
       "D": "'Sonnet' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Latency Cost Slos questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: Haiku is the lowest-latency, lowest-cost Claude model tier and is appropriate for high-volume, well-defined classification tasks where deep reasoning is not required."
   },
   {
     "num": 26,
@@ -977,7 +977,7 @@ export const QUESTIONS_DATA = [
       "B": "'Category 1 only' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "C": "'Categories 1' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Governance Fluency questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: Least-privilege tool configuration keeps only tools required for defined tasks and those that measurably reduce hand-offs."
   },
   {
     "num": 27,
@@ -998,7 +998,7 @@ export const QUESTIONS_DATA = [
       "C": "'No' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Yes' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Rag Retrieval Multitenancy questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: AuthZ before retrieval and an async queue for burst absorption are sound."
   },
   {
     "num": 28,
@@ -1019,7 +1019,7 @@ export const QUESTIONS_DATA = [
       "C": "'Route simpler requests to a smaller model and reserve the larger model for ca...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Compress the system prompt by rewriting its instructions more concisely and r...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Rag Retrieval Multitenancy questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: When cost is dominated by a repeated long system prompt plus large retrieval, the highest-leverage moves are prompt caching of the static prefix and aggressive trimming of retrieved spans."
   },
   {
     "num": 29,
@@ -1040,7 +1040,7 @@ export const QUESTIONS_DATA = [
       "C": "'a prompt with no category descriptions' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'a prompt-chaining setup that routes each ticket through a coarse grouping ste...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Latency Cost Slos questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: With clear, enumerated categories and descriptions already available, a well-specified zero-shot prompt is the simplest and most reliable starting point; chain-of-thought and multi-step chaining add unnecessary latency and cost."
   },
   {
     "num": 30,
@@ -1062,7 +1062,7 @@ export const QUESTIONS_DATA = [
       "C": "'The acceptance rate' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "E": "'The survey response rate may not be statistically representative of all the s...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Governance Fluency questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: Discernment requires distinguishing acceptance (what users did) from correctness (what should have been recommended)."
   },
   {
     "num": 31,
@@ -1084,7 +1084,7 @@ export const QUESTIONS_DATA = [
       "C": "'Disable the assistant immediately for all current users without any prior dia...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "E": "'Communicate to users that the assistant does not fabricate output as a matter...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Governance Fluency questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: Diligence requires checking whether grounding controls are present and measuring how often the failure actually occurs."
   },
   {
     "num": 32,
@@ -1105,7 +1105,7 @@ export const QUESTIONS_DATA = [
       "B": "'a bespoke streaming protocol layered over an unrelated asynchronous message bus' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "C": "'a long-lived stateful session protocol maintained between the assistant and t...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Enterprise Tooling Mcp questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: A stable, low-latency, stateless HTTP endpoint is best consumed by a direct, scoped API call."
   },
   {
     "num": 33,
@@ -1126,7 +1126,7 @@ export const QUESTIONS_DATA = [
       "B": "'Automate the review of the server list before each session and disable server...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "C": "'Raise the session's context window to a larger model tier so all tool definit...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Enterprise Tooling Mcp questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: Tool Search defers tool definitions until they are actually needed, preserving the full capability set while eliminating the upfront context-tax of loading every definition."
   },
   {
     "num": 34,
@@ -1147,7 +1147,7 @@ export const QUESTIONS_DATA = [
       "C": "'Move the workload to a smaller Claude model to reduce the per-token cost paid.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Cache the filing as the prompt prefix for reuse across the 14 queries per case.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Rag Retrieval Multitenancy questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: Vector indexing + passage retrieval cuts tokens dramatically while keeping the original text inside the tenancy."
   },
   {
     "num": 35,
@@ -1169,7 +1169,7 @@ export const QUESTIONS_DATA = [
       "C": "'The proposed router introduces an additional model call on every incoming req...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "E": "'Several tools have not been invoked across the most recent 90 days of traffic.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Latency Cost Slos questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: When tools map to distinct domains and descriptions overlap, decomposition into specialized agents is the cleaner fix."
   },
   {
     "num": 36,
@@ -1191,7 +1191,7 @@ export const QUESTIONS_DATA = [
       "C": "'Switch the retrieval index to a denser embedding model to improve chunk relev...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Increase the context window size to allow more retrieved chunks per query.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Rag Retrieval Multitenancy questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: A sudden contradiction of retrieved sources after a model upgrade or prompt change points to either a model-version mismatch or a broken grounding instruction."
   },
   {
     "num": 37,
@@ -1213,7 +1213,7 @@ export const QUESTIONS_DATA = [
       "D": "'Truncate the policy preamble to remove non-essential clauses from the prompt.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "E": "'Switch the workload to a smaller' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Rag Retrieval Multitenancy questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: Caching the static preamble and the frequently-retrieved sales chunks removes the dominant repeated cost without changing the model or the information available for projection, preserving accuracy."
   },
   {
     "num": 38,
@@ -1235,7 +1235,7 @@ export const QUESTIONS_DATA = [
       "C": "'Monitor interim metrics daily during the experiment and stop as soon as one p...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Decide whether to promote' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Evaluation Metrics Qa questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: Before random assignment you must lock the hypothesis, the success metric, the effect size you care about, and the sample size required to detect it."
   },
   {
     "num": 39,
@@ -1256,7 +1256,7 @@ export const QUESTIONS_DATA = [
       "C": "'treating retrieved passages as untrusted input and screening them with classi...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'scoring each new model version against a stable adversarial evaluation set be...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Governance Fluency questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: When the model starts inventing claims beyond the retrieved sources, the direct fix is to re-impose source-only constraints, require citations, and add a verification step that checks claims against the provided passages."
   },
   {
     "num": 40,
@@ -1277,7 +1277,7 @@ export const QUESTIONS_DATA = [
       "C": "'Defer the discovery session on the grounds that the sponsor must fully specif...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Accept the sponsor's original phrasing as a complete and final requirement an...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Governance Fluency questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: Vague requests must be decomposed through structured questioning that surfaces actors, triggers, success criteria, and constraints."
   },
   {
     "num": 41,
@@ -1298,7 +1298,7 @@ export const QUESTIONS_DATA = [
       "C": "'Configuration X' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Configuration X' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Guardrails Security Compliance questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: When the stated priority order is accuracy first, any measured accuracy drop disqualifies the lower-latency option."
   },
   {
     "num": 42,
@@ -1319,7 +1319,7 @@ export const QUESTIONS_DATA = [
       "C": "'No' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Yes' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Governance Fluency questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: Catalog lookup, draft-write, and policy lookup are required for the defined task."
   },
   {
     "num": 43,
@@ -1341,7 +1341,7 @@ export const QUESTIONS_DATA = [
       "D": "'Move credentials out of the prompt context and resolve them from a server-sid...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "E": "'Enforce RBAC at the retrieval layer before content enters the model context.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Enterprise Tooling Mcp questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: Per-user OAuth tokens eliminate the shared-key problem; actor attribution in tool-call logs closes the missing identity gap."
   },
   {
     "num": 44,
@@ -1362,7 +1362,7 @@ export const QUESTIONS_DATA = [
       "B": "'A workflow pattern' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "C": "'An agentic pattern' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Enterprise Tooling Mcp questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: Fixed, sequential steps with no need for open-ended planning map cleanly to a workflow pattern, which also yields predictable cost and simpler observability."
   },
   {
     "num": 45,
@@ -1383,7 +1383,7 @@ export const QUESTIONS_DATA = [
       "C": "'Accept the additional scope into the current release' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Acknowledge the request' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Prompt Boundaries Degradation questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: Transparent acknowledgment of impact plus concrete options preserves trust and gives the stakeholder agency."
   },
   {
     "num": 46,
@@ -1404,7 +1404,7 @@ export const QUESTIONS_DATA = [
       "B": "'The system must extract a defined set of specific fields from invoice attachm...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "C": "'The system must classify inbound tickets into a defined set of categories and...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Latency Cost Slos questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: Latency under a defined percentile is a quality-of-service (non-functional) constraint."
   },
   {
     "num": 47,
@@ -1425,7 +1425,7 @@ export const QUESTIONS_DATA = [
       "B": "'Use a separate model call to condense all 60 tool definitions into a compact ...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Increase the maximum context length so all 60 tool definitions fit within a s...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Latency Cost Slos questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: Progressive / on-demand tool discovery keeps the initial context small while still allowing the full tool set to be reached when needed, preserving capability without the constant token tax."
   },
   {
     "num": 48,
@@ -1446,7 +1446,7 @@ export const QUESTIONS_DATA = [
       "B": "'Configure subagents that read the relevant code files and draft documentation' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Configure subagents that read the relevant code files and generate documentation' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Rag Retrieval Multitenancy questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: Reading the actual files via tools, generating grounded documentation, and routing the result through the normal review workflow keeps documentation accurate and accountable."
   },
   {
     "num": 49,
@@ -1467,7 +1467,7 @@ export const QUESTIONS_DATA = [
       "C": "'No' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Yes' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Evaluation Metrics Qa questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: Heavier models are slower and more rate-limit hungry; representative evaluation is the correct selection basis; the most capable model is not always appropriate; tiered routing is sound; newest-version selection is not."
   },
   {
     "num": 50,
@@ -1489,7 +1489,7 @@ export const QUESTIONS_DATA = [
       "C": "'Score the deployment outputs against the reference labels and aggregate the m...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Publish the aggregated metrics to a dashboard and gate releases on threshold ...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Evaluation Metrics Qa questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: Before any scoring run you must define what you will measure (metrics + slices) and have a labeled dataset that covers those slices."
   },
   {
     "num": 51,
@@ -1510,7 +1510,7 @@ export const QUESTIONS_DATA = [
       "C": "'No' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Yes' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Governance Fluency questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: Claude is appropriate for drafting, long-context review, and reasoned routing."
   },
   {
     "num": 52,
@@ -1532,7 +1532,7 @@ export const QUESTIONS_DATA = [
       "B": "'BLEU score computed against a human-annotated reference summary set' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'throughput measured as successful requests processed per minute' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Evaluation Metrics Qa questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: Per-query token cost tracks the cost ceiling; RBAC enforcement rate on a red-team set verifies that patient data is never surfaced to unauthorized roles."
   },
   {
     "num": 53,
@@ -1554,7 +1554,7 @@ export const QUESTIONS_DATA = [
       "C": "'Add a retrieval step that fetches the full source corpus into the context win...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "E": "'Increase max_tokens to reduce the frequency of truncated responses requiring ...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Latency Cost Slos questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: Prompt caching of the static prefix and tiered routing to a lighter model both cut tokens and wall-clock time."
   },
   {
     "num": 54,
@@ -1575,7 +1575,7 @@ export const QUESTIONS_DATA = [
       "C": "'Recommend a hybrid approach using Architecture X for complex cases and Archit...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Select Architecture Y based solely on the 50% cost reduction' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Governance Fluency questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: SLA is a hard gate: X fails the <3 s requirement."
   },
   {
     "num": 55,
@@ -1596,7 +1596,7 @@ export const QUESTIONS_DATA = [
       "C": "'1-Pre' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'1-Model' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Guardrails Security Compliance questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: Claude classification is a model step; both schema validation of the model output and persistence of validated records are post-processing steps that occur after generation."
   },
   {
     "num": 56,
@@ -1618,7 +1618,7 @@ export const QUESTIONS_DATA = [
       "D": "'Per-user OAuth tokens are exchanged with scope-restricted permissions and ref...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "E": "'Tool calls execute server-side under a least-privilege service principal scop...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Guardrails Security Compliance questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: RBAC after the model has already seen restricted data is too late; credentials in the prompt can leak."
   },
   {
     "num": 57,
@@ -1639,7 +1639,7 @@ export const QUESTIONS_DATA = [
       "B": "'Allow-list Bash to the specific commands the workflows require' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Approve the rules as written' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Enterprise Tooling Mcp questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: Enterprise Claude Code permissions should use narrow allow patterns for required commands plus explicit denies for sensitive operations."
   },
   {
     "num": 58,
@@ -1661,7 +1661,7 @@ export const QUESTIONS_DATA = [
       "C": "'Lock decisions made in early phases to prevent revisiting them as later phase...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "E": "'Maintain a stakeholder register and notify the listed parties at every phase ...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Governance Fluency questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: Carrying the evaluation framework forward and feeding lessons learned into subsequent phases preserve institutional knowledge and measurement consistency."
   },
   {
     "num": 59,
@@ -1683,7 +1683,7 @@ export const QUESTIONS_DATA = [
       "D": "'Confirm that latency and throughput remain consistent across regions and user...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "E": "'Confirm that vendor licensing terms permit the planned production use of the ...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Governance Fluency questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: Ethics review focuses on retained human accountability for high-impact decisions and avoidance of unsupported generalizations about people."
   },
   {
     "num": 60,
@@ -1704,7 +1704,7 @@ export const QUESTIONS_DATA = [
       "B": "'whether managed agents support the current bus topology used by the platform ...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "C": "'whether managed agents reduce per-invoice token costs across the existing pro...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Enterprise Tooling Mcp questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: Security's network-boundary requirement is a hard constraint."
   },
   {
     "num": 61,
@@ -1726,7 +1726,7 @@ export const QUESTIONS_DATA = [
       "B": "'whether the team has prior implementation experience with any of the candidat...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'whether the underlying transport supports encryption in transit between the i...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Enterprise Tooling Mcp questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: Interaction shape (stateless/latency vs stateful/long-running) and cross-client portability are primary drivers of protocol choice."
   },
   {
     "num": 62,
@@ -1747,7 +1747,7 @@ export const QUESTIONS_DATA = [
       "B": "'Claude Pro with no signed Business Associate Agreement' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "C": "'an ad-hoc personal Claude account used by individual clinicians for PHI-relat...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Guardrails Security Compliance questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: HIPAA-eligible use requires a signed BAA, Zero Data Retention, and audit logging—capabilities provided under Claude Enterprise."
   },
   {
     "num": 63,
@@ -1768,7 +1768,7 @@ export const QUESTIONS_DATA = [
       "B": "'Disclose AI involvement only to internal staff and operators while withholdin...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Refuse to answer any user question about how the responses were produced or w...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Guardrails Security Compliance questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: Responsible transparency discloses AI involvement to the people affected by it and offers a clear path to a human."
   },
   {
     "num": 64,
@@ -1790,7 +1790,7 @@ export const QUESTIONS_DATA = [
       "C": "'Trace spans for each agent step are exported to the shared distributed-tracin...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Latency and token usage on every span are emitted to the central metrics pipe...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Enterprise Tooling Mcp questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: Missing correlation IDs across agent/tool boundaries and missing model identity/version break end-to-end diagnosis."
   },
   {
     "num": 65,
@@ -1812,7 +1812,7 @@ export const QUESTIONS_DATA = [
       "C": "'smoke tests to verify core paths after each deployment' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'unit tests targeting individual prompt-template rendering logic only' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Governance Fluency questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: Adversarial tests exercise safety under attack; integration tests verify that components work together correctly end-to-end."
   },
   {
     "num": 66,
@@ -1833,7 +1833,7 @@ export const QUESTIONS_DATA = [
       "B": "'Present a single undifferentiated narrative that addresses technical and busi...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Announce the chosen decision and move directly to implementation planning.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Governance Fluency questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: Executives need the decision, outcomes, and trade-offs first; engineers need the technical depth afterward."
   },
   {
     "num": 67,
@@ -1855,7 +1855,7 @@ export const QUESTIONS_DATA = [
       "C": "'The 94 percent match rate is sufficient evidence of fairness for the assistan...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'The fairness team's review process likely missed at least some of the protect...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Guardrails Security Compliance questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: Matching a potentially biased human process does not prove fairness; approval-rate parity alone omits error-rate (false-positive/false-negative) parity."
   },
   {
     "num": 68,
@@ -1876,7 +1876,7 @@ export const QUESTIONS_DATA = [
       "C": "'Continue using the narrow evaluation set drawn from one region and one tenure...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Narrow the evaluation set to a single demographic subgroup to simplify score ...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Evaluation Metrics Qa questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: An evaluation set that does not cover the populations the system will serve cannot support a release decision."
   },
   {
     "num": 69,
@@ -1897,7 +1897,7 @@ export const QUESTIONS_DATA = [
       "C": "'Rely on the model to refuse any request that appears to target another tenant...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Post-filter the generated response to remove any phrases that mention other t...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Rag Retrieval Multitenancy questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: Tenant isolation must be enforced before content reaches the model."
   },
   {
     "num": 70,
@@ -1918,7 +1918,7 @@ export const QUESTIONS_DATA = [
       "C": "'Ask the model to rate its own answer on a 1–5 scale after generation and map ...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Increase temperature and interpret higher variance across samples as lower co...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Evaluation Metrics Qa questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: For closed-label classification, token log-probabilities provide the most direct, model-native confidence signal."
   },
   {
     "num": 71,
@@ -1939,7 +1939,7 @@ export const QUESTIONS_DATA = [
       "C": "'Perplexity of the generated redline text and total token consumption per docu...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Number of suggested edits per document and model temperature setting.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Evaluation Metrics Qa questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: Exact-match on clause changes measures detection accuracy; attorney acceptance measures whether the suggestions are actually useful."
   },
   {
     "num": 72,
@@ -1961,7 +1961,7 @@ export const QUESTIONS_DATA = [
       "D": "'Switch the entire workload to a smaller model that tends to produce shorter o...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "E": "'Remove the JSON schema from the prompt so the model is free to respond in any...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Latency Cost Slos questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: Raising the token ceiling reduces truncation frequency; a schema validator plus continuation recovers the rare remaining cases."
   },
   {
     "num": 73,
@@ -1982,7 +1982,7 @@ export const QUESTIONS_DATA = [
       "B": "'Rank the rules by priority and add an explicit ordering statement so the mode...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Split the prompt into two separate system prompts and randomly select one at ...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Prompt Boundaries Degradation questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: Conflicting instructions produce non-deterministic behavior."
   },
   {
     "num": 74,
@@ -2003,7 +2003,7 @@ export const QUESTIONS_DATA = [
       "C": "'Rely on the model's internal memory of the conversation as the audit record.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Store only a hash of the prompt and response to save storage costs.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Guardrails Security Compliance questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: A complete audit trail for regulated decisions must capture inputs, context, outputs, human interventions, and identity so any decision can be reconstructed and explained later."
   },
   {
     "num": 75,
@@ -2024,7 +2024,7 @@ export const QUESTIONS_DATA = [
       "C": "'Summarize only a random 10 percent sample of tickets and extrapolate.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Remove all few-shot examples from the prompt to shorten it.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Latency Cost Slos questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: Batching amortizes the fixed instruction cost across many tickets; prompt caching further reduces the repeated prefix cost."
   },
   {
     "num": 76,
@@ -2045,7 +2045,7 @@ export const QUESTIONS_DATA = [
       "C": "'Refuse the request on the grounds that roadmaps change too frequently for any...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Propose an offline weekly PDF digest instead of an interactive assistant.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Governance Fluency questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: Vague \"answer any question\" requests must be decomposed into concrete decision types, audiences, and constraints before design can begin."
   },
   {
     "num": 77,
@@ -2066,7 +2066,7 @@ export const QUESTIONS_DATA = [
       "C": "'Allow all tools by default and rely on developers to self-restrict.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Disable all tool use and force every action through a human operator.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Enterprise Tooling Mcp questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: Regulated environments require least-privilege allow-lists for required operations and explicit denies for high-risk paths."
   },
   {
     "num": 78,
@@ -2088,7 +2088,7 @@ export const QUESTIONS_DATA = [
       "D": "'Length of the system prompt in tokens.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "E": "'Number of unique users who opened the assistant at least once.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Evaluation Metrics Qa questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: Satisfaction alone does not measure correctness or safety."
   },
   {
     "num": 79,
@@ -2109,7 +2109,7 @@ export const QUESTIONS_DATA = [
       "C": "'Whether the model has a high average confidence score on similar past generat...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Whether the legal team has bandwidth this quarter.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Governance Fluency questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: Human review is required when the consequence of error is high (liability or harm)."
   },
   {
     "num": 80,
@@ -2130,7 +2130,7 @@ export const QUESTIONS_DATA = [
       "C": "'Lower the temperature of the generation model.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Add a second system-prompt instruction telling the model to \"try harder\" when...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Rag Retrieval Multitenancy questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: When topical but non-answer-bearing passages dominate, hybrid retrieval plus exact-term re-ranking improves the chance that fact-bearing spans reach the context."
   },
   {
     "num": 81,
@@ -2152,7 +2152,7 @@ export const QUESTIONS_DATA = [
       "D": "'Marketing copy describing the service for external press releases.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "E": "'Preferred coffee order for the on-call rotation.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Enterprise Tooling Mcp questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: On-call engineers need the current version identity and a tested rollback procedure."
   },
   {
     "num": 82,
@@ -2173,7 +2173,7 @@ export const QUESTIONS_DATA = [
       "C": "'Generate tests offline and commit them without running them against the codeb...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Use a temperature of 1.0 to maximize test diversity.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Enterprise Tooling Mcp questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: Generated tests must be grounded in the real source and verified by compilation and execution; otherwise they risk testing invented behavior."
   },
   {
     "num": 83,
@@ -2194,7 +2194,7 @@ export const QUESTIONS_DATA = [
       "C": "'Increase temperature to see whether variability decreases.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Ask a single colleague for a subjective opinion on a handful of responses.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Prompt Boundaries Degradation questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: A controlled side-by-side evaluation against a fixed set isolates the effect of the prompt change and quantifies any consistency regression."
   },
   {
     "num": 84,
@@ -2215,7 +2215,7 @@ export const QUESTIONS_DATA = [
       "C": "English test set ka result doosri languages par directly assume nahi kiya ja sakta; localized evaluation benchmark zaroori hai.",
       "D": "'Use a single multilingual BLEU score that collapses both languages.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Evaluation Metrics Qa questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: Language-specific evaluation sets and per-language metrics are the only way to detect and prevent quality asymmetry between languages."
   },
   {
     "num": 85,
@@ -2236,7 +2236,7 @@ export const QUESTIONS_DATA = [
       "C": "'Relying on the model to have learned that credit-card numbers are sensitive.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Logging every response that contains a number longer than 12 digits for later...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Guardrails Security Compliance questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: Prompt-level prohibition plus deterministic post-generation detection and redaction form a defense-in-depth that does not rely solely on model compliance."
   },
   {
     "num": 86,
@@ -2257,7 +2257,7 @@ export const QUESTIONS_DATA = [
       "C": "'Switch to the largest model available and keep every other setting identical.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Remove all brand-guideline constraints so the model is free to invent.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Governance Fluency questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: Creativity is most directly influenced by temperature; the instruction must still preserve brand and factual constraints so the output remains usable."
   },
   {
     "num": 87,
@@ -2278,7 +2278,7 @@ export const QUESTIONS_DATA = [
       "B": "'Sparse-only retrieval with BM25.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "Random sampling se deterministic ya relevant knowledge extract nahi ho sakti; production Q&A mein yeh complete failure hai."
     },
-    "examTip": "Exam Tip: Rag Retrieval Multitenancy questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: Hybrid retrieval plus re-ranking covers both semantic paraphrase and exact-token needs; either dense-only or sparse-only leaves a large recall gap."
   },
   {
     "num": 88,
@@ -2299,7 +2299,7 @@ export const QUESTIONS_DATA = [
       "C": "'Only when the model reports low confidence.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'After publication' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Governance Fluency questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: The human gate must sit between generation and any irreversible downstream action (publication or distribution)."
   },
   {
     "num": 89,
@@ -2320,7 +2320,7 @@ export const QUESTIONS_DATA = [
       "C": "'Lower the log level so connection strings are no longer written to disk.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Switch to a different model provider.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Guardrails Security Compliance questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: Credentials must never enter the prompt or logs."
   },
   {
     "num": 90,
@@ -2341,7 +2341,7 @@ export const QUESTIONS_DATA = [
       "C": "'Latency can be ignored if the answers are high quality.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Raising temperature will reduce latency.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Latency Cost Slos questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: Hard sub-second interactive latency budgets are outside Claude's typical generation profile; specialized speech or streaming architectures are needed."
   },
   {
     "num": 91,
@@ -2362,7 +2362,7 @@ export const QUESTIONS_DATA = [
       "C": "'\"The model should use the most advanced reasoning available.\"' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'\"Users should not complain about the routing.\"' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Evaluation Metrics Qa questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: Acceptance criteria must be quantitative, measurable against a defined sample, and tied to the business outcomes of correct routing and acceptable latency."
   },
   {
     "num": 92,
@@ -2384,7 +2384,7 @@ export const QUESTIONS_DATA = [
       "D": "'Switch every request to the largest model tier.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "E": "'Disable all caching.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Latency Cost Slos questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: Caching the static few-shot block and pruning to the minimal effective set both attack the new cost driver without sacrificing quality."
   },
   {
     "num": 93,
@@ -2405,7 +2405,7 @@ export const QUESTIONS_DATA = [
       "C": "'Ask the model to list its confidence next to every SKU.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Manually review a random sample of responses once a month.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Rag Retrieval Multitenancy questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: Closed-set constrained generation plus deterministic catalog validation prevents invented SKUs; prompt instructions and periodic sampling cannot guarantee it."
   },
   {
     "num": 94,
@@ -2426,7 +2426,7 @@ export const QUESTIONS_DATA = [
       "C": "'Reject hybrid retrieval in all cases.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Recommend random retrieval as a simpler alternative.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Rag Retrieval Multitenancy questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: Hybrid helps when both paraphrase and exact tokens matter; for purely semantic workloads the extra sparse path may add cost without benefit."
   },
   {
     "num": 95,
@@ -2447,7 +2447,7 @@ export const QUESTIONS_DATA = [
       "C": "'Approval from the original prompt author before rollback.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Automatic deletion of all logs generated under the new prompt.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Prompt Boundaries Degradation questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: Rollback must be fast, tested, and verifiable so production can be restored when a prompt change degrades quality or safety."
   },
   {
     "num": 96,
@@ -2468,7 +2468,7 @@ export const QUESTIONS_DATA = [
       "C": "'Number of adjectives used in the draft.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Model temperature setting on the day of generation.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Evaluation Metrics Qa questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: The value of a drafting assistant is reduced analyst time and higher acceptance of the generated text; those are the metrics that matter."
   },
   {
     "num": 97,
@@ -2489,7 +2489,7 @@ export const QUESTIONS_DATA = [
       "C": "'The projects will automatically stay in sync.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Retrieval corpora never affect prompt behavior.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Rag Retrieval Multitenancy questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: Identical prompts on divergent corpora produce different answers for the same question, breaking shared evaluation and complicating root-cause analysis."
   },
   {
     "num": 98,
@@ -2510,7 +2510,7 @@ export const QUESTIONS_DATA = [
       "C": "'Log only the model version used for the call.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Rely on network-level IP logging as a proxy for user identity.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Enterprise Tooling Mcp questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: User identity must travel with the request and be recorded at the tool-call boundary; service accounts or IP addresses do not provide individual attribution."
   },
   {
     "num": 99,
@@ -2531,7 +2531,7 @@ export const QUESTIONS_DATA = [
       "C": "'Add a system-prompt sentence saying \"be careful with writes.\"' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Increase the model's temperature so writes are more random and therefore less...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Enterprise Tooling Mcp questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: High-risk write capabilities require formal risk assessment, human gates, least-privilege credentials, and explicit stakeholder sign-off before activation."
   },
   {
     "num": 100,
@@ -2552,7 +2552,7 @@ export const QUESTIONS_DATA = [
       "C": "'Remove all examples that the current model already answers correctly.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Translate the entire set into a second language and discard the original.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Evaluation Metrics Qa questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: An evaluation set that never stresses safety or edge conditions cannot reveal the failures that matter most in production."
   },
   {
     "num": 101,
@@ -2573,7 +2573,7 @@ export const QUESTIONS_DATA = [
       "C": "'Ask the model to remember previous policy versions from conversation history.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Disable the assistant every time a policy changes until a full retrain can be...' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Prompt Boundaries Degradation questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: Retrieval of versioned policy sections keeps the prompt stable and the knowledge current without weekly prompt rewrites or reliance on conversation memory."
   },
   {
     "num": 102,
@@ -2594,7 +2594,7 @@ export const QUESTIONS_DATA = [
       "C": "'Raise temperature so the model invents more confident-sounding answers.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Accept the request without discussion.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Prompt Boundaries Degradation questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: Forbidding uncertainty forces the model to invent; responsible design surfaces uncertainty and provides escalation rather than suppressing it."
   },
   {
     "num": 103,
@@ -2615,7 +2615,7 @@ export const QUESTIONS_DATA = [
       "C": "'Never' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Only when the model is the smallest available tier.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Evaluation Metrics Qa questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: Cascades help when the label space is large and hierarchical and the first stage is reliable; otherwise the extra hop adds latency and error risk."
   },
   {
     "num": 104,
@@ -2637,7 +2637,7 @@ export const QUESTIONS_DATA = [
       "D": "'Disable all monitoring to reduce load.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "E": "'Restart the service every hour whether or not it is healthy.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Latency Cost Slos questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: High availability requires proactive health checks, failover, and a fast, tested recovery path."
   },
   {
     "num": 105,
@@ -2658,7 +2658,7 @@ export const QUESTIONS_DATA = [
       "C": "'The number of engineers on the team.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'The color of the product UI.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Latency Cost Slos questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: Token cost is a function of volume, tokens per call, price per token, and efficiency factors such as caching; those are the necessary inputs."
   },
   {
     "num": 106,
@@ -2679,7 +2679,7 @@ export const QUESTIONS_DATA = [
       "C": "'Raising temperature so answers become more vague.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Relying on the model's pre-training to avoid medical topics.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Guardrails Security Compliance questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: Layered controls (prompt refusal + output classifier + logging) provide defense-in-depth that a single instruction cannot match."
   },
   {
     "num": 107,
@@ -2700,7 +2700,7 @@ export const QUESTIONS_DATA = [
       "C": "'A list of every meeting that was held during the project.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'The full source code of the implementation.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Governance Fluency questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: A useful ADR captures why the decision was made, what else was considered, and who accepted the trade-offs, so future teams can understand and revisit it intelligently."
   },
   {
     "num": 108,
@@ -2721,7 +2721,7 @@ export const QUESTIONS_DATA = [
       "C": "'Disable all logging to eliminate leakage risk.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Send logs to a public analytics service for richer dashboards.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Guardrails Security Compliance questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: Confidential data in logs must be redacted or tokenized and access-controlled; clear-text logging or public export creates a secondary data store of regulated information."
   },
   {
     "num": 109,
@@ -2742,7 +2742,7 @@ export const QUESTIONS_DATA = [
       "C": "'Keep tools only if they were written by the original agent author.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "D": "'Always prefer more tools because \"more capability is better.\"' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Enterprise Tooling Mcp questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: Least privilege and tool-set hygiene remove unused surface area while retaining tools that map to defined tasks or have a documented near-term need."
   },
   {
     "num": 110,
@@ -2764,6 +2764,6 @@ export const QUESTIONS_DATA = [
       "D": "'The system prompt is too long.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti.",
       "E": "'Users are intentionally trying to break the system.' yeh approach is scenario ke core constraints aur official Anthropic best practice ko satisfy nahi karti."
     },
-    "examTip": "Exam Tip: Evaluation Metrics Qa questions mein hamesha centralized coordinator control, defense-in-depth, aur explicit human oversight ko prioritize karein."
+    "examTip": "Exam Takeaway: Mismatch between test and production distributions, or contaminated/leaky labels, are the most common reasons a high offline score fails to translate to production."
   }
 ];
