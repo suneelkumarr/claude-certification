@@ -1,4 +1,4 @@
-// Exam Registry: Central configuration for Multi-Exam Support
+// Exam Registry: Central configuration for multi-track practice
 import { CONCEPTS_DATA as CCAOF_CONCEPTS, QUESTIONS_DATA as CCAOF_QUESTIONS } from './exams/ccao-f.js';
 import { CONCEPTS_DATA as CCAF_CONCEPTS, QUESTIONS_DATA as CCAF_QUESTIONS } from './exams/cca-f.js';
 import { CONCEPTS_DATA as CCAP_CONCEPTS, QUESTIONS_DATA as CCAP_QUESTIONS } from './exams/cca-p.js';
@@ -6,9 +6,9 @@ import { CONCEPTS_DATA as CCAP_CONCEPTS, QUESTIONS_DATA as CCAP_QUESTIONS } from
 export const EXAMS_REGISTRY = [
   {
     id: 'ccao-f',
-    title: 'Anthropic Claude Certified Associate — Foundations (CCAO-F)',
+    title: 'Claude Certified Associate — Foundations (CCAO-F) Practice',
     shortCode: 'CCAO-F',
-    description: 'Official Foundation certification covering AI Fluency, Prompt Engineering, Claude Models, Context Windows, Data Privacy, and Code Execution.',
+    description: 'Independent practice track covering foundations topics such as AI fluency, prompt engineering, context windows, data privacy, and verification. Confirm current exam objectives with official documentation.',
     examDate: '4 November 2026',
     durationMinutes: 120,
     quizQuestionCount: 60,
@@ -19,10 +19,10 @@ export const EXAMS_REGISTRY = [
   },
   {
     id: 'cca-f',
-    title: 'Anthropic Claude Certified Architect — Foundations (CCA-F)',
+    title: 'Claude Certified Architect — Foundations (CCA-F) Practice',
     shortCode: 'CCA-F',
-    description: 'Architect certification covering Multi-Agent Orchestration, Parallel Execution, Pipeline Crash Recovery, Temporal Synthesis, and Dynamic Routing.',
-    examDate: '4 November 2026',
+    description: 'Independent practice track for architecture concepts, model selection, latency, cost, and system design. This repository does not verify official exam scope or scheduling.',
+    examDate: 'Not set',
     durationMinutes: 120,
     quizQuestionCount: 60,
     passingPercentage: 70,
@@ -32,10 +32,10 @@ export const EXAMS_REGISTRY = [
   },
   {
     id: 'cca-p',
-    title: 'Anthropic Claude Certified Architect — Professional (CCA-P)',
+    title: 'Claude Certified Architect — Practitioner (CCA-P) Practice',
     shortCode: 'CCA-P',
-    description: 'Professional Architect certification covering Enterprise AI Governance, Defense-in-Depth Guardrails, RAG Multi-Tenancy, Evaluation Pipelines, and Claude Code Security.',
-    examDate: '4 November 2026',
+    description: 'Independent practice track for tool use, orchestration, retrieval, security, and guardrails. This repository does not verify official exam scope or scheduling.',
+    examDate: 'Not set',
     durationMinutes: 120,
     quizQuestionCount: 60,
     passingPercentage: 70,
