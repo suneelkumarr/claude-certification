@@ -69,6 +69,18 @@ export default function ExamView({ exam, onSwitchToStudy }) {
     }
   });
 
+  // Persist an absolute deadline so refreshing the page does not pause the exam clock.
+  const [deadlineAt, setDeadlineAt] = useState(() => {
+    try {
+      const saved = JSON.parse(localStorage.getItem(savedSessionKey) || 'null');
+      return typeof saved?.deadlineAt === 'number'
+        ? saved.deadlineAt
+        : Date.now() + (typeof saved?.remainingSeconds === 'number' ? saved.remainingSeconds : TOTAL_SECONDS) * 1000;
+    } catch {
+      return Date.now() + TOTAL_SECONDS * 1000;
+    }
+  });
+
   const [showSubmitModal, setShowSubmitModal] = useState(false);
   const [mobilePaletteOpen, setMobilePaletteOpen] = useState(false);
   const [reviewFilter, setReviewFilter] = useState('all'); // 'all', 'correct', 'wrong'
@@ -82,13 +94,14 @@ export default function ExamView({ exam, onSwitchToStudy }) {
         currentIndex,
         userResponses,
         remainingSeconds,
+        deadlineAt,
         savedAt: Date.now()
       };
       localStorage.setItem(savedSessionKey, JSON.stringify(sessionData));
     } else if (phase === 'report' || phase === 'intro') {
       localStorage.removeItem(savedSessionKey);
     }
-  }, [phase, examQuestions, currentIndex, userResponses, remainingSeconds, savedSessionKey]);
+  }, [phase, examQuestions, currentIndex, userResponses, remainingSeconds, deadlineAt, savedSessionKey]);
 
   // Pick balanced questions across all concepts
   const initExamQuestions = () => {
@@ -129,6 +142,7 @@ export default function ExamView({ exam, onSwitchToStudy }) {
     setCurrentIndex(0);
     setUserResponses({});
     setRemainingSeconds(TOTAL_SECONDS);
+    setDeadlineAt(Date.now() + TOTAL_SECONDS * 1000);
     setPhase('running');
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -140,23 +154,24 @@ export default function ExamView({ exam, onSwitchToStudy }) {
     }
   };
 
-  // Timer countdown hook
+  // Timer countdown uses the absolute deadline so background tabs and refreshes
+  // do not accidentally grant extra exam time.
   useEffect(() => {
-    let timer = null;
-    if (phase === 'running' && remainingSeconds > 0) {
-      timer = setInterval(() => {
-        setRemainingSeconds(prev => {
-          if (prev <= 1) {
-            clearInterval(timer);
-            handleFinishExam();
-            return 0;
-          }
-          return prev - 1;
-        });
-      }, 1000);
-    }
+    if (phase !== 'running') return undefined;
+
+    const tick = () => {
+      const secondsLeft = Math.max(0, Math.ceil((deadlineAt - Date.now()) / 1000));
+      setRemainingSeconds(secondsLeft);
+
+      if (secondsLeft === 0) {
+        handleFinishExam();
+      }
+    };
+
+    tick();
+    const timer = setInterval(tick, 1000);
     return () => clearInterval(timer);
-  }, [phase, remainingSeconds]);
+  }, [phase, deadlineAt]);
 
   // Handle option select in exam
   const handleSelectOption = (idx, letter, isMulti) => {
