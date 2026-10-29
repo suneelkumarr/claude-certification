@@ -269,7 +269,7 @@ export default function ExamView({ exam, onSwitchToStudy }) {
             textTransform: 'uppercase'
           }}>
             <Zap size={14} />
-            <span>Official Anthropic Timed Certification Simulation</span>
+            <span>Independent Practice Exam Simulation</span>
           </div>
 
           <h1 style={{
@@ -289,7 +289,7 @@ export default function ExamView({ exam, onSwitchToStudy }) {
             fontSize: '1rem',
             lineHeight: 1.65
           }}>
-            Yeh simulator pool mein se <strong>randomly 60 questions</strong> select karta hai, jisme sabhi <strong>{exam.concepts.length} core concepts</strong> ka equal proportion hota hai. Real exam timing aur passing threshold ke sath live test dein!
+            Yeh simulator pool mein se <strong>randomly 60 questions</strong> select karta hai, jisme sabhi <strong>{exam.concepts.length} core concepts</strong> ka equal proportion hota hai. Practice timing aur score benchmark ke saath apni preparation test karein. Yeh official exam simulation nahi hai.
           </p>
 
           {/* 4 Feature Highlights Grid */}
@@ -309,7 +309,7 @@ export default function ExamView({ exam, onSwitchToStudy }) {
             }}>
               <div style={{ fontSize: '1.6rem', marginBottom: '0.4rem' }}>⏳</div>
               <div style={{ fontWeight: 800, color: '#f8fafc', fontSize: '0.98rem', marginBottom: '0.2rem' }}>120 Minutes Timer</div>
-              <div style={{ fontSize: '0.82rem', color: 'var(--text-muted)', lineHeight: 1.5 }}>Real exam countdown with automatic submit at 00:00.</div>
+              <div style={{ fontSize: '0.82rem', color: 'var(--text-muted)', lineHeight: 1.5 }}>Countdown with automatic submission at 00:00.</div>
             </div>
 
             <div style={{
@@ -332,8 +332,8 @@ export default function ExamView({ exam, onSwitchToStudy }) {
               boxShadow: 'var(--shadow-sm)'
             }}>
               <div style={{ fontSize: '1.6rem', marginBottom: '0.4rem' }}>🎯</div>
-              <div style={{ fontWeight: 800, color: '#f8fafc', fontSize: '0.98rem', marginBottom: '0.2rem' }}>70% Passing Gate</div>
-              <div style={{ fontSize: '0.82rem', color: 'var(--text-muted)', lineHeight: 1.5 }}>Minimum 42 / 60 correct answers required to pass benchmark.</div>
+              <div style={{ fontWeight: 800, color: '#f8fafc', fontSize: '0.98rem', marginBottom: '0.2rem' }}>70% Practice Benchmark</div>
+              <div style={{ fontSize: '0.82rem', color: 'var(--text-muted)', lineHeight: 1.5 }}>42 / 60 correct answers reaches this practice benchmark; this is not an official passing score.</div>
             </div>
 
             <div style={{
