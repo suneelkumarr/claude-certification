@@ -171,7 +171,7 @@ export default function ExamView({ exam, onSwitchToStudy }) {
     tick();
     const timer = setInterval(tick, 1000);
     return () => clearInterval(timer);
-  }, [phase, deadlineAt]);
+  }, [phase, deadlineAt, examQuestions, userResponses]);
 
   // Handle option select in exam
   const handleSelectOption = (idx, letter, isMulti) => {
