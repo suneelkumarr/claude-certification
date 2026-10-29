@@ -1,0 +1,38 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Production build
+dist/
+dist-ssr/
+*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Editor / OS
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Scratch / temp files
+*.tmp
+inspect_*.txt
+layout_*.txt
+boundary_sample.txt
+cca_f_cleaned.txt
+cca_f_raw.txt
+cca_p_intro.txt
+extracted_raw.txt
+page_*.txt
