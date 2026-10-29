@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CCAO-F 120-Minute Exam Simulator | 60 Random Questions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+
+  <!-- Exam Header -->
+  <header class="quiz-header">
+    <div class="quiz-header-inner">
+      <div class="quiz-brand">
+        <a href="index.html" class="back-link" title="Study Guide par wapas jayein">← Study Guide</a>
+        <div class="brand-badge">CCAO-F SIMULATOR</div>
+        <h2>Anthropic Claude Certified Associate — Foundations</h2>
+      </div>
+
+      <div class="timer-container" id="timer-box">
+        <span class="timer-icon">⏱️</span>
+        <div class="timer-display">
+          <span class="timer-label">Time Remaining</span>
+          <span class="timer-clock" id="timer-clock">120:00</span>
+        </div>
+        <button class="btn-submit-exam" id="btn-submit-exam">Submit Exam</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Start Exam Screen (Before Timer Starts) -->
+  <div class="quiz-intro-modal" id="start-screen">
+    <div class="intro-card">
+      <div class="intro-badge">OFFICIAL FORMAT SIMULATION</div>
+      <h1>CCAO-F 60-Question Mock Exam</h1>
+      <p class="intro-desc">
+        Yeh exam simulator aapke uploaded PDF ke 110 questions pool mein se **randomly 60 questions** select karta hai. 
+        Sabhi **10 core topics** se equal questions liye gaye hain taaki aapka complete syllabus comprehensively test ho sake.
+      </p>
+
+      <div class="exam-rules-grid">
+        <div class="rule-box">
+          <div class="rule-icon">⏳</div>
+          <div class="rule-title">120 Minutes Time Limit</div>
+          <div class="rule-desc">Time khatam hote hi exam automatically submit ho jayega.</div>
+        </div>
+        <div class="rule-box">
+          <div class="rule-icon">📋</div>
+          <div class="rule-title">60 Balanced Questions</div>
+          <div class="rule-desc">All 10 core concepts covered (Single & Multiple Choice).</div>
+        </div>
+        <div class="rule-box">
+          <div class="rule-icon">🎯</div>
+          <div class="rule-title">70% Passing Score</div>
+          <div class="rule-desc">Pass hone ke liye minimum 42/60 score zaroori hai.</div>
+        </div>
+        <div class="rule-box">
+          <div class="rule-icon">📊</div>
+          <div class="rule-title">In-Depth Diagnostic Report</div>
+          <div class="rule-desc">Topic-wise score, weak areas identification aur option breakdowns.</div>
+        </div>
+      </div>
+
+      <button class="btn-start-exam" id="btn-start-exam">🚀 Start 120-Minute Exam</button>
+    </div>
+  </div>
+
+  <!-- Active Exam Area -->
+  <main class="quiz-main-container" id="exam-screen" style="display: none;">
+    
+    <!-- Question Area -->
+    <div class="question-pane">
+      <div class="q-progress-header">
+        <div class="q-counter-tag">
+          Question <span id="current-q-index">1</span> of 60
+        </div>
+        <div class="q-topic-tag" id="current-q-topic">Prompt Clarity & Constraints</div>
+        
+        <label class="mark-review-label">
+          <input type="checkbox" id="mark-review-chk">
+          <span>🚩 Mark for Review</span>
+        </label>
+      </div>
+
+      <!-- Question Content -->
+      <div class="exam-question-box">
+        <div class="exam-q-prompt-type" id="exam-q-type">Single Choice</div>
+        <div class="exam-q-text" id="exam-q-text">Loading question...</div>
+        
+        <div class="exam-options-container" id="exam-options-container">
+          <!-- Dynamic Options rendered by JS -->
+        </div>
+      </div>
+
+      <!-- Navigation Footer -->
+      <div class="exam-nav-footer">
+        <button class="nav-btn btn-secondary" id="btn-prev">← Previous</button>
+        <button class="nav-btn btn-secondary" id="btn-clear">Clear Response</button>
+        <button class="nav-btn btn-primary" id="btn-next">Next Question →</button>
+      </div>
+    </div>
+
+    <!-- Right Sidebar Palette -->
+    <aside class="palette-pane">
+      <div class="palette-header">
+        <h3>Question Palette</h3>
+        <span class="palette-count"><span id="answered-count">0</span>/60 Answered</span>
+      </div>
+
+      <div class="palette-legend">
+        <div class="legend-item"><span class="dot dot-answered"></span> Answered</div>
+        <div class="legend-item"><span class="dot dot-review"></span> Review</div>
+        <div class="legend-item"><span class="dot dot-unanswered"></span> Unanswered</div>
+      </div>
+
+      <div class="palette-grid" id="palette-grid">
+        <!-- 60 numbers rendered here -->
+      </div>
+    </aside>
+
+  </main>
+
+  <!-- Complete Diagnostic Report Screen -->
+  <div class="report-container" id="report-screen" style="display: none;">
+    <!-- Rendered dynamically upon exam completion -->
+  </div>
+
+  <!-- Submit Confirmation Modal -->
+  <div class="modal-overlay" id="confirm-modal" style="display: none;">
+    <div class="modal-box">
+      <h3>Submit Exam?</h3>
+      <p id="modal-summary-text">Aapne 60 mein se 45 questions answer kiye hain. Kya aap sure hain ki exam submit karna chahte hain?</p>
+      <div class="modal-actions">
+        <button class="btn-secondary" id="btn-cancel-submit">Keep Practicing</button>
+        <button class="btn-submit-exam" id="btn-confirm-submit">Confirm & Submit</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="quiz.js"></script>
+</body>
+</html>

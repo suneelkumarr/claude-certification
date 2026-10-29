@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anthropic CCAO-F Master Exam Coach | 110 Practice Questions & Concepts</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Navigation Header -->
+  <header class="header">
+    <div class="header-inner">
+      <div class="brand">
+        <div class="brand-logo">C</div>
+        <div class="brand-text">
+          <h1>Anthropic CCAO-F Certification Coach</h1>
+          <p>Complete 110-Question Master Study Program (Hinglish + Interactive UI)</p>
+        </div>
+      </div>
+      
+      <!-- Exam Simulator Link & Live Score -->
+      <div style="display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
+        <a href="quiz.html" class="nav-btn" style="text-decoration: none; display: flex; align-items: center; gap: 0.5rem; font-size: 0.85rem; padding: 0.55rem 1.2rem; border-radius: 9999px; background: linear-gradient(135deg, #e11d48, #be123c); color: #fff; font-weight: 700; box-shadow: 0 4px 14px rgba(225, 29, 72, 0.35);">
+          ⏱️ Start 120-Min Mock Exam (60 Qs) →
+        </a>
+
+        <div class="stats-bar" id="stats-bar">
+          <div class="stat-item">Study Progress: <span class="stat-val" id="stat-attempted">0/110</span></div>
+          <div class="stat-item">Correct: <span class="stat-val correct" id="stat-correct">0</span></div>
+          <div class="stat-item">Wrong: <span class="stat-val wrong" id="stat-wrong">0</span></div>
+          <div class="stat-item">Accuracy: <span class="stat-val" id="stat-accuracy">0%</span></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <div class="main-wrapper">
+    
+    <!-- Sidebar: 10 Core Concepts + Master Mode -->
+    <aside class="sidebar">
+      <div class="sidebar-title">
+        <span>10 Core Concepts</span>
+        <span id="total-q-badge">110 Qs</span>
+      </div>
+      <ul class="concept-nav-list" id="concept-nav-list">
+        <!-- Rendered by JavaScript -->
+      </ul>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="content-area">
+      
+      <!-- Concept Explanation Card -->
+      <section class="concept-card" id="concept-card">
+        <!-- Rendered dynamically by JavaScript -->
+      </section>
+
+      <!-- Practice Questions Area -->
+      <section>
+        <div class="questions-header">
+          <h3 id="questions-section-title">Practice Questions</h3>
+          <div class="filter-btn-group">
+            <button class="filter-btn active" data-filter="all">All in Concept</button>
+            <button class="filter-btn" data-filter="earlier">Earlier Examples</button>
+            <button class="filter-btn" data-filter="repeated">Repeated Examples</button>
+          </div>
+        </div>
+        
+        <div id="questions-container" style="display: flex; flex-direction: column; gap: 1.5rem; margin-top: 1rem;">
+          <!-- Question cards injected here -->
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <footer class="footer">
+    Anthropic Claude Certified Associate — Foundations (CCAO-F) Exam Prep | Primary Source: ccao-f-premium.pdf | Exam Date: 4 November 2026
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
