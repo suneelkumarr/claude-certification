@@ -1,6 +1,6 @@
 # Claude Certification Preparation Platform
 
-> 🚀 **Enterprise React + Vite preparation platform for Anthropic Claude Certifications** (`CCAO-F`, `CCA-F`, `CCA-P`) featuring **376 authentic questions**, official blueprint topic weightings, 120-minute timed simulator, diagnostic scorecard, interactive Question Bank, and a 100% passing automated test suite.
+> 🚀 **Enterprise React + Vite preparation platform for Anthropic Claude Certifications** (`CCAO-F`, `CCA-F`, `CCA-P`) featuring **436 authentic questions**, official blueprint topic weightings, 120-minute timed simulator, diagnostic scorecard, interactive Question Bank, and a 100% passing automated test suite.
 
 > **Important:** This is an independent learning resource, not an official Anthropic product. The practice questions and explanations are created for educational self-assessment. Verify current exam objectives, certification names, policies, and product behavior against official Anthropic documentation.
 
@@ -10,7 +10,7 @@
 
 Question distribution in the exam simulator is governed by **certification blueprint topic weightings** (`src/utils/examEngine.js`) to accurately mirror real exam conditions:
 
-### 1. CCAO-F: Claude Certified Associate — Foundations (181 Qs)
+### 1. CCAO-F: Claude Certified Associate — Foundations (241 Qs)
 *Target: 60 questions sampled per exam attempt*
 
 | Domain / Concept | Blueprint Weight | Target Quota | Core Topics |

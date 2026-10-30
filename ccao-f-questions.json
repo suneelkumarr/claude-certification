@@ -6084,5 +6084,1690 @@
       "E"
     ],
     "explanation": "Standardized input format (A) ensures consistency across runs, and a human verification step (E) catches errors the sandbox cannot detect, such as logical mistakes or incorrect calculations."
+  },
+  {
+    "question_number": 182,
+    "content": "You are an analyst working on a one-off complex problem that genuinely requires multi-step reasoning over an\nextended chain of thought. Which model is best suited to this work?",
+    "question_type": "single",
+    "options": [
+      {
+        "label": "A",
+        "content": "Haiku, because lightweight models are generally preferred for cost and speed, even on tasks that need extended\nreasoning."
+      },
+      {
+        "label": "B",
+        "content": "Opus, because it is positioned as the most capable for advanced reasoning on complex specialized tasks."
+      },
+      {
+        "label": "C",
+        "content": "Sonnet, because most tasks perform equally well on the mid-tier model regardless of reasoning complexity."
+      },
+      {
+        "label": "D",
+        "content": "Sonnet, because its balanced reasoning is generally adequate and avoids the higher latency associated with Opus."
+      }
+    ],
+    "correct_option_labels": [
+      "B"
+    ],
+    "explanation": "Opus is Anthropic’s highest-capability model and is the recommended choice when the task truly needs deep, multi-step\nreasoning. Cost and latency are secondary for one-off complex work."
+  },
+  {
+    "question_number": 183,
+    "content": "A knowledge worker used the Google Drive connector and asked Claude to summarize a recently revised policy\ndocument. The summary reflects the prior version of the document, not the revision saved three hours earlier.\nWhich factor most likely explains this?",
+    "question_type": "single",
+    "options": [
+      {
+        "label": "A",
+        "content": "The connector cached the prior version of the document at the start of the chat session, and will continue to use the\ncached version until the chat is closed."
+      },
+      {
+        "label": "B",
+        "content": "The associate’s permissions on the document allow access only to the prior version, since the revision is held in a\nseparate permission group until publication."
+      },
+      {
+        "label": "C",
+        "content": "The connector retrieved both versions, and Claude selected the earlier one because it was longer and contained\nmore material relevant to the prompt."
+      },
+      {
+        "label": "D",
+        "content": "The connector’s index has not yet refreshed to reflect the recently revised document, so the older indexed content is\nstill being referenced."
+      }
+    ],
+    "correct_option_labels": [
+      "D"
+    ],
+    "explanation": "Connectors rely on an index that is refreshed periodically. A change made only a few hours earlier may not yet be visible to\nClaude until the index updates."
+  },
+  {
+    "question_number": 184,
+    "content": "You are an operations lead sorting proposed Claude use cases by whether they are acceptable for your team to\npursue with Claude. Which two proposed use cases are acceptable for the team to pursue with Claude? (Select\ntwo.)",
+    "question_type": "multi",
+    "options": [
+      {
+        "label": "A",
+        "content": "drafting a preliminary symptom summary to support a clinician’s diagnostic review"
+      },
+      {
+        "label": "B",
+        "content": "drafting an internal training summary from approved internal documentation"
+      },
+      {
+        "label": "C",
+        "content": "drafting a legal summary an attorney reviews before sharing with a client"
+      },
+      {
+        "label": "D",
+        "content": "synthesizing themes across approved customer feedback under aggregation rules"
+      },
+      {
+        "label": "E",
+        "content": "summarizing performance review notes to determine promotion decisions across a team"
+      }
+    ],
+    "correct_option_labels": [
+      "B",
+      "D"
+    ],
+    "explanation": "Internal training summaries from approved docs and aggregated, non-identifying customer-feedback synthesis are low-risk,\nfully human-supervised tasks. Medical, legal-client, and employment decisions carry higher stakes and are generally out of\nscope without additional controls.\nGet Latest & Actual \nExam"
+  },
+  {
+    "question_number": 185,
+    "content": "A manager is monitoring a Project’s effectiveness over time. The Project has been in use for several months and\nsupports a recurring workflow. Which signal most directly suggests the configuration needs updating?",
+    "question_type": "single",
+    "options": [
+      {
+        "label": "A",
+        "content": "The Project’s outputs increasingly reference terminology, sources, or guidance that no longer reflects current\npractice."
+      },
+      {
+        "label": "B",
+        "content": "The Project’s chat volume has decreased steadily over the past several weeks compared to the prior baseline."
+      },
+      {
+        "label": "C",
+        "content": "The Project’s members have started using ad-hoc chats outside the Project for tasks within the Project’s scope."
+      },
+      {
+        "label": "D",
+        "content": "The Project’s outputs have grown longer on average than the outputs produced when the Project was first\nconfigured."
+      }
+    ],
+    "correct_option_labels": [
+      "A"
+    ],
+    "explanation": "Outdated terminology or sources is a direct quality-drift signal that the Project’s knowledge or instructions no longer match\ncurrent reality. Volume or length changes are weaker, indirect indicators.\nGet Latest & Actual \nExam"
+  },
+  {
+    "question_number": 186,
+    "content": "When refining a Claude output that does not meet expectations. Which iterative refinement step should be\nperformed first?",
+    "question_type": "single",
+    "options": [
+      {
+        "label": "A",
+        "content": "Submit the revised prompt and capture the new output."
+      },
+      {
+        "label": "B",
+        "content": "Compare the new output against the original criteria."
+      },
+      {
+        "label": "C",
+        "content": "Identify the specific weaknesses in the current output."
+      },
+      {
+        "label": "D",
+        "content": "Modify the prompt to address each identified weakness."
+      }
+    ],
+    "correct_option_labels": [
+      "C"
+    ],
+    "explanation": "You cannot usefully revise a prompt until you know exactly what is wrong with the current output. Diagnosis always precedes\nintervention."
+  },
+  {
+    "question_number": 187,
+    "content": "A knowledge worker is adjusting an approach after a successful pilot revealed two opportunities for further\nimprovement. The pilot’s core results were positive, and the team is preparing for a broader rollout. Which\nadjustment is most appropriate?",
+    "question_type": "single",
+    "options": [
+      {
+        "label": "A",
+        "content": "Run a second pilot focused only on the two opportunities, then combine the results of both pilots before rolling out\nthe approach."
+      },
+      {
+        "label": "B",
+        "content": "Adopt the changes that worked, address the two specific opportunities, and run a controlled comparison before\nbroader rollout."
+      },
+      {
+        "label": "C",
+        "content": "Adopt the changes that worked, address the two opportunities, and monitor results closely during the broader rollout."
+      },
+      {
+        "label": "D",
+        "content": "Roll out the approach as piloted and address the two opportunities in a separate follow-up project after the rollout\ncompletes."
+      }
+    ],
+    "correct_option_labels": [
+      "C"
+    ],
+    "explanation": "When the pilot already succeeded, the practical next step is to incorporate the improvements and proceed to broader rollout\nwith close monitoring rather than delaying for another full pilot cycle."
+  },
+  {
+    "question_number": 188,
+    "content": "You are a knowledge worker who decomposed a “draft a board memo” request into fifteen tiny steps and noticed\nthe output now feels disjointed because related ideas were split apart. Which adjustment is most appropriate?",
+    "question_type": "single",
+    "options": [
+      {
+        "label": "A",
+        "content": "Consolidate related steps into fewer cohesive sections that group naturally connected ideas."
+      },
+      {
+        "label": "B",
+        "content": "Group the fifteen steps by the order they appear rather than by which ideas they share."
+      },
+      {
+        "label": "C",
+        "content": "Reduce the step count by merging steps that occur near each other in sequence."
+      },
+      {
+        "label": "D",
+        "content": "Add short headings above each of the fifteen steps to visually separate them into named categories."
+      }
+    ],
+    "correct_option_labels": [
+      "A"
+    ],
+    "explanation": "Over-decomposition fragments related content. Re-grouping by conceptual cohesion restores narrative flow while still keeping\nthe task manageable for the model."
+  },
+  {
+    "question_number": 189,
+    "content": "You are a project manager designing a checklist for prompt-quality reviews. Which two items belong on the\nprompt-quality checklist? (Select two.)",
+    "question_type": "multi",
+    "options": [
+      {
+        "label": "A",
+        "content": "whether the prompt uses the author’s favorite opening phrase as a signature"
+      },
+      {
+        "label": "B",
+        "content": "whether the prompt reaches a thousand words, whatever it actually says"
+      },
+      {
+        "label": "C",
+        "content": "whether the prompt provides relevant context including audience and goal"
+      },
+      {
+        "label": "D",
+        "content": "whether the prompt states a specific task with the required deliverable"
+      },
+      {
+        "label": "E",
+        "content": "whether the prompt includes the names of every person in the department"
+      }
+    ],
+    "correct_option_labels": [
+      "C",
+      "D"
+    ],
+    "explanation": "A high-quality prompt must state a clear task/deliverable and supply the context (audience, goal, constraints) needed to\nproduce a useful result. Length quotas or personal stylistic quirks are not quality criteria."
+  },
+  {
+    "question_number": 190,
+    "content": "A knowledge worker has asked Claude to produce a one-page operating procedure. The team will edit the\nprocedure, reuse it across multiple onboarding cycles, and update it when the underlying process changes. Which\noutput format is most appropriate?",
+    "question_type": "single",
+    "options": [
+      {
+        "label": "A",
+        "content": "Generate the procedure as the chat response and save the entire chat transcript to the team’s document store as\nthe working reference."
+      },
+      {
+        "label": "B",
+        "content": "Generate the procedure as an Artifact, which the team can open, edit, and save as a stable reference for ongoing\nuse."
+      },
+      {
+        "label": "C",
+        "content": "Generate the procedure as the chat response and copy the text into the team’s document store after each revision."
+      },
+      {
+        "label": "D",
+        "content": "Generate the procedure as a series of numbered steps in the chat and keep the chat itself as the reference for future\nedits."
+      }
+    ],
+    "correct_option_labels": [
+      "B"
+    ],
+    "explanation": "Artifacts are designed to be durable, editable, versionable documents—exactly the properties needed for a living operating\nprocedure that will be reused and updated."
+  },
+  {
+    "question_number": 191,
+    "content": "You are a project lead at Zentari Traders aligning a model choice to a new recurring workflow. Which is the correct\norder of alignment steps?\n(1) Run a representative sample on the candidate model and measure quality, latency, and rate-limit consumption.\n(2) Select the lightest model that consistently meets the bar across the sample.\n(3) Define the quality bar, latency tolerance, and expected volume for the workflow.\n(4) Choose a candidate model based on the requirements profile.\n(5) Retest the choice when a new model becomes available.",
+    "question_type": "single",
+    "options": [
+      {
+        "label": "A",
+        "content": "3, 1, 4, 2, 5"
+      },
+      {
+        "label": "B",
+        "content": "3, 4, 1, 2, 5"
+      },
+      {
+        "label": "C",
+        "content": "4, 3, 1, 2, 5"
+      },
+      {
+        "label": "D",
+        "content": "1, 3, 4, 2, 5"
+      }
+    ],
+    "correct_option_labels": [
+      "B"
+    ],
+    "explanation": "Requirements must be defined first (3), then a candidate chosen (4), then measured on a representative sample (1), then the\nlightest model that still meets the bar selected (2), with periodic retesting (5).\nGet Latest & Actual \nExam"
+  },
+  {
+    "question_number": 192,
+    "content": "You are validating evaluation criteria proposed for a Claude-generated business brief. Which two criteria are valid\nfor evaluating a Claude-generated brief? (Select two.)",
+    "question_type": "multi",
+    "options": [
+      {
+        "label": "A",
+        "content": "presence of an executive summary section as a structural completeness check"
+      },
+      {
+        "label": "B",
+        "content": "factual accuracy of the claims made against the supplied source material"
+      },
+      {
+        "label": "C",
+        "content": "total word count of the output relative to industry benchmarks for business briefs"
+      },
+      {
+        "label": "D",
+        "content": "consistency of the writing style with the organization’s established tone guidelines"
+      },
+      {
+        "label": "E",
+        "content": "alignment of the output with the requested format and length constraints"
+      }
+    ],
+    "correct_option_labels": [
+      "B",
+      "E"
+    ],
+    "explanation": "Factual accuracy against sources and fidelity to the requested format/length are core quality criteria. Presence of a particular\nsection, industry word-count norms, or style consistency may be secondary but are not the primary validity checks listed here."
+  },
+  {
+    "question_number": 193,
+    "content": "You are an HR specialist reviewing data items proposed for inclusion in a Claude prompt for a routine task. Which\ntwo data items are appropriate to include in a Claude prompt? (Select two.)",
+    "question_type": "multi",
+    "options": [
+      {
+        "label": "A",
+        "content": "a compensation band summary that includes employee names and current salary figures for a specific team"
+      },
+      {
+        "label": "B",
+        "content": "employee ID numbers and hire dates for the team roster included to help Claude personalize onboarding\ncommunications"
+      },
+      {
+        "label": "C",
+        "content": "an anonymized summary of an HR policy that the model will rephrase"
+      },
+      {
+        "label": "D",
+        "content": "a redacted job description that the model will adapt for a posting"
+      },
+      {
+        "label": "E",
+        "content": "accommodation request notes from an employee’s HR file needed to draft a role adjustment memo"
+      }
+    ],
+    "correct_option_labels": [
+      "C",
+      "D"
+    ],
+    "explanation": "Anonymized policy text and already-redacted job descriptions are appropriate inputs. Named compensation data, employee\nIDs, and accommodation notes are sensitive personnel information that should not be entered.\nGet Latest & Actual \nExam"
+  },
+  {
+    "question_number": 194,
+    "content": "A product owner wants Claude to generate three alternative product roadmap options for the next quarter. The\nteam will debate trade-offs later. Which prompting approach is most appropriate?",
+    "question_type": "single",
+    "options": [
+      {
+        "label": "A",
+        "content": "Ask Claude to pick the single best roadmap and justify why the other two are inferior."
+      },
+      {
+        "label": "B",
+        "content": "Request three distinct roadmaps, each with explicit trade-offs, without ranking them."
+      },
+      {
+        "label": "C",
+        "content": "Ask Claude to generate one roadmap and then iteratively refine it based on imagined stakeholder objections."
+      },
+      {
+        "label": "D",
+        "content": "Request a single comprehensive roadmap that already balances all known constraints."
+      }
+    ],
+    "correct_option_labels": [
+      "B"
+    ],
+    "explanation": "When the goal is breadth and later human debate, the model should surface distinct options with trade-offs rather than\ncollapsing to a single recommendation."
+  },
+  {
+    "question_number": 195,
+    "content": "You notice that Claude’s answers in a long chat have started repeating earlier points and ignoring the latest\ninstruction. Which recovery step should be tried first?",
+    "question_type": "single",
+    "options": [
+      {
+        "label": "A",
+        "content": "Switch immediately to a different model vendor."
+      },
+      {
+        "label": "B",
+        "content": "Summarize the key decisions so far and issue a fresh, focused prompt that restates the current goal."
+      },
+      {
+        "label": "C",
+        "content": "Delete the entire Project configuration and start over."
+      },
+      {
+        "label": "D",
+        "content": "Increase the temperature setting to encourage more varied responses."
+      }
+    ],
+    "correct_option_labels": [
+      "B"
+    ],
+    "explanation": "Context degradation is best addressed by compressing history and re-anchoring the model with a clear, current goal before\nmore drastic measures.\nGet Latest & Actual \nExam"
+  },
+  {
+    "question_number": 196,
+    "content": "A compliance officer is deciding whether a proposed Claude use case is in scope. The use case involves drafting\ninternal policy FAQs from already-approved policy documents. Which decision is most consistent with typical\norganizational AI policies?",
+    "question_type": "single",
+    "options": [
+      {
+        "label": "A",
+        "content": "Reject the use case because any policy-related content is high-risk."
+      },
+      {
+        "label": "B",
+        "content": "Approve the use case with mandatory human review before the FAQs are published internally."
+      },
+      {
+        "label": "C",
+        "content": "Approve the use case for fully automated publication without review."
+      },
+      {
+        "label": "D",
+        "content": "Require the FAQs to be written only by a licensed attorney using Claude as a silent assistant."
+      }
+    ],
+    "correct_option_labels": [
+      "B"
+    ],
+    "explanation": "Internal FAQs drawn from approved sources are low-to-moderate risk and are typically allowed when a human reviews the\noutput before distribution."
+  },
+  {
+    "question_number": 197,
+    "content": "Which two elements are essential in a well-formed evaluation rubric for Claude-generated customer emails?\n(Select two.)",
+    "question_type": "multi",
+    "options": [
+      {
+        "label": "A",
+        "content": "Whether the email uses the author’s preferred greeting style."
+      },
+      {
+        "label": "B",
+        "content": "Factual accuracy of any claims against the source ticket or knowledge base."
+      },
+      {
+        "label": "C",
+        "content": "Whether the email exceeds 400 words regardless of content."
+      },
+      {
+        "label": "D",
+        "content": "Alignment with the brand voice guide and required compliance statements."
+      },
+      {
+        "label": "E",
+        "content": "Whether Claude spontaneously added an upsell offer."
+      }
+    ],
+    "correct_option_labels": [
+      "B",
+      "D"
+    ],
+    "explanation": "Accuracy against source material and adherence to brand/compliance requirements are core quality criteria; stylistic\npreferences and unsolicited upsells are secondary or out of scope."
+  },
+  {
+    "question_number": 198,
+    "content": "A team is configuring a Project that will be used by twelve people for weekly status reports. Which configuration\npractice best supports consistency?",
+    "question_type": "single",
+    "options": [
+      {
+        "label": "A",
+        "content": "Leave custom instructions empty so each user can prompt freely."
+      },
+      {
+        "label": "B",
+        "content": "Place role, required sections, tone, and length constraints in the Project’s custom instructions."
+      },
+      {
+        "label": "C",
+        "content": "Rely solely on a shared Slack channel to remind people of the expected format."
+      },
+      {
+        "label": "D",
+        "content": "Create a separate Project for each team member to avoid cross-contamination."
+      }
+    ],
+    "correct_option_labels": [
+      "B"
+    ],
+    "explanation": "Project-level custom instructions ensure every conversation inherits the same role, structure, tone, and constraints without\nrelying on individual memory or external reminders."
+  },
+  {
+    "question_number": 199,
+    "content": "You are preparing a prompt that must reference a confidential pricing spreadsheet. Which data-handling step is\nrequired before including any content from the spreadsheet?",
+    "question_type": "single",
+    "options": [
+      {
+        "label": "A",
+        "content": "Upload the full spreadsheet and instruct Claude to ignore sensitive columns."
+      },
+      {
+        "label": "B",
+        "content": "Redact or exclude any customer-specific or non-public pricing cells that the task does not require."
+      },
+      {
+        "label": "C",
+        "content": "Convert the spreadsheet to a PDF so Claude cannot extract numbers precisely."
+      },
+      {
+        "label": "D",
+        "content": "Ask Claude to confirm it will not store the data after the chat ends."
+      }
+    ],
+    "correct_option_labels": [
+      "B"
+    ],
+    "explanation": "Only the minimum necessary data should be provided; confidential or personally identifiable values that are not required for the\ntask must be redacted or omitted."
+  },
+  {
+    "question_number": 200,
+    "content": "A manager observes that Claude outputs for a recurring task have begun citing an internal style guide that was\nretired six months ago. What does this signal most strongly?",
+    "question_type": "single",
+    "options": [
+      {
+        "label": "A",
+        "content": "The model’s training data is outdated and cannot be fixed."
+      },
+      {
+        "label": "B",
+        "content": "The Project’s knowledge base or custom instructions still reference the retired guide and need updating."
+      },
+      {
+        "label": "C",
+        "content": "Users are deliberately pasting the old guide into every prompt."
+      },
+      {
+        "label": "D",
+        "content": "The temperature setting is too high, causing hallucinated citations."
+      }
+    ],
+    "correct_option_labels": [
+      "B"
+    ],
+    "explanation": "Persistent citation of retired guidance almost always means the Project still contains that material in its knowledge or\ninstructions; updating the configuration resolves the drift.\n Get Latest & Actual \nExam"
+  },
+  {
+    "question_number": 201,
+    "content": "Which hand-off design between Claude and a human reviewer is most reliable for high-stakes external\ncommunications?",
+    "question_type": "single",
+    "options": [
+      {
+        "label": "A",
+        "content": "The human reviewer decides ad-hoc what to check based on personal experience."
+      },
+      {
+        "label": "B",
+        "content": "Explicit criteria define both what Claude must produce and what the human must verify before release."
+      },
+      {
+        "label": "C",
+        "content": "Claude generates a self-checklist that the human is free to ignore."
+      },
+      {
+        "label": "D",
+        "content": "The human only reviews the final paragraph for tone."
+      }
+    ],
+    "correct_option_labels": [
+      "B"
+    ],
+    "explanation": "Documented, dual-sided criteria create an auditable, consistent hand-off; ad-hoc or partial review leaves gaps."
+  },
+  {
+    "question_number": 202,
+    "content": "A knowledge worker needs Claude to perform exact arithmetic across three uploaded CSV files and return a\nverified totals table. Which feature is the best fit?",
+    "question_type": "single",
+    "options": [
+      {
+        "label": "A",
+        "content": "Standard chat with the files attached."
+      },
+      {
+        "label": "B",
+        "content": "Artifacts only."
+      },
+      {
+        "label": "C",
+        "content": "Code Execution on the uploaded files, followed by human verification of the results."
+      },
+      {
+        "label": "D",
+        "content": "Memory import of previous calculations."
+      }
+    ],
+    "correct_option_labels": [
+      "C"
+    ],
+    "explanation": "Deterministic calculations belong in the Code Execution sandbox where actual code runs against the data; the language model\nalone is not reliable for precise multi-file arithmetic."
+  },
+  {
+    "question_number": 203,
+    "content": "When refining a prompt after a mediocre first output, which step should come first?",
+    "question_type": "single",
+    "options": [
+      {
+        "label": "A",
+        "content": "Immediately rewrite the entire prompt from scratch."
+      },
+      {
+        "label": "B",
+        "content": "Identify the specific deficiencies in the current output relative to the success criteria."
+      },
+      {
+        "label": "C",
+        "content": "Add three new example outputs to the prompt."
+      },
+      {
+        "label": "D",
+        "content": "Switch to a more capable model before changing anything else."
+      }
+    ],
+    "correct_option_labels": [
+      "B"
+    ],
+    "explanation": "Diagnosis precedes intervention: you must know exactly what failed before you can target the prompt changes effectively."
+  },
+  {
+    "question_number": 204,
+    "content": "Which two risks are highest when Claude is used inside an HR performance-calibration workflow? (Select two.)",
+    "question_type": "multi",
+    "options": [
+      {
+        "label": "A",
+        "content": "Inconsistent use of Oxford commas in written feedback."
+      },
+      {
+        "label": "B",
+        "content": "Employment decisions made without clear human accountability."
+      },
+      {
+        "label": "C",
+        "content": "Outputs that systematically disadvantage members of a protected class."
+      },
+      {
+        "label": "D",
+        "content": "Slight variations in email signature formatting."
+      },
+      {
+        "label": "E",
+        "content": "Occasional use of a slightly longer greeting."
+      }
+    ],
+    "correct_option_labels": [
+      "B",
+      "C"
+    ],
+    "explanation": "Material employment impact without accountability and systematic bias against protected groups are high-severity ethical and\nlegal risks; formatting issues are not."
+  },
+  {
+    "question_number": 205,
+    "content": "A stakeholder asks for a one-sentence description of Claude’s role in a project. Which framing best balances value\nand limitations?",
+    "question_type": "single",
+    "options": [
+      {
+        "label": "A",
+        "content": "“Claude does everything so the team can focus on strategy.”"
+      },
+      {
+        "label": "B",
+        "content": "“Claude drafts and synthesizes under human direction; the team retains review and final decision rights.”"
+      },
+      {
+        "label": "C",
+        "content": "“Claude is experimental and should not be relied upon.”"
+      },
+      {
+        "label": "D",
+        "content": "“Claude replaces the need for junior analysts.”"
+      }
+    ],
+    "correct_option_labels": [
+      "B"
+    ],
+    "explanation": "Balanced framing names both the productive contribution and the continuing human accountability.\nGet Latest & Actual \nExam"
+  },
+  {
+    "question_number": 206,
+    "content": "You are designing a prompt for a constrained brainstorming task that must produce exactly eight ideas, each tied\nto one of four predefined customer segments. Which approach fits best?",
+    "question_type": "single",
+    "options": [
+      {
+        "label": "A",
+        "content": "Ask for twenty ideas and filter afterward."
+      },
+      {
+        "label": "B",
+        "content": "State the exact count, the four segments, and require each idea to name its segment."
+      },
+      {
+        "label": "C",
+        "content": "Ask for ideas without segment constraints so creativity is unconstrained."
+      },
+      {
+        "label": "D",
+        "content": "Ask Claude to choose the eight strongest ideas from an unbounded list."
+      }
+    ],
+    "correct_option_labels": [
+      "B"
+    ],
+    "explanation": "When constraints define success, they belong in the prompt and each output item should explicitly demonstrate compliance."
+  },
+  {
+    "question_number": 207,
+    "content": "After a successful pilot, two improvement opportunities were identified. The core results were positive. What is the\nmost appropriate next step?",
+    "question_type": "single",
+    "options": [
+      {
+        "label": "A",
+        "content": "Run an entirely new pilot focused only on the two opportunities."
+      },
+      {
+        "label": "B",
+        "content": "Incorporate the improvements and proceed to broader rollout with close monitoring."
+      },
+      {
+        "label": "C",
+        "content": "Delay rollout indefinitely until both opportunities are fully solved."
+      },
+      {
+        "label": "D",
+        "content": "Discard the pilot results and start research from scratch."
+      }
+    ],
+    "correct_option_labels": [
+      "B"
+    ],
+    "explanation": "Positive core results justify advancing; remaining improvements can be addressed during monitored rollout rather than blocking\nprogress."
+  },
+  {
+    "question_number": 208,
+    "content": "Which statement most accurately describes the context window?",
+    "question_type": "single",
+    "options": [
+      {
+        "label": "A",
+        "content": "Unlimited conversation history that persists across all future chats."
+      },
+      {
+        "label": "B",
+        "content": "A fixed token budget that includes system instructions, history, attachments, and the current message."
+      },
+      {
+        "label": "C",
+        "content": "A user-adjustable slider that controls how much history Claude sees."
+      },
+      {
+        "label": "D",
+        "content": "The subset of history Claude decides is relevant, which can exceed the model’s limit."
+      }
+    ],
+    "correct_option_labels": [
+      "B"
+    ],
+    "explanation": "The context window is a hard token limit on everything the model can attend to in a single turn."
+  },
+  {
+    "question_number": 209,
+    "content": "A team member wants to put full employee salary bands and names into a Claude prompt to generate\npersonalized compensation letters. What is the correct response?",
+    "question_type": "single",
+    "options": [
+      {
+        "label": "A",
+        "content": "Proceed if the letters will only be used internally."
+      },
+      {
+        "label": "B",
+        "content": "Redact names and exact figures; supply only the policy rules and required structure."
+      },
+      {
+        "label": "C",
+        "content": "Use Incognito mode so the data is not retained."
+      },
+      {
+        "label": "D",
+        "content": "Ask Claude to anonymize the data after it has been uploaded."
+      }
+    ],
+    "correct_option_labels": [
+      "B"
+    ],
+    "explanation": "Named compensation data is highly sensitive; only the minimum necessary non-identifying policy information should be\nsupplied."
+  },
+  {
+    "question_number": 210,
+    "content": "Which two items belong on a prompt-quality checklist? (Select two.)",
+    "question_type": "multi",
+    "options": [
+      {
+        "label": "A",
+        "content": "Whether the prompt contains the author’s favorite quotation."
+      },
+      {
+        "label": "B",
+        "content": "Whether the prompt states a clear task and required deliverable."
+      },
+      {
+        "label": "C",
+        "content": "Whether the prompt supplies relevant context (audience, goal, constraints)."
+      },
+      {
+        "label": "D",
+        "content": "Whether the prompt is longer than 800 words."
+      },
+      {
+        "label": "E",
+        "content": "Whether the prompt lists every team member’s email address."
+      }
+    ],
+    "correct_option_labels": [
+      "B",
+      "C"
+    ],
+    "explanation": "Clear task/deliverable and sufficient context are foundational; length quotas and personal flourishes are not quality criteria.\nGet Latest & Actual \nExam"
+  },
+  {
+    "question_number": 211,
+    "content": "Claude has produced a report that cites a growth figure appearing in three secondary articles, none of which link to\na primary source. What is the correct validation action?",
+    "question_type": "single",
+    "options": [
+      {
+        "label": "A",
+        "content": "Accept the figure because three independent articles agree."
+      },
+      {
+        "label": "B",
+        "content": "Locate and verify the figure in the original primary study or authoritative source."
+      },
+      {
+        "label": "C",
+        "content": "Average the three slightly different numbers reported."
+      },
+      {
+        "label": "D",
+        "content": "Remove the citation and present the figure as common knowledge."
+      }
+    ],
+    "correct_option_labels": [
+      "B"
+    ],
+    "explanation": "Secondary repetition is not verification; the primary source must be checked."
+  },
+  {
+    "question_number": 212,
+    "content": "For a living one-page operating procedure that will be edited and reused for months, which output format is most\nappropriate?",
+    "question_type": "single",
+    "options": [
+      {
+        "label": "A",
+        "content": "A chat response that is copied into email each time."
+      },
+      {
+        "label": "B",
+        "content": "An Artifact that can be opened, edited, and versioned as a stable document."
+      },
+      {
+        "label": "C",
+        "content": "A series of numbered steps left only inside the original chat."
+      },
+      {
+        "label": "D",
+        "content": "A PDF screenshot of the chat window."
+      }
+    ],
+    "correct_option_labels": [
+      "B"
+    ],
+    "explanation": "Artifacts are designed to be durable, editable working documents—exactly what a living procedure requires."
+  },
+  {
+    "question_number": 213,
+    "content": "When applying organizational AI policy to a new use case, which step comes first?",
+    "question_type": "single",
+    "options": [
+      {
+        "label": "A",
+        "content": "Approve or reject the use case."
+      },
+      {
+        "label": "B",
+        "content": "Document the decision in the compliance register."
+      },
+      {
+        "label": "C",
+        "content": "Identify which policy provisions apply to the proposed use case."
+      },
+      {
+        "label": "D",
+        "content": "Compare the use case against every policy document in the company."
+      }
+    ],
+    "correct_option_labels": [
+      "C"
+    ],
+    "explanation": "You must first determine relevance before comparison or decision-making can occur."
+  },
+  {
+    "question_number": 214,
+    "content": "A Claude-generated customer health report covers all required topics but addresses only one of three mandated\nrisk dimensions in the renewal-risk section. What is the best conclusion?",
+    "question_type": "single",
+    "options": [
+      {
+        "label": "A",
+        "content": "The report fully meets the specification because every topic heading is present."
+      },
+      {
+        "label": "B",
+        "content": "The renewal-risk section is under-scoped and should be expanded before delivery."
+      },
+      {
+        "label": "C",
+        "content": "Completeness cannot be judged without customer feedback."
+      },
+      {
+        "label": "D",
+        "content": "The missing dimensions can be ignored because the rest of the report is strong."
+      }
+    ],
+    "correct_option_labels": [
+      "B"
+    ],
+    "explanation": "Presence of a section is insufficient when the specification requires multi-dimensional coverage; the gap must be closed."
+  },
+  {
+    "question_number": 215,
+    "content": "Which two criteria most directly inform whether a workflow step should be delegated to Claude? (Select two.)",
+    "question_type": "multi",
+    "options": [
+      {
+        "label": "A",
+        "content": "How colorful the process diagram is."
+      },
+      {
+        "label": "B",
+        "content": "Whether the step requires human creativity, empathy, or high-stakes judgment."
+      },
+      {
+        "label": "C",
+        "content": "How long the current process has existed unchanged."
+      },
+      {
+        "label": "D",
+        "content": "The reversibility of the step and the consequence of an error."
+      },
+      {
+        "label": "E",
+        "content": "The job title of the person who currently performs the step."
+      }
+    ],
+    "correct_option_labels": [
+      "B",
+      "D"
+    ],
+    "explanation": "Delegation decisions turn on uniquely human capabilities and on risk (reversibility × impact), not on diagram aesthetics or\ntenure.\nGet Latest & Actual \nExam"
+  },
+  {
+    "question_number": 216,
+    "content": "A prompt asks Claude to “act as a senior researcher” but does not constrain it to the supplied source documents.\nThe output introduces plausible-sounding facts absent from those sources. What is the most direct root cause?",
+    "question_type": "single",
+    "options": [
+      {
+        "label": "A",
+        "content": "The model is inherently incapable of staying on source."
+      },
+      {
+        "label": "B",
+        "content": "The prompt lacks an explicit constraint to use only facts present in the supplied sources."
+      },
+      {
+        "label": "C",
+        "content": "The temperature setting was left at the default."
+      },
+      {
+        "label": "D",
+        "content": "The role “senior researcher” forces invention of new facts."
+      }
+    ],
+    "correct_option_labels": [
+      "B"
+    ],
+    "explanation": "Without a source-boundary constraint, the model will fill gaps with trained knowledge or plausible invention."
+  },
+  {
+    "question_number": 217,
+    "content": "For a time-constrained investor update, which narrative structure is most appropriate?",
+    "question_type": "single",
+    "options": [
+      {
+        "label": "A",
+        "content": "Chronological recap of the quarter, reaching the headline result near the end."
+      },
+      {
+        "label": "B",
+        "content": "Lead with the headline result, present key drivers concisely, close with forward outlook."
+      },
+      {
+        "label": "C",
+        "content": "Lead with operational anecdotes, then financial results."
+      },
+      {
+        "label": "D",
+        "content": "Present only the forward outlook and omit historical results."
+      }
+    ],
+    "correct_option_labels": [
+      "B"
+    ],
+    "explanation": "Investors need the bottom line first, then the concise explanation, then the forward view."
+  },
+  {
+    "question_number": 218,
+    "content": "Which two evaluation criteria are valid for a Claude-generated business brief? (Select two.)",
+    "question_type": "multi",
+    "options": [
+      {
+        "label": "A",
+        "content": "Total word count matching an industry average."
+      },
+      {
+        "label": "B",
+        "content": "Factual accuracy of claims against the supplied source material."
+      },
+      {
+        "label": "C",
+        "content": "Presence of the author’s favorite transitional phrase."
+      },
+      {
+        "label": "D",
+        "content": "Alignment with the requested format and length constraints."
+      },
+      {
+        "label": "E",
+        "content": "Whether Claude added an unsolicited competitive analysis."
+      }
+    ],
+    "correct_option_labels": [
+      "B",
+      "D"
+    ],
+    "explanation": "Accuracy against sources and fidelity to the requested format/length are core; stylistic idiosyncrasies and unsolicited extras are\nnot."
+  },
+  {
+    "question_number": 219,
+    "content": "A finance manager needs deterministic calculations across a multi-tab workbook. Which Claude feature should be\nselected?",
+    "question_type": "single",
+    "options": [
+      {
+        "label": "A",
+        "content": "Standard chat prompt with the file attached."
+      },
+      {
+        "label": "B",
+        "content": "Research feature."
+      },
+      {
+        "label": "C",
+        "content": "Artifacts only."
+      },
+      {
+        "label": "D",
+        "content": "Code Execution that runs code against the uploaded file and produces verifiable outputs."
+      }
+    ],
+    "correct_option_labels": [
+      "D"
+    ],
+    "explanation": "Only Code Execution provides actual deterministic computation on the file contents."
+  },
+  {
+    "question_number": 220,
+    "content": "Claude’s first response is factually correct but uses terminology that conflicts with the organization’s glossary. What\nis the most direct fix?",
+    "question_type": "single",
+    "options": [
+      {
+        "label": "A",
+        "content": "Manually find-and-replace terms after every generation."
+      },
+      {
+        "label": "B",
+        "content": "Provide the glossary and instruct Claude to use only those terms."
+      },
+      {
+        "label": "C",
+        "content": "Ask Claude to choose whatever terminology it prefers."
+      },
+      {
+        "label": "D",
+        "content": "Ignore the inconsistency because the facts are correct."
+      }
+    ],
+    "correct_option_labels": [
+      "B"
+    ],
+    "explanation": "Supplying the authoritative glossary and requiring exclusive use prevents terminology drift at generation time.\nGet Latest & Actual \nExam"
+  },
+  {
+    "question_number": 221,
+    "content": "An operations analyst has process documentation and cycle-time data. How can Claude best support process\noptimization?",
+    "question_type": "single",
+    "options": [
+      {
+        "label": "A",
+        "content": "Autonomously redesign the process and implement the changes."
+      },
+      {
+        "label": "B",
+        "content": "Map the current process, surface data-backed bottleneck hypotheses, and propose options for human review."
+      },
+      {
+        "label": "C",
+        "content": "Interview every team member via Claude and rewrite the process from those interviews alone."
+      },
+      {
+        "label": "D",
+        "content": "Generate an industry-benchmark process and force the team to adopt it."
+      }
+    ],
+    "correct_option_labels": [
+      "B"
+    ],
+    "explanation": "Claude is most effective as an analytical partner that surfaces options; humans retain design and implementation authority."
+  },
+  {
+    "question_number": 222,
+    "content": "Which two data items are appropriate to include in a Claude prompt for a routine HR task? (Select two.)",
+    "question_type": "multi",
+    "options": [
+      {
+        "label": "A",
+        "content": "Named employee salary figures."
+      },
+      {
+        "label": "B",
+        "content": "An anonymized summary of an HR policy to be rephrased."
+      },
+      {
+        "label": "C",
+        "content": "A redacted job description to be adapted for a posting."
+      },
+      {
+        "label": "D",
+        "content": "Accommodation request notes from a personnel file."
+      },
+      {
+        "label": "E",
+        "content": "Full employee ID numbers and home addresses."
+      }
+    ],
+    "correct_option_labels": [
+      "B",
+      "C"
+    ],
+    "explanation": "Anonymized policy text and already-redacted job descriptions are appropriate; named compensation and sensitive personnel\ndata are not."
+  },
+  {
+    "question_number": 223,
+    "content": "After clarifying that the goal is a structured competitor-pricing summary (not new ideas), which strategy fits best?",
+    "question_type": "single",
+    "options": [
+      {
+        "label": "A",
+        "content": "Divergent brainstorming of many possible observations."
+      },
+      {
+        "label": "B",
+        "content": "A research strategy that gathers structured pricing data, names sources, and notes confidence."
+      },
+      {
+        "label": "C",
+        "content": "Open-ended conversation that lets structure emerge organically."
+      },
+      {
+        "label": "D",
+        "content": "Comparative analysis against a single competitor only."
+      }
+    ],
+    "correct_option_labels": [
+      "B"
+    ],
+    "explanation": "A structured research approach with sources and confidence levels matches the clarified goal of an actionable summary."
+  },
+  {
+    "question_number": 224,
+    "content": "Which two elements belong in a well-structured business prompt? (Select two.)",
+    "question_type": "multi",
+    "options": [
+      {
+        "label": "A",
+        "content": "A clear statement of the task the model must perform."
+      },
+      {
+        "label": "B",
+        "content": "A complete catalog of every company product."
+      },
+      {
+        "label": "C",
+        "content": "Relevant context such as audience and goal."
+      },
+      {
+        "label": "D",
+        "content": "A personal anecdote to make the prompt feel friendly."
+      },
+      {
+        "label": "E",
+        "content": "An instruction to use a casual tone regardless of audience."
+      }
+    ],
+    "correct_option_labels": [
+      "A",
+      "C"
+    ],
+    "explanation": "Task clarity and relevant context are essential; exhaustive catalogs and personal stories are usually noise.\nGet Latest & Actual \nExam"
+  },
+  {
+    "question_number": 225,
+    "content": "A request asks for a process map, supporting materials, and a measurement plan. What does this feature\nindicate?",
+    "question_type": "single",
+    "options": [
+      {
+        "label": "A",
+        "content": "The request is simple enough for a single prompt."
+      },
+      {
+        "label": "B",
+        "content": "The request should be decomposed into distinct outputs before prompting."
+      },
+      {
+        "label": "C",
+        "content": "The request can be ignored because it is too large."
+      },
+      {
+        "label": "D",
+        "content": "The request should be handled entirely by Code Execution."
+      }
+    ],
+    "correct_option_labels": [
+      "B"
+    ],
+    "explanation": "Multiple distinct deliverables benefit from decomposition so each can receive focused attention and quality criteria."
+  },
+  {
+    "question_number": 226,
+    "content": "Which two proposed changes meaningfully improve a recurring Claude workflow? (Select two.)",
+    "question_type": "multi",
+    "options": [
+      {
+        "label": "A",
+        "content": "Renaming the shared workspace for aesthetic reasons."
+      },
+      {
+        "label": "B",
+        "content": "Adding a quality check on outputs before they enter the downstream process."
+      },
+      {
+        "label": "C",
+        "content": "Extracting standard reference material into a Project so it is not re-pasted every time."
+      },
+      {
+        "label": "D",
+        "content": "Changing the font of the workflow document."
+      },
+      {
+        "label": "E",
+        "content": "Reordering section headings without changing content or controls."
+      }
+    ],
+    "correct_option_labels": [
+      "B",
+      "C"
+    ],
+    "explanation": "A quality gate and elimination of repeated reference material are substantive improvements; cosmetic changes are not."
+  },
+  {
+    "question_number": 227,
+    "content": "After eight prompt iterations with no further quality gain, what is the appropriate conclusion?",
+    "question_type": "single",
+    "options": [
+      {
+        "label": "A",
+        "content": "Keep iterating; plateaus usually break after a few more tries."
+      },
+      {
+        "label": "B",
+        "content": "Iteration has reached diminishing returns; move to human review or a different approach."
+      },
+      {
+        "label": "C",
+        "content": "Accept the current output without further human review."
+      },
+      {
+        "label": "D",
+        "content": "Abandon the task silently."
+      }
+    ],
+    "correct_option_labels": [
+      "B"
+    ],
+    "explanation": "Continued prompting after a clear plateau wastes effort; human judgment or a new strategy is required."
+  },
+  {
+    "question_number": 228,
+    "content": "A user wants Claude to draft an external press release that will be published without further human editing. Is this\nappropriate?",
+    "question_type": "single",
+    "options": [
+      {
+        "label": "A",
+        "content": "Yes, because Claude is highly capable at writing."
+      },
+      {
+        "label": "B",
+        "content": "No; external press releases require human review and approval before publication."
+      },
+      {
+        "label": "C",
+        "content": "Yes, if the temperature is set to zero."
+      },
+      {
+        "label": "D",
+        "content": "Yes, provided the release is shorter than 300 words."
+      }
+    ],
+    "correct_option_labels": [
+      "B"
+    ],
+    "explanation": "High-visibility external communications carry reputational and legal risk and must retain human accountability."
+  },
+  {
+    "question_number": 229,
+    "content": "Which practice best reflects the Diligence competency of the AI Fluency Framework?",
+    "question_type": "single",
+    "options": [
+      {
+        "label": "A",
+        "content": "Applying policy only when usage is likely to be audited."
+      },
+      {
+        "label": "B",
+        "content": "Completing a one-time policy acknowledgment at onboarding and never revisiting it."
+      },
+      {
+        "label": "C",
+        "content": "Consistently applying policy, identifying gaps between practice and policy, and closing those gaps over time."
+      },
+      {
+        "label": "D",
+        "content": "Delegating all policy questions to a central team and taking no personal responsibility."
+      }
+    ],
+    "correct_option_labels": [
+      "C"
+    ],
+    "explanation": "Diligence is a sustained habit of alignment, gap detection, and corrective action.\nGet Latest & Actual \nExam"
+  },
+  {
+    "question_number": 230,
+    "content": "More capable Claude models (e.g., Opus) compared with lighter models (e.g., Haiku) generally:",
+    "question_type": "single",
+    "options": [
+      {
+        "label": "A",
+        "content": "Consume less of the rate limit and run faster."
+      },
+      {
+        "label": "B",
+        "content": "Consume more of the rate limit and run more slowly, while offering higher reasoning quality."
+      },
+      {
+        "label": "C",
+        "content": "Have identical speed and rate-limit consumption; only quality differs."
+      },
+      {
+        "label": "D",
+        "content": "Require multiple passes to match lighter-model quality."
+      }
+    ],
+    "correct_option_labels": [
+      "B"
+    ],
+    "explanation": "Higher capability comes with higher latency and greater rate-limit consumption—the fundamental trade-off."
+  },
+  {
+    "question_number": 231,
+    "content": "Two secondary sources give conflicting dates for the same event. What is the correct fact-checking action?",
+    "question_type": "single",
+    "options": [
+      {
+        "label": "A",
+        "content": "Choose the more recent secondary source."
+      },
+      {
+        "label": "B",
+        "content": "Average the two dates."
+      },
+      {
+        "label": "C",
+        "content": "Locate a primary or authoritative source and use the date it confirms."
+      },
+      {
+        "label": "D",
+        "content": "Prefer the source with the longer citation."
+      }
+    ],
+    "correct_option_labels": [
+      "C"
+    ],
+    "explanation": "Conflicts between secondary sources are resolved by consulting a primary or authoritative source."
+  },
+  {
+    "question_number": 232,
+    "content": "A Project’s custom instructions tell Claude to “be casual and offer goodwill credits freely.” Recent drafts violate the\nbrand voice guide and the credit policy. What is the best configuration fix?",
+    "question_type": "single",
+    "options": [
+      {
+        "label": "A",
+        "content": "Add a sentence telling Claude to “also consult the attached policies.”"
+      },
+      {
+        "label": "B",
+        "content": "Replace the vague instructions with explicit brand-voice attributes, length expectations, and a rule that credits are\noffered only when the eligibility policy permits."
+      },
+      {
+        "label": "C",
+        "content": "Move the policies into the knowledge base and leave the original instructions unchanged."
+      },
+      {
+        "label": "D",
+        "content": "Disable custom instructions entirely."
+      }
+    ],
+    "correct_option_labels": [
+      "B"
+    ],
+    "explanation": "Explicit, enforceable constraints outperform vague instructions plus a hope that the model will consult documents."
+  },
+  {
+    "question_number": 233,
+    "content": "Which recovery action is least appropriate as a first response when conversation quality degrades?",
+    "question_type": "single",
+    "options": [
+      {
+        "label": "A",
+        "content": "Summarize state and continue with a focused follow-up."
+      },
+      {
+        "label": "B",
+        "content": "Immediately replace Claude with a competitor’s model."
+      },
+      {
+        "label": "C",
+        "content": "Restate the current goal clearly."
+      },
+      {
+        "label": "D",
+        "content": "Trim irrelevant history before the next turn."
+      }
+    ],
+    "correct_option_labels": [
+      "B"
+    ],
+    "explanation": "Switching vendors is a heavy, last-resort step; lighter recovery actions should be tried first."
+  },
+  {
+    "question_number": 234,
+    "content": "A request is for a single, well-defined deliverable with familiar inputs and format. Does it need decomposition?",
+    "question_type": "single",
+    "options": [
+      {
+        "label": "A",
+        "content": "Yes, every request should be decomposed."
+      },
+      {
+        "label": "B",
+        "content": "No; a single coherent deliverable can usually be handled in one well-structured prompt."
+      },
+      {
+        "label": "C",
+        "content": "Yes, because decomposition always improves quality."
+      },
+      {
+        "label": "D",
+        "content": "Only if the user is new to Claude."
+      }
+    ],
+    "correct_option_labels": [
+      "B"
+    ],
+    "explanation": "Decomposition is indicated by multiple distinct outputs or conflicting success criteria, not by default."
+  },
+  {
+    "question_number": 235,
+    "content": "Which statement about Memory imports is most accurate?",
+    "question_type": "single",
+    "options": [
+      {
+        "label": "A",
+        "content": "Imports are guaranteed to transfer every detail perfectly."
+      },
+      {
+        "label": "B",
+        "content": "Imports are experimental; some content may not be incorporated and can be added manually as a fallback."
+      },
+      {
+        "label": "C",
+        "content": "Imports overwrite all existing memories and cannot be partial."
+      },
+      {
+        "label": "D",
+        "content": "Imported memories are stored in a completely inaccessible separate store."
+      }
+    ],
+    "correct_option_labels": [
+      "B"
+    ],
+    "explanation": "Anthropic documents Memory imports as experimental with possible incomplete incorporation; manual addition is the\ndocumented recovery path.\n Get Latest & Actual \nExam"
+  },
+  {
+    "question_number": 236,
+    "content": "A team wants Claude to generate a structured status update from meeting notes. Is this a suitable use case?",
+    "question_type": "single",
+    "options": [
+      {
+        "label": "A",
+        "content": "No, because status updates are too important for AI."
+      },
+      {
+        "label": "B",
+        "content": "Yes; drafting structured updates from notes is a classic high-value, human-supervised task."
+      },
+      {
+        "label": "C",
+        "content": "Only if the update will never be read by executives."
+      },
+      {
+        "label": "D",
+        "content": "Only if Code Execution is used."
+      }
+    ],
+    "correct_option_labels": [
+      "B"
+    ],
+    "explanation": "Synthesis and drafting under human review is precisely the kind of work Claude is well suited to support."
+  },
+  {
+    "question_number": 237,
+    "content": "Which practice best supports long-term Project effectiveness?",
+    "question_type": "single",
+    "options": [
+      {
+        "label": "A",
+        "content": "Never touch the configuration once it works."
+      },
+      {
+        "label": "B",
+        "content": "Periodically review and update instructions, knowledge, and standards because the real world changes."
+      },
+      {
+        "label": "C",
+        "content": "Update only when a senior leader complains."
+      },
+      {
+        "label": "D",
+        "content": "Create a new Project every month and abandon the old one."
+      }
+    ],
+    "correct_option_labels": [
+      "B"
+    ],
+    "explanation": "Projects drift as policies, terminology, and source material evolve; periodic review keeps them current."
+  },
+  {
+    "question_number": 238,
+    "content": "A demographic generalization about purchasing behavior appears in an internal marketing brief. What is the most\nappropriate response?",
+    "question_type": "single",
+    "options": [
+      {
+        "label": "A",
+        "content": "Keep it because the brief is internal only."
+      },
+      {
+        "label": "B",
+        "content": "Add a disclaimer and leave the generalization unchanged."
+      },
+      {
+        "label": "C",
+        "content": "Revise the text to focus on observed behaviors and validate against actual data."
+      },
+      {
+        "label": "D",
+        "content": "Delete the entire segment description."
+      }
+    ],
+    "correct_option_labels": [
+      "C"
+    ],
+    "explanation": "Replacing unsupported demographic generalizations with data-backed behavioral observations improves both accuracy and\nfairness."
+  },
+  {
+    "question_number": 239,
+    "content": "Over-decomposition of a board-memo request into fifteen tiny steps produced a disjointed result. What is the best\nremedy?",
+    "question_type": "single",
+    "options": [
+      {
+        "label": "A",
+        "content": "Add more steps for even finer control."
+      },
+      {
+        "label": "B",
+        "content": "Consolidate related steps into fewer cohesive sections that group naturally connected ideas."
+      },
+      {
+        "label": "C",
+        "content": "Keep all fifteen steps but number them differently."
+      },
+      {
+        "label": "D",
+        "content": "Switch to a lighter model."
+      }
+    ],
+    "correct_option_labels": [
+      "B"
+    ],
+    "explanation": "Re-grouping by conceptual cohesion restores narrative flow while still keeping the task manageable.\nGet Latest & Actual \nExam"
+  },
+  {
+    "question_number": 240,
+    "content": "An organization’s policy explicitly prohibits entering ongoing investigation information into AI tools. What is the\ncompliant action?",
+    "question_type": "single",
+    "options": [
+      {
+        "label": "A",
+        "content": "Enter a paraphrased version that removes names."
+      },
+      {
+        "label": "B",
+        "content": "Use Incognito chat because it does not retain data."
+      },
+      {
+        "label": "C",
+        "content": "Escalate for an approved alternative and do not enter the investigation information."
+      },
+      {
+        "label": "D",
+        "content": "Wait until the investigation closes and then enter the full history."
+      }
+    ],
+    "correct_option_labels": [
+      "C"
+    ],
+    "explanation": "An explicit prohibition leaves no room for work-arounds; escalation and non-entry is the only compliant path."
+  },
+  {
+    "question_number": 241,
+    "content": "Which two signals most strongly indicate that a Project configuration needs updating? (Select two.)",
+    "question_type": "multi",
+    "options": [
+      {
+        "label": "A",
+        "content": "Outputs increasingly reference retired terminology or outdated source guidance."
+      },
+      {
+        "label": "B",
+        "content": "Chat volume has declined for two weeks."
+      },
+      {
+        "label": "C",
+        "content": "Users have begun using ad-hoc chats for tasks that fall inside the Project’s intended scope."
+      },
+      {
+        "label": "D",
+        "content": "Average output length has increased by 10 percent."
+      },
+      {
+        "label": "E",
+        "content": "One user prefers a different greeting style."
+      }
+    ],
+    "correct_option_labels": [
+      "A",
+      "C"
+    ],
+    "explanation": "Outdated references and circumvention via ad-hoc chats are direct signals of configuration drift; volume or length changes are\nweaker indicators.\nGet Latest & Actual \nExam"
   }
 ]
