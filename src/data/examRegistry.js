@@ -8,14 +8,14 @@ export const TOPIC_WEIGHTINGS = {
   'ccao-f': {
     'prompt-clarity': 12,
     'context-windows': 10,
-    'claude-models': 10,
-    'system-prompts': 12,
-    'evals-iteration': 10,
-    'temperature-parameters': 8,
-    'prompt-caching': 10,
-    'hallucinations-grounding': 10,
-    'rag-retrieval': 10,
-    'structured-outputs': 8
+    'data-privacy': 10,
+    'code-execution': 8,
+    'primary-source': 10,
+    'project-config': 12,
+    'degraded-conversations': 8,
+    'iteration-diminishing': 10,
+    'workflow-decomposition': 10,
+    'human-oversight': 10
   },
   'cca-f': {
     'multi-agent-orchestration': 22,

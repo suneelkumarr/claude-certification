@@ -29,10 +29,7 @@
     "correct_option_labels": [
       "D"
     ],
-    "explanation": "Discussion:\nSelected Answer: D - Under the objective Identify, diagnose, and resolve issues with underperforming prompts and/or poor outputs (Domain 7: Troubleshooting and Optimization), troubleshooting follows a structured diagnostic protocol. The troubleshooting sequence begins with symptom identification: reading the output end-to-end to categorize the exact flaw (e.g., factual error, structural omission, tone mismatch) (Step 3). Second, the practitioner performs an input-output diff: comparing the deficient output against the prompt instructions to spot instruction omissions or ambiguities (Step 4). Third, the practitioner forms a testable hypothesis regarding which prompt element caused the failure (Step 1). Fourth, they execute a controlled experiment by applying a single targeted prompt adjustment and observing the revised output (Step 2). Finally, they document the verified root cause and solution (Step 5). This establishes the order 3, 4, 1, 2, 5 .",
-    "in_website": true,
-    "website_question_number": 1,
-    "website_url": "https://examfree.org/exam/ccao-f/question-1"
+    "explanation": "Discussion:\nSelected Answer: D - Under the objective Identify, diagnose, and resolve issues with underperforming prompts and/or poor outputs (Domain 7: Troubleshooting and Optimization), troubleshooting follows a structured diagnostic protocol. The troubleshooting sequence begins with symptom identification: reading the output end-to-end to categorize the exact flaw (e.g., factual error, structural omission, tone mismatch) (Step 3). Second, the practitioner performs an input-output diff: comparing the deficient output against the prompt instructions to spot instruction omissions or ambiguities (Step 4). Third, the practitioner forms a testable hypothesis regarding which prompt element caused the failure (Step 1). Fourth, they execute a controlled experiment by applying a single targeted prompt adjustment and observing the revised output (Step 2). Finally, they document the verified root cause and solution (Step 5). This establishes the order 3, 4, 1, 2, 5 ."
   },
   {
     "question_number": 2,
@@ -70,10 +67,7 @@
       "C",
       "D"
     ],
-    "explanation": "Honest description of Claude's role and clear statement of limits/failure modes are appropriate for stakeholder communication.",
-    "in_website": true,
-    "website_question_number": 2,
-    "website_url": "https://examfree.org/exam/ccao-f/question-2"
+    "explanation": "Honest description of Claude's role and clear statement of limits/failure modes are appropriate for stakeholder communication."
   },
   {
     "question_number": 3,
@@ -105,10 +99,7 @@
     "correct_option_labels": [
       "D"
     ],
-    "explanation": "Discussion:\nSelected Answer: D (Official ExamTopics Suggested Answer)",
-    "in_website": true,
-    "website_question_number": 3,
-    "website_url": "https://examfree.org/exam/ccao-f/question-3"
+    "explanation": "Discussion:\nSelected Answer: D (Official ExamTopics Suggested Answer)"
   },
   {
     "question_number": 4,
@@ -140,10 +131,7 @@
     "correct_option_labels": [
       "B"
     ],
-    "explanation": "Discussion:\nSelected Answer: B - Answer B is correct. This is a constrained brainstorming task with three explicit acceptance requirements: exactly ten distinct ideas, alignment with a stated audience segment, and placement within one of three defined budget bands. The prompt should include all these constraints and require Claude to label each idea with its intended audience and budget category. That structure makes compliance visible and allows the manager to review the output efficiently. Option A omits the budget requirement, even though affordability is part of the task rather than a later filtering preference. Option C changes the requested quantity from ten to thirty and creates unnecessary review work without evidence that the larger pool is required. Option D postpones the budget constraint until after generation, increasing the likelihood that several ideas will be unusable and leaving the manager with fewer than ten valid options. Constraints do not inherently undermine creativity. Well-defined boundaries direct creativity toward implementable solutions and reduce wasted output. A strong prompt could request a table containing the idea, audience segment, budget band, campaign concept, and brief rationale. Anthropic recommends being clear and direct, specifying the desired output format and constraints, and making completion requirements explicit. Requiring each idea to identify its audience and budget band provides an immediate quality-control mechanism. Anthropic prompting best practices21:[\"$\",\"$L24\",null,{\"question\":{\"id\":\"9f195074-1cbd-4b1c-8359-135f767ae694\",\"examId\":\"cmvl7br5q000fs401v734g4ur\",\"questionNumber\":4,\"content\":\"A marketing manager is preparing a constrained brainstorming task: produce ten campaign ideas, each tied to a stated audience segment and each fitting one of three defined budget bands. Which prompting approach fits the task?\",\"questionType\":\"single\",\"isPremium\":false,\"createdAt\":\"$D2026-10-24T02:08:24.635Z\",\"updatedAt\":\"$D2026-10-24T02:08:24.635Z\",\"options\":[{\"id\":\"d977ad10-f2ad-4017-9836-e6ff5331db47\",\"questionId\":\"9f195074-1cbd-4b1c-8359-135f767ae694\",\"label\":\"A\",\"content\":\"Ask Claude for ten distinct ideas, stating the audience constraints in the prompt and leaving the budget unconstrained so creativity is not limited at the ideation stage.\",\"orderIndex\":1},{\"id\":\"e84ec6c8-366b-4eb0-808d-d33a2f705f65\",\"questionId\":\"9f195074-1cbd-4b1c-8359-135f767ae694\",\"label\":\"B\",\"content\":\"Ask Claude for ten distinct ideas with the audience and budget constraints stated in the prompt, and require each idea to name which audience and budget band it addresses.\",\"orderIndex\":2},{\"id\":\"d148d990-c69f-4c02-85e4-12af936d77d6\",\"questionId\":\"9f195074-1cbd-4b1c-8359-135f767ae694\",\"label\":\"C\",\"content\":\"Ask Claude for thirty ideas with the audience and budget constraints stated in the prompt, then keep the strongest ten so a wider initial pool produces stronger finalists.\",\"orderIndex\":3},{\"id\":\"43afa4e3-0a12-4b3d-a17b-56a4217cbe86\",\"questionId\":\"9f195074-1cbd-4b1c-8359-135f767ae694\",\"label\":\"D\",\"content\":\"Ask Claude for ten distinct ideas without budget constraints, then filter the output afterward to keep only the ideas that fit the three budget bands.\",\"orderIndex\":4}],\"answer\":{\"id\":\"cea48fda-2d0e-4b50-ada0-565bf3f97c65\",\"questionId\":\"9f195074-1cbd-4b1c-8359-135f767ae694\",\"correctOptionId\":\"e84ec6c8-366b-4eb0-808d-d33a2f705f65\",\"correctOptionLabels\":\"[\\\"B\\\\",
-    "in_website": true,
-    "website_question_number": 4,
-    "website_url": "https://examfree.org/exam/ccao-f/question-4"
+    "explanation": "The correct answer is B: B. Ask Claude for ten distinct ideas with the audience and budget constraints stated in the prompt, and require each idea to name which audience and budget band it addresses.."
   },
   {
     "question_number": 5,
@@ -175,10 +163,7 @@
     "correct_option_labels": [
       "A"
     ],
-    "explanation": "Discussion:\nSelected Answer: A - Option A is correct because effective Project instructions should establish Claude's role, the authoritative standards governing the work, and the expected output structure. These elements create consistent behaviour across the Project's course-design chats. The role establishes the professional perspective Claude should adopt, the instructional-design standard defines the governing methodology, and the lesson-outline structure specifies the required deliverable. Anthropic explains that Project instructions tell Claude how to behave and respond across every chat within the Project. Consequently, recurring requirements should be placed in Project instructions instead of being manually repeated in each conversation. The organization's instructional-design documentation should also be uploaded to Project knowledge so Claude can reference the actual standard rather than infer it from a brief instruction. Option B omits a known structural requirement and permits unnecessary variation. Option C supplies the format but not the governing methodology or role context; structure alone cannot communicate the complete instructional standard. Option D defeats the persistence benefit of Projects and increases inconsistency between users and chats. Individual prompts can still specify lesson-specific objectives, audiences, subjects, and constraints, but the stable role, standards, and output schema belong in the Project-level instructions. See Anthropic's documentation on Project instructions and knowledge and prompting best practices . Only six genuinely unique questions were found. This is the complete Set 3 batch.21:[\"$\",\"$L24\",null,{\"question\":{\"id\":\"e2491b40-ff17-4faa-a873-efbd1d771d26\",\"examId\":\"cmvl7br5q000fs401v734g4ur\",\"questionNumber\":5,\"content\":\"A learning specialist is configuring a Project for course-design work. Their organization has an internal instructional-design standard and a preferred output structure for lesson outlines. Which custom-instruction set best supports this use case?\",\"questionType\":\"single\",\"isPremium\":false,\"createdAt\":\"$D2026-10-24T02:08:24.635Z\",\"updatedAt\":\"$D2026-10-24T02:08:24.635Z\",\"options\":[{\"id\":\"a070301a-f034-425f-85dc-2d4876cdde7f\",\"questionId\":\"e2491b40-ff17-4faa-a873-efbd1d771d26\",\"label\":\"A\",\"content\":\"Name Claude's role as a course designer, require alignment with the organization's instructional-design standards, and specify the preferred output structure for lesson outlines.\",\"orderIndex\":1},{\"id\":\"c801062e-6925-4e83-8e42-249e832063f8\",\"questionId\":\"e2491b40-ff17-4faa-a873-efbd1d771d26\",\"label\":\"B\",\"content\":\"Name Claude's role as a course designer and require alignment with the organization's instructional- design standards; leave the output structure to Claude based on each lesson's topic.\",\"orderIndex\":2},{\"id\":\"14ced227-2c43-453a-8882-a02affb8e1b4\",\"questionId\":\"e2491b40-ff17-4faa-a873-efbd1d771d26\",\"label\":\"C\",\"content\":\"Specify only the preferred output structure for lesson outlines, since the structure carries the standards implicitly and naming the role adds no value.\",\"orderIndex\":3},{\"id\":\"87e6cd36-d485-485d-a860-6439a44988ad\",\"questionId\":\"e2491b40-ff17-4faa-a873-efbd1d771d26\",\"label\":\"D\",\"content\":\"Name Claude's role as a course designer; let each chat prompt specify the standards and output structure for that lesson, since lessons vary widely.\",\"orderIndex\":4}],\"answer\":{\"id\":\"dad32f06-cfa2-46ff-ac3a-6dba2c13f42e\",\"questionId\":\"e2491b40-ff17-4faa-a873-efbd1d771d26\",\"correctOptionId\":\"a070301a-f034-425f-85dc-2d4876cdde7f\",\"correctOptionLabels\":\"[\\\"A\\\\",
-    "in_website": true,
-    "website_question_number": 5,
-    "website_url": "https://examfree.org/exam/ccao-f/question-5"
+    "explanation": "The correct answer is A: A. Name Claude's role as a course designer, require alignment with the organization's instructional-design standards, and specify the preferred output structure for lesson outlines.."
   },
   {
     "question_number": 6,
@@ -216,10 +201,7 @@
       "B",
       "C"
     ],
-    "explanation": "Before scoring, define evaluation criteria (B) and specify the acceptable/unacceptable threshold (C).",
-    "in_website": true,
-    "website_question_number": 6,
-    "website_url": "https://examfree.org/exam/ccao-f/question-6"
+    "explanation": "Before scoring, define evaluation criteria (B) and specify the acceptable/unacceptable threshold (C)."
   },
   {
     "question_number": 7,
@@ -257,10 +239,7 @@
       "D",
       "E"
     ],
-    "explanation": "Trimming irrelevant material (D) and using clear section headers (E) are effective context-window practices.",
-    "in_website": true,
-    "website_question_number": 7,
-    "website_url": "https://examfree.org/exam/ccao-f/question-7"
+    "explanation": "Trimming irrelevant material (D) and using clear section headers (E) are effective context-window practices."
   },
   {
     "question_number": 8,
@@ -290,17 +269,14 @@
       }
     ],
     "correct_option_labels": [
-      "C"
+      "D"
     ],
-    "explanation": "Discussion:\nSelected Answer: D Accountability is for human because at the end human gives input to the claude to be acted upon. upvoted 2 times Submit Cancel\n\n---\n\nAccountability is for human because at the end human gives input to the claude to be acted upon.\n\n---\n\nSelected Answer: D Claude Workflow need to be considered always as a colloborative tool rather than shifting accountability. Remember accountability always lie on the human upvoted 1 time Submit Cancel\n\n---\n\nClaude Workflow need to be considered always as a colloborative tool rather than shifting accountability. Remember accountability always lie on the human",
-    "in_website": true,
-    "website_question_number": 8,
-    "website_url": "https://examfree.org/exam/ccao-f/question-8"
+    "explanation": "Diligence requires the human to identify elements needing independent verification and take ownership of those verifications as a professional accountability obligation before external delivery."
   },
   {
     "question_number": 9,
     "content": "You are reviewing claims about prompt iteration that colleagues have made in a recent training. Which two claims about prompt iteration are accurate? (Choose two.) Each correct answer presents a complete solution.",
-    "question_type": "multi",
+    "question_type": "single",
     "is_premium": false,
     "options": [
       {
@@ -332,10 +308,7 @@
     "correct_option_labels": [
       "B"
     ],
-    "explanation": "Discussion:\nSelected Answer: BC We should iteration when ever required. upvoted 1 time Submit Cancel\n\n---\n\nWe should iteration when ever required.",
-    "in_website": true,
-    "website_question_number": 9,
-    "website_url": "https://examfree.org/exam/ccao-f/question-9"
+    "explanation": "Discussion:\nSelected Answer: BC We should iteration when ever required. upvoted 1 time Submit Cancel\n\n---\n\nWe should iteration when ever required."
   },
   {
     "question_number": 10,
@@ -367,10 +340,7 @@
     "correct_option_labels": [
       "D"
     ],
-    "explanation": "Discussion:\nSelected Answer: D Claude does not change the outcome for single customer that too considering its marketing upvoted 1 time Submit Cancel\n\n---\n\nClaude does not change the outcome for single customer that too considering its marketing\n\n---\n\nSelected Answer: D adding disclaimer helps in this case. upvoted 2 times Submit Cancel\n\n---\n\nadding disclaimer helps in this case.",
-    "in_website": true,
-    "website_question_number": 10,
-    "website_url": "https://examfree.org/exam/ccao-f/question-10"
+    "explanation": "Discussion:\nSelected Answer: D Claude does not change the outcome for single customer that too considering its marketing upvoted 1 time Submit Cancel\n\n---\n\nClaude does not change the outcome for single customer that too considering its marketing\n\n---\n\nSelected Answer: D adding disclaimer helps in this case. upvoted 2 times Submit Cancel\n\n---\n\nadding disclaimer helps in this case."
   },
   {
     "question_number": 11,
@@ -402,10 +372,7 @@
     "correct_option_labels": [
       "D"
     ],
-    "explanation": "Discussion:\nSelected Answer: D - Option D most directly corrects the observed drift while preserving the work already completed. The conversation contains valuable requirements, validated data findings, and drafting decisions, but those elements are distributed across approximately 60 turns. A structured summary consolidates the authoritative working state and brings the most important instructions back into Claude's immediate attention. The summary should distinguish confirmed requirements from abandoned ideas, record the principal findings from the data review, identify the current draft version, and restate outstanding work. Reasserting that summary as the governing context gives Claude a clearer foundation for subsequent revisions. Option A assumes that context-window size alone resolves drift. A larger window can retain more tokens, but it does not automatically remove contradictory instructions or emphasize the correct requirements. Option B preserves the draft but discards the reasoning and requirements needed to evaluate it. Option C could support future recurring work, particularly when sources must persist across conversations, but restructuring the workflow into a Project is not the most direct initial response to the current drift. If the summarized context does not restore output quality, the analyst can start a new conversation using that validated summary and the necessary source materials.21:[\"$\",\"$L24\",null,{\"question\":{\"id\":\"9be578a2-18cf-4b3d-8acf-f190a5718fc1\",\"examId\":\"cmvl7br5q000fs401v734g4ur\",\"questionNumber\":11,\"content\":\"An analyst is working in a long Claude conversation. The conversation contains roughly 60 turns covering an initial requirements analysis, several rounds of data review, and a current drafting phase. Recent responses have started to drift from the agreed requirements. Which step most directly addresses the drift while preserving the analyst's progress?\",\"questionType\":\"single\",\"isPremium\":false,\"createdAt\":\"$D2026-10-24T02:08:24.635Z\",\"updatedAt\":\"$D2026-10-24T02:08:24.635Z\",\"options\":[{\"id\":\"71b629e2-a839-4777-854c-9f57c1c6107c\",\"questionId\":\"9be578a2-18cf-4b3d-8acf-f190a5718fc1\",\"label\":\"A\",\"content\":\"Switch the conversation to a model with a larger context window so the accumulated history no longer causes drift, and continue without restructuring the inputs.\",\"orderIndex\":1},{\"id\":\"113cb2e5-f9dc-4653-99b1-2044286e6e01\",\"questionId\":\"9be578a2-18cf-4b3d-8acf-f190a5718fc1\",\"label\":\"B\",\"content\":\"Open a new chat and paste only the current draft, then continue refining it there without the prior requirements and data-review context.\",\"orderIndex\":2},{\"id\":\"72689507-5956-48f6-8003-b415d54cfef5\",\"questionId\":\"9be578a2-18cf-4b3d-8acf-f190a5718fc1\",\"label\":\"C\",\"content\":\"Move the source data and requirements into a Project knowledge base, then continue the drafting work in a new chat inside that Project.\",\"orderIndex\":3},{\"id\":\"9cbff408-c70f-4d1b-b4ff-d82ceb695cc8\",\"questionId\":\"9be578a2-18cf-4b3d-8acf-f190a5718fc1\",\"label\":\"D\",\"content\":\"Summarize the agreed requirements, key data findings, and current draft state, then continue in the same chat by reasserting the summary as the working context.\",\"orderIndex\":4}],\"answer\":{\"id\":\"b15934df-6323-4a9e-88c6-7e39d5ab0ce6\",\"questionId\":\"9be578a2-18cf-4b3d-8acf-f190a5718fc1\",\"correctOptionId\":\"9cbff408-c70f-4d1b-b4ff-d82ceb695cc8\",\"correctOptionLabels\":\"[\\\"D\\\\",
-    "in_website": true,
-    "website_question_number": 11,
-    "website_url": "https://examfree.org/exam/ccao-f/question-11"
+    "explanation": "The correct answer is D: D. Summarize the agreed requirements, key data findings, and current draft state, then continue in the same chat by reasserting the summary as the working context.."
   },
   {
     "question_number": 12,
@@ -437,10 +404,7 @@
     "correct_option_labels": [
       "B"
     ],
-    "explanation": "Discussion:\nSelected Answer: B (Official ExamTopics Suggested Answer)",
-    "in_website": true,
-    "website_question_number": 12,
-    "website_url": "https://examfree.org/exam/ccao-f/question-12"
+    "explanation": "Discussion:\nSelected Answer: B (Official ExamTopics Suggested Answer)"
   },
   {
     "question_number": 13,
@@ -472,10 +436,7 @@
     "correct_option_labels": [
       "B"
     ],
-    "explanation": "Discussion:\nSelected Answer: B Haiku is a lightweight model where it can provide response quickly &lt;img src=x onerror=alert(1)&gt; upvoted 2 times Submit Cancel\n\n---\n\nHaiku is a lightweight model where it can provide response quickly &lt;img src=x onerror=alert(1)&gt;\n\n---\n\nSelected Answer: B Haiku goes well when the volume of data is high, and reasoning is little and less complex. upvoted 1 time Submit Cancel\n\n---\n\nHaiku goes well when the volume of data is high, and reasoning is little and less complex.",
-    "in_website": true,
-    "website_question_number": 13,
-    "website_url": "https://examfree.org/exam/ccao-f/question-13"
+    "explanation": "Discussion:\nSelected Answer: B Haiku is a lightweight model where it can provide response quickly &lt;img src=x onerror=alert(1)&gt; upvoted 2 times Submit Cancel\n\n---\n\nHaiku is a lightweight model where it can provide response quickly &lt;img src=x onerror=alert(1)&gt;\n\n---\n\nSelected Answer: B Haiku goes well when the volume of data is high, and reasoning is little and less complex. upvoted 1 time Submit Cancel\n\n---\n\nHaiku goes well when the volume of data is high, and reasoning is little and less complex."
   },
   {
     "question_number": 14,
@@ -507,14 +468,7 @@
     "correct_option_labels": [
       "A"
     ],
-    "explanation": "Discussion:\nSelected Answer: A - Option A is the correct immediate response because potential mishandling of restricted information must be contained, documented, and reported through the organization's established governance process. The user should stop further use or distribution of the output and preserve enough information for an authorized reviewer to understand what occurred, including the prompt, connected or uploaded source, affected output, data classification, and any actions already taken. Removing the figure from the visible output, as suggested by Option B, does not address whether the information was improperly submitted, retrieved, retained, or exposed elsewhere in the workflow. A private log is not a substitute for an approved incident channel. Starting another conversation under Option C may prevent reuse of the immediate response, but it neither documents nor investigates the possible policy violation. Option D is also unsafe: restricted-data incidents can require reporting even when no external disclosure has yet occurred. Claude governance depends on human accountability. Users must follow organizational rules governing confidential data rather than deciding individually that an incident is harmless. The designated privacy, security, or AI-governance team can determine severity, required containment, retention implications, and whether further notification or remediation is necessary.1b:[\"$\",\"$L1e\",null,{\"question\":{\"id\":\"f44e9724-0803-4a14-8aa9-178c610ba3c3\",\"examId\":\"cmvl7br5q000fs401v734g4ur\",\"questionNumber\":14,\"content\":\"A knowledge worker notices that a Claude output may have repeated a confidential financial figure from an internal source that the user was told to treat as restricted. The output has not yet been shared outside the user. Which immediate action is most appropriate?\",\"questionType\":\"single\",\"isPremium\":false,\"createdAt\":\"$D2026-10-24T02:08:24.635Z\",\"updatedAt\":\"$D2026-10-24T02:08:24.635Z\",\"options\":[{\"id\":\"0f77bb38-0518-4a66-aab2-62ac19800af2\",\"questionId\":\"f44e9724-0803-4a14-8aa9-178c610ba3c3\",\"label\":\"A\",\"content\":\"Stop using the output, document the issue-including the prompt and the source-and report it through the documented governance or incident channel.\",\"orderIndex\":1},{\"id\":\"6d827ec9-6c78-42e8-8780-9b6ac5b18a98\",\"questionId\":\"f44e9724-0803-4a14-8aa9-178c610ba3c3\",\"label\":\"B\",\"content\":\"Edit the output to remove the figure, save the edited version for the intended use, and document the change in a personal log without involving the governance channel.\",\"orderIndex\":2},{\"id\":\"5b905077-19f5-460e-9bd0-6cbc378a724d\",\"questionId\":\"f44e9724-0803-4a14-8aa9-178c610ba3c3\",\"label\":\"C\",\"content\":\"Stop using the output and start a new chat with a more carefully scoped prompt, since the issue is resolved as long as the original output is not used.\",\"orderIndex\":3},{\"id\":\"f23277bf-b1b2-4c99-85e9-1f9e9f7805d9\",\"questionId\":\"f44e9724-0803-4a14-8aa9-178c610ba3c3\",\"label\":\"D\",\"content\":\"Continue using the output for the intended internal purpose, since the figure has not left the user's possession and no external disclosure has occurred.\",\"orderIndex\":4}],\"answer\":{\"id\":\"093af820-dc36-4bcf-83b6-2d331b8ce3db\",\"questionId\":\"f44e9724-0803-4a14-8aa9-178c610ba3c3\",\"correctOptionId\":\"0f77bb38-0518-4a66-aab2-62ac19800af2\",\"correctOptionLabels\":\"[\\\"A\\\\",
-    "in_website": true,
-    "website_question_number": 14,
-    "website_url": "https://examfree.org/exam/ccao-f/question-14",
-    "website_duplicate_numbers": [
-      14,
-      132
-    ]
+    "explanation": "The correct answer is A: A. Stop using the output, document the issue-including the prompt and the source-and report it through the documented governance or incident channel.."
   },
   {
     "question_number": 15,
@@ -549,12 +503,10 @@
       }
     ],
     "correct_option_labels": [
-      "A"
+      "A",
+      "B"
     ],
-    "explanation": "Discussion:\nSelected Answer: AB A. The reversibility of the task and the consequence of an error, which together indicate whether the step is safe to delegate to Claude or should be retained for human decision-making. B. The need for human creativity, empathy, or judgment in the step, which indicates whether the task is appropriate for AI delegation or requires the human capabilities Claude cannot provide. upvoted 1 time Submit Cancel\n\n---\n\nA. The reversibility of the task and the consequence of an error, which together indicate whether the step is safe to delegate to Claude or should be retained for human decision-making. B. The need for human creativity, empathy, or judgment in the step, which indicates whether the task is appropriate for AI delegation or requires the human capabilities Claude cannot provide.",
-    "in_website": true,
-    "website_question_number": 15,
-    "website_url": "https://examfree.org/exam/ccao-f/question-15"
+    "explanation": "Delegation decisions are informed by: (A) the reversibility of the task and consequence of error, indicating safety of delegation; and (B) the need for human creativity, empathy, or judgment that Claude cannot provide."
   },
   {
     "question_number": 16,
@@ -589,12 +541,10 @@
       }
     ],
     "correct_option_labels": [
-      "A"
+      "A",
+      "D"
     ],
-    "explanation": "Discussion:\nSelected Answer: AD A is a sound check because an unfamiliar third-party Skill should be verified against the organization’s approved-Skill list before it is enabled anywhere the team works. That confirms who provided it and whether the organization has vetted it. D is a sound check because a Skill’s requested permissions and capabilities should match the task it is meant to perform. Access beyond what the task needs is a red flag. upvoted 1 time Submit Cancel\n\n---\n\nA is a sound check because an unfamiliar third-party Skill should be verified against the organization’s approved-Skill list before it is enabled anywhere the team works. That confirms who provided it and whether the organization has vetted it. D is a sound check because a Skill’s requested permissions and capabilities should match the task it is meant to perform. Access beyond what the task needs is a red flag.",
-    "in_website": true,
-    "website_question_number": 16,
-    "website_url": "https://examfree.org/exam/ccao-f/question-16"
+    "explanation": "Verify the Skill source against the organization's approved-Skill list (A) and review the permissions and capabilities the Skill requests to confirm appropriateness (D)."
   },
   {
     "question_number": 17,
@@ -626,10 +576,7 @@
     "correct_option_labels": [
       "C"
     ],
-    "explanation": "Discussion:\nSelected Answer: C (Official ExamTopics Suggested Answer)",
-    "in_website": true,
-    "website_question_number": 17,
-    "website_url": "https://examfree.org/exam/ccao-f/question-17"
+    "explanation": "Discussion:\nSelected Answer: C (Official ExamTopics Suggested Answer)"
   },
   {
     "question_number": 18,
@@ -661,10 +608,7 @@
     "correct_option_labels": [
       "A"
     ],
-    "explanation": "Prompting strategy should be adapted to each task type because different tasks benefit from different approaches.",
-    "in_website": true,
-    "website_question_number": 18,
-    "website_url": "https://examfree.org/exam/ccao-f/question-18"
+    "explanation": "Prompting strategy should be adapted to each task type because different tasks benefit from different approaches."
   },
   {
     "question_number": 19,
@@ -699,12 +643,10 @@
       }
     ],
     "correct_option_labels": [
-      "A"
+      "A",
+      "B"
     ],
-    "explanation": "Discussion:\nSelected Answer: AE (Official ExamTopics Suggested Answer)",
-    "in_website": true,
-    "website_question_number": 19,
-    "website_url": "https://examfree.org/exam/ccao-f/question-19"
+    "explanation": "Redacted job descriptions (A) and anonymized HR policy summaries (B) are appropriate for inclusion. Sensitive personal data like accommodation notes, salary figures, and employee IDs must not be included in prompts."
   },
   {
     "question_number": 20,
@@ -736,10 +678,7 @@
     "correct_option_labels": [
       "B"
     ],
-    "explanation": "Discussion:\nSelected Answer: B - Option B gives the most accurate definition of workflow optimization. The objective is to improve measurable performance-such as cycle time, quality, consistency, cost, or throughput-without removing controls that protect accuracy, privacy, compliance, and accountable decision-making. Claude should be introduced where its capabilities provide clear leverage, such as drafting, summarization, classification, source synthesis, or structured extraction. Option A incorrectly assumes that fewer steps always produce a better workflow. Some steps, including validation, escalation, approval, and documentation, exist because they control significant risks. Removing them may reduce apparent processing time while increasing rework or downstream harm. Option C similarly treats maximum automation as the goal. A manual step should remain human-controlled when it requires authority, empathy, professional judgment, or responsibility for a consequential decision. Option D confuses optimization with inflexible standardization. Templates can improve consistency, but workflows must still accommodate legitimate differences in inputs and risk. A sound optimization process maps the current workflow, measures its bottlenecks, removes duplication, selects suitable Claude-supported steps, defines hand-offs, retains necessary reviews, and pilots the revised process against a baseline. The change is successful only when evidence shows that it improves the intended operational outcomes without weakening quality or governance.21:[\"$\",\"$L24\",null,{\"question\":{\"id\":\"388383af-3d60-466e-ac52-196f2b9050d6\",\"examId\":\"cmvl7br5q000fs401v734g4ur\",\"questionNumber\":20,\"content\":\"A knowledge worker is defining what \\\"workflow optimization\\\" means at the Associate level for the team's recurring AI-supported workflows. Which description is most accurate?\",\"questionType\":\"single\",\"isPremium\":false,\"createdAt\":\"$D2026-10-24T02:08:24.635Z\",\"updatedAt\":\"$D2026-10-24T02:08:24.635Z\",\"options\":[{\"id\":\"f697a2fa-2e60-43b3-ae18-1a226d40277a\",\"questionId\":\"388383af-3d60-466e-ac52-196f2b9050d6\",\"label\":\"A\",\"content\":\"Reducing the number of steps in the workflow to the smallest possible count, since fewer steps mean faster cycle time and lower error rates.\",\"orderIndex\":1},{\"id\":\"123dbf36-a565-4de0-b6b4-73646444551f\",\"questionId\":\"388383af-3d60-466e-ac52-196f2b9050d6\",\"label\":\"B\",\"content\":\"Reducing redundancy, removing low-value steps, and applying Claude where it adds measurable value, while keeping required reviews and quality gates.\",\"orderIndex\":2},{\"id\":\"39aecc03-da23-4429-8e26-f90c9d3eb0bc\",\"questionId\":\"388383af-3d60-466e-ac52-196f2b9050d6\",\"label\":\"C\",\"content\":\"Replacing manual steps with Claude-supported steps wherever possible, since each replacement adds value by reducing the time the team spends on the workflow.\",\"orderIndex\":3},{\"id\":\"55034887-eae4-4673-8ec0-9980e2a9608d\",\"questionId\":\"388383af-3d60-466e-ac52-196f2b9050d6\",\"label\":\"D\",\"content\":\"Standardizing every step of the workflow to a fixed template so each run produces identical output, without adjusting for variation in the workflow's inputs.\",\"orderIndex\":4}],\"answer\":{\"id\":\"9db2ee02-a5ed-47e7-94d1-06561f14d8f7\",\"questionId\":\"388383af-3d60-466e-ac52-196f2b9050d6\",\"correctOptionId\":\"123dbf36-a565-4de0-b6b4-73646444551f\",\"correctOptionLabels\":\"[\\\"B\\\\",
-    "in_website": true,
-    "website_question_number": 20,
-    "website_url": "https://examfree.org/exam/ccao-f/question-20"
+    "explanation": "The correct answer is B: B. Reducing redundancy, removing low-value steps, and applying Claude where it adds measurable value, while keeping required reviews and quality gates.."
   },
   {
     "question_number": 21,
@@ -774,12 +713,10 @@
       }
     ],
     "correct_option_labels": [
-      "A"
+      "A",
+      "C"
     ],
-    "explanation": "Discussion:\nSelected Answer: AC (Official ExamTopics Suggested Answer)",
-    "in_website": true,
-    "website_question_number": 21,
-    "website_url": "https://examfree.org/exam/ccao-f/question-21"
+    "explanation": "Providing an example of desired output (A) sets clear expectations, and adding specific tone descriptor and concrete audience (C) provides crucial framing for better-aligned responses."
   },
   {
     "question_number": 22,
@@ -814,12 +751,10 @@
       }
     ],
     "correct_option_labels": [
-      "D"
+      "D",
+      "E"
     ],
-    "explanation": "Discussion:\nSelected Answer: DE (Official ExamTopics Suggested Answer)",
-    "in_website": true,
-    "website_question_number": 22,
-    "website_url": "https://examfree.org/exam/ccao-f/question-22"
+    "explanation": "Asking clarifying questions when feedback is ambiguous (D) and mapping each piece of feedback to the specific change made in the next draft (E) are productive feedback response practices."
   },
   {
     "question_number": 23,
@@ -851,10 +786,7 @@
     "correct_option_labels": [
       "C"
     ],
-    "explanation": "Discussion:\nSelected Answer: C (Official ExamTopics Suggested Answer)",
-    "in_website": true,
-    "website_question_number": 23,
-    "website_url": "https://examfree.org/exam/ccao-f/question-23"
+    "explanation": "Discussion:\nSelected Answer: C (Official ExamTopics Suggested Answer)"
   },
   {
     "question_number": 24,
@@ -886,10 +818,7 @@
     "correct_option_labels": [
       "D"
     ],
-    "explanation": "Discussion:\nSelected Answer: D (Official ExamTopics Suggested Answer)",
-    "in_website": true,
-    "website_question_number": 24,
-    "website_url": "https://examfree.org/exam/ccao-f/question-24"
+    "explanation": "Discussion:\nSelected Answer: D (Official ExamTopics Suggested Answer)"
   },
   {
     "question_number": 25,
@@ -927,10 +856,7 @@
       "B",
       "C"
     ],
-    "explanation": "Discussion:\nSelected Answer: B,C - Project instructions should contain persistent behavioral requirements that apply across the Project's recurring tasks. Option B defines the expected structure and length of typical deliverables, while Option C establishes the organization's brand voice and tonal requirements. Both are stable instructions that Claude should consistently apply across chats. Option A concerns unrelated internal messages and therefore does not belong in a Project dedicated to external writing deliverables. Option D reflects one reviewer's personal preference rather than an approved organizational standard. Option E can be valuable, but the representative document itself is better stored as Project knowledge or attached reference material. The custom instructions can direct Claude to follow that approved example, but they should not attempt to reproduce an entire sample document unnecessarily. Anthropic explains that Project instructions are intended to provide project-specific context, workflow guidelines, task requirements, and roles that apply consistently across multiple conversations. Uploaded Project knowledge supplies the source documents and reference examples Claude should consult. Separating durable behavioral rules from supporting reference material makes the configuration easier to maintain and reduces conflicting guidance. Consequently, B and C are the correct instruction-level elements. Anthropic's personalization and Project-instruction guidance1a:[\"$\",\"$L1d\",null,{\"question\":{\"id\":\"35db2dca-fd2b-4c8d-9ca9-8e00151179fb\",\"examId\":\"cmvl7br5q000fs401v734g4ur\",\"questionNumber\":25,\"content\":\"You are a marketing manager deciding what to include in custom instructions for a writing-focused Project. Which two items belong in the custom instructions? (Select two.) Each correct answer presents a complete solution.\",\"questionType\":\"multi\",\"isPremium\":false,\"createdAt\":\"$D2026-10-24T02:08:24.635Z\",\"updatedAt\":\"$D2026-10-24T02:08:24.635Z\",\"options\":[{\"id\":\"3795ba56-fff5-47dc-83ac-c185ee49b504\",\"questionId\":\"35db2dca-fd2b-4c8d-9ca9-8e00151179fb\",\"label\":\"A\",\"content\":\"The prompt author's preferred response length for internal messages unrelated to external deliverables.\",\"orderIndex\":1},{\"id\":\"f94c15ed-3eb1-4270-9da9-e70e4329c241\",\"questionId\":\"35db2dca-fd2b-4c8d-9ca9-8e00151179fb\",\"label\":\"B\",\"content\":\"The standard structure and length expectations for typical deliverables.\",\"orderIndex\":2},{\"id\":\"5be85c19-b617-48f8-9e2f-208ed53ce97e\",\"questionId\":\"35db2dca-fd2b-4c8d-9ca9-8e00151179fb\",\"label\":\"C\",\"content\":\"The brand voice and tonal expectations the writing must follow.\",\"orderIndex\":3},{\"id\":\"51cf7827-a9d8-4a01-a230-84e83cc56dda\",\"questionId\":\"35db2dca-fd2b-4c8d-9ca9-8e00151179fb\",\"label\":\"D\",\"content\":\"The preferred writing style of the marketing manager who will review all final deliverables.\",\"orderIndex\":4},{\"id\":\"8b1fcfcc-bb9e-49cc-9b54-dadc20a89565\",\"questionId\":\"35db2dca-fd2b-4c8d-9ca9-8e00151179fb\",\"label\":\"E\",\"content\":\"A representative sample of past writing that reflects the team's preferred style and structure.\",\"orderIndex\":5}],\"answer\":{\"id\":\"253beb6b-b6e4-424e-88c3-4b8b02dd5b4e\",\"questionId\":\"35db2dca-fd2b-4c8d-9ca9-8e00151179fb\",\"correctOptionId\":\"f94c15ed-3eb1-4270-9da9-e70e4329c241\",\"correctOptionLabels\":\"[\\\"B\\\",\\\"C\\\\",
-    "in_website": true,
-    "website_question_number": 25,
-    "website_url": "https://examfree.org/exam/ccao-f/question-25"
+    "explanation": "Correct answers: B, C. B. The standard structure and length expectations for typical deliverables.; C. The brand voice and tonal expectations the writing must follow.."
   },
   {
     "question_number": 26,
@@ -962,10 +888,7 @@
     "correct_option_labels": [
       "B"
     ],
-    "explanation": "Discussion:\nSelected Answer: B (Official ExamTopics Suggested Answer)",
-    "in_website": true,
-    "website_question_number": 26,
-    "website_url": "https://examfree.org/exam/ccao-f/question-26"
+    "explanation": "Discussion:\nSelected Answer: B (Official ExamTopics Suggested Answer)"
   },
   {
     "question_number": 27,
@@ -997,10 +920,7 @@
     "correct_option_labels": [
       "B"
     ],
-    "explanation": "Discussion:\nSelected Answer: B Code Execution gives deterministic results upvoted 1 time Submit Cancel\n\n---\n\nCode Execution gives deterministic results",
-    "in_website": true,
-    "website_question_number": 27,
-    "website_url": "https://examfree.org/exam/ccao-f/question-27"
+    "explanation": "Discussion:\nSelected Answer: B Code Execution gives deterministic results upvoted 1 time Submit Cancel\n\n---\n\nCode Execution gives deterministic results"
   },
   {
     "question_number": 28,
@@ -1032,10 +952,7 @@
     "correct_option_labels": [
       "C"
     ],
-    "explanation": "Discussion:\nSelected Answer: C (Official ExamTopics Suggested Answer)",
-    "in_website": true,
-    "website_question_number": 28,
-    "website_url": "https://examfree.org/exam/ccao-f/question-28"
+    "explanation": "Discussion:\nSelected Answer: C (Official ExamTopics Suggested Answer)"
   },
   {
     "question_number": 29,
@@ -1067,10 +984,7 @@
     "correct_option_labels": [
       "A"
     ],
-    "explanation": "Discussion:\nSelected Answer: A - Answer A is correct. The pattern shows inconsistent compliance with requirements that should have been stated explicitly: the audience, tone, output structure, and mandatory sections. If those requirements are vague or implied, Claude may emphasize different aspects of the request across runs, especially as the weekly source content changes. The first troubleshooting step should therefore be to inspect the prompt and convert each expectation into a clear, testable instruction. Option B is incomplete. Model outputs can vary, but non-determinism should not be used to excuse recurring failures to satisfy defined requirements. Strong prompts and evaluation criteria can substantially reduce unacceptable variation. Option C is less likely because the weekly inputs follow the same structure; changing facts alone should not cause required sections or tone instructions to disappear. Option D adds unnecessary workflow complexity. Claude can follow tone and structural requirements within one prompt when those requirements are clearly separated and explicitly defined. The prompt should identify the intended audience, prescribe the tone, list every required section, specify the output format, and state that no section may be omitted. Anthropic recommends clear, direct instructions and precise output constraints, particularly when order or completeness matters. Anthropic prompting best practices21:[\"$\",\"$L24\",null,{\"question\":{\"id\":\"67dd1297-840e-4dbc-bf82-52dddd24c71b\",\"examId\":\"cmvl7br5q000fs401v734g4ur\",\"questionNumber\":29,\"content\":\"A knowledge worker has noticed that the same prompt for a recurring weekly task produces inconsistent outputs across runs. Some weeks the output uses the right sections but the wrong tone; other weeks the tone is right but a section is missing. The source inputs change each week but follow the same structure. Which cause is most worth investigating first?\",\"questionType\":\"single\",\"isPremium\":false,\"createdAt\":\"$D2026-10-24T02:08:24.635Z\",\"updatedAt\":\"$D2026-10-24T02:08:24.635Z\",\"options\":[{\"id\":\"30a1505a-96b5-44cd-ae2f-eff58934322f\",\"questionId\":\"67dd1297-840e-4dbc-bf82-52dddd24c71b\",\"label\":\"A\",\"content\":\"The recurring prompt under-specifies the audience, tone, format, and required sections, so each run drifts depending on what the model emphasizes that time.\",\"orderIndex\":1},{\"id\":\"c8a1424b-9b5d-4df8-b260-ba055932565e\",\"questionId\":\"67dd1297-840e-4dbc-bf82-52dddd24c71b\",\"label\":\"B\",\"content\":\"The model is non-deterministic, so identical prompts naturally produce different outputs even when the prompt itself is well-written, and the team should accept the variation.\",\"orderIndex\":2},{\"id\":\"eb38f9e0-4360-4aa1-90d3-ff79a24671bd\",\"questionId\":\"67dd1297-840e-4dbc-bf82-52dddd24c71b\",\"label\":\"C\",\"content\":\"The source inputs vary too much from week to week, and the team should standardize the inputs before changing the prompt.\",\"orderIndex\":3},{\"id\":\"10ea4bc3-de6b-43f1-8592-162a5f5c6f89\",\"questionId\":\"67dd1297-840e-4dbc-bf82-52dddd24c71b\",\"label\":\"D\",\"content\":\"The team should split the prompt into separate prompts for tone and structure, since combining both in one prompt produces the mixed inconsistency the team is seeing.\",\"orderIndex\":4}],\"answer\":{\"id\":\"1d3bfb28-2784-467b-bc52-d8d14a7b88e5\",\"questionId\":\"67dd1297-840e-4dbc-bf82-52dddd24c71b\",\"correctOptionId\":\"30a1505a-96b5-44cd-ae2f-eff58934322f\",\"correctOptionLabels\":\"[\\\"A\\\\",
-    "in_website": true,
-    "website_question_number": 29,
-    "website_url": "https://examfree.org/exam/ccao-f/question-29"
+    "explanation": "The correct answer is A: A. The recurring prompt under-specifies the audience, tone, format, and required sections, so each run drifts depending on what the model emphasizes that time.."
   },
   {
     "question_number": 30,
@@ -1108,10 +1022,7 @@
       "B",
       "E"
     ],
-    "explanation": "Discussion:\nSelected Answer: B,E - Options B and E apply organizational governance and data-minimization requirements before the file enters Claude's execution environment. The associate must first establish whether Code Execution is an approved processing method for the file's classification. If the information exceeds the approved sensitivity level, the user must escalate to privacy, security, legal, or another designated authority rather than proceeding independently. The file must also be inspected for customer identifiers, confidential fields, regulated information, credentials, or data unrelated to the calculation. Unnecessary fields should be removed, redacted, or anonymized. A sandbox limits interaction with the surrounding system, but it does not change the sensitivity of uploaded data, provide authorization, or override the organization's handling rules. Therefore, Options C and D incorrectly treat technical isolation as a governance exemption. Option A allows urgency to displace mandatory review. Anthropic explains that Code Execution runs in an isolated container, while also warning that file-processing configurations and network access create security considerations. Its privacy guidance recommends careful treatment of highly sensitive personal and confidential information. The correct control is to minimize and authorize the data before uploading it, not rely solely on the sandbox afterward. Anthropic's Code Execution security guidance1a:[\"$\",\"$L1e\",null,{\"question\":{\"id\":\"51f2669a-32e0-42e2-8edb-940bae0e88f0\",\"examId\":\"cmvl7br5q000fs401v734g4ur\",\"questionNumber\":30,\"content\":\"Before uploading a customer file for a Code Execution analysis, a customer-success associate at Noventra, Ltd. is reviewing the planned task. Which two practices best align with sound data handling? (Select two.)\",\"questionType\":\"multi\",\"isPremium\":false,\"createdAt\":\"$D2026-10-24T02:08:24.635Z\",\"updatedAt\":\"$D2026-10-24T02:08:24.635Z\",\"options\":[{\"id\":\"76c4fd73-4623-4493-b242-082cb1badb94\",\"questionId\":\"51f2669a-32e0-42e2-8edb-940bae0e88f0\",\"label\":\"A\",\"content\":\"Skip the upload review entirely on the basis of urgency, even though the file might contain regulated fields that organizational policy requires the user to redact before any Code Execution.\",\"orderIndex\":1},{\"id\":\"674cb812-ef5d-4df7-9ad4-f1019bc159ab\",\"questionId\":\"51f2669a-32e0-42e2-8edb-940bae0e88f0\",\"label\":\"B\",\"content\":\"Confirm that the planned Code Execution task aligns with the organization's data-classification policy and escalate to the appropriate contact if the data sensitivity exceeds approved use.\",\"orderIndex\":2},{\"id\":\"2f915f5f-2fc0-4108-a945-63f2983f861b\",\"questionId\":\"51f2669a-32e0-42e2-8edb-940bae0e88f0\",\"label\":\"C\",\"content\":\"Upload the full unredacted customer file without review, on the assumption that a sandboxed execution environment removes the need to apply the organization's data-classification policy.\",\"orderIndex\":3},{\"id\":\"8581b7e7-114c-492b-8709-a35ae53a8c13\",\"questionId\":\"51f2669a-32e0-42e2-8edb-940bae0e88f0\",\"label\":\"D\",\"content\":\"Bypass the data-classification policy because the task is internal, treating sandboxed processing as an exemption from the review that the policy requires before sensitive data is uploaded.\",\"orderIndex\":4},{\"id\":\"439836d8-11f8-45b7-838a-3b4a5e6d2cb9\",\"questionId\":\"51f2669a-32e0-42e2-8edb-940bae0e88f0\",\"label\":\"E\",\"content\":\"Review the file for sensitive, confidential, or regulated fields before upload, and remove or redact any fields that are not required for the planned Code Execution analysis.\",\"orderIndex\":5}],\"answer\":{\"id\":\"9e64a30c-35af-4cee-aae9-ada36e98a75b\",\"questionId\":\"51f2669a-32e0-42e2-8edb-940bae0e88f0\",\"correctOptionId\":\"674cb812-ef5d-4df7-9ad4-f1019bc159ab\",\"correctOptionLabels\":\"[\\\"B\\\",\\\"E\\\\",
-    "in_website": true,
-    "website_question_number": 30,
-    "website_url": "https://examfree.org/exam/ccao-f/question-30"
+    "explanation": "Correct answers: B, E. B. Confirm that the planned Code Execution task aligns with the organization's data-classification policy and escalate to the appropriate contact if the data sensitivity exceeds approved use.; E. Review the file for sensitive, confidential, or regulated fields before upload, and remove or redact any fields that are not required for the planned Code Execution analysis.."
   },
   {
     "question_number": 31,
@@ -1143,10 +1054,7 @@
     "correct_option_labels": [
       "C"
     ],
-    "explanation": "Discussion:\nSelected Answer: C Incorporates the stakeholder’s feedback precisely Preserves the portions of the prototype that were already accepted. Avoids unnecessary changes that could introduce new issues. Makes the revisions transparent and easy to review. upvoted 2 times Submit Cancel\n\n---\n\nIncorporates the stakeholder’s feedback precisely Preserves the portions of the prototype that were already accepted. Avoids unnecessary changes that could introduce new issues. Makes the revisions transparent and easy to review.",
-    "in_website": true,
-    "website_question_number": 31,
-    "website_url": "https://examfree.org/exam/ccao-f/question-31"
+    "explanation": "Discussion:\nSelected Answer: C Incorporates the stakeholder’s feedback precisely Preserves the portions of the prototype that were already accepted. Avoids unnecessary changes that could introduce new issues. Makes the revisions transparent and easy to review. upvoted 2 times Submit Cancel\n\n---\n\nIncorporates the stakeholder’s feedback precisely Preserves the portions of the prototype that were already accepted. Avoids unnecessary changes that could introduce new issues. Makes the revisions transparent and easy to review."
   },
   {
     "question_number": 32,
@@ -1178,10 +1086,7 @@
     "correct_option_labels": [
       "A"
     ],
-    "explanation": "Discussion:\nSelected Answer: B Because the workflow has to follow the natural data flow: you can't organize or group requirements that don't exist yet. Walking through it: 1. **(4) Gather and label the sources** -- first you collect and tag the raw materials so every requirement can later be traced back. Nothing can happen before you have labeled inputs. 2. **(3) Submit to Claude with a structured extraction prompt** -- now you actually extract the requirements from those sources. This has to come before grouping, because you need the extracted output to group. 3. **(1) Group related requirements and flag conflicts** -- once Claude has produced structured requirements, you cluster them and surface ambiguities/conflicts for stakeholders. 4. **(2) Validate against the original sources** -- check the grouped/structured output back against the labeled sources for accuracy and completeness. 5. **(5) Document the final set with traceability** -- finalize and record, with status and source links. So: **4 → 3 → 1 → 2 → 5 = B.** The trap is option A (4, 1, 3, 2, 5), which puts **grouping (1) before submitting to Claude (3)**. That's backwards -- you can't group or flag conflicts in requirements until the extraction step has actually produced them. The \\u0026quot;Most Voted\\u0026quot; tag on A is just crowd voting, and it's wrong here. upvoted 2 times Submit Cancel\n\n---\n\nBecause the workflow has to follow the natural data flow: you can't organize or group requirements that don't exist yet. Walking through it: 1. **(4) Gather and label the sources** -- first you collect and tag the raw materials so every requirement can later be traced back. Nothing can happen before you have labeled inputs. 2. **(3) Submit to Claude with a structured extraction prompt** -- now you actually extract the requirements from those sources. This has to come before grouping, because you need the extracted output to group. 3. **(1) Group related requirements and flag conflicts** -- once Claude has produced structured requirements, you cluster them and surface ambiguities/conflicts for stakeholders. 4. **(2) Validate against the original sources** -- check the grouped/structured output back against the labeled sources for accuracy and completeness. 5. **(5) Document the final set with traceability** -- finalize and record, with status and source links. So: **4 → 3 → 1 → 2 → 5 = B.** The trap is option A (4, 1, 3, 2, 5), which puts **grouping (1) before submitting to Claude (3)**. That's backwards -- you can't group or flag conflicts in requirements until the extraction step has actually produced them. The \\u0026quot;Most Voted\\u0026quot; tag on A is just crowd voting, and it's wrong here.\n\n---\n\nSelected Answer: A Step (4) -- Gather and label source materials: Why first: Before you can process, analyze, or prompt an AI with any requirements, you must first collect, organize, and label your inputs (e.g., meeting transcripts, stakeholder emails, documents). Without clear labels, you lose source traceability from the very beginning. Step (1) -- Group related requirements and flag conflicts/ambiguities: Why second: Before feeding raw or unorganized text into an AI model, a human analyst needs to review the collected materials, cluster related ideas, and identify glaring contradictions or missing details. Doing this upfront ensures the inputs are structured logically and prepares clean, coherent data for the AI. Step (3) -- Submit consolidated inputs to Claude with a structured extraction prompt: Why third: Now that your materials are gathered, labeled, and pre-screened for obvious conflicts, you feed them into Claude using a well-defined, structured prompt to extract, categorize, and format the requirements systematically. Step (2) -- Validate the structured output against original sources: Why fourth: AI models can hallucinate, misinterpret, or miss subtle details. Therefore, immediately after receiving the structured output from Claude, you must cross-check it against the original source materials to ensure complete accuracy, fidelity, and completeness. Step (5) -- Document the final requirements set with source traceability and status: Why last: Once the AI's output has been rigorously validated and any gaps or conflicts are resolved, you finalize and publish the formal requirements document complete with tracking statuses and source references. upvoted 3 times Submit Cancel\n\n---\n\nStep (4) -- Gather and label source materials: Why first: Before you can process, analyze, or prompt an AI with any requirements, you must first collect, organize, and label your inputs (e.g., meeting transcripts, stakeholder emails, documents). Without clear labels, you lose source traceability from the very beginning. Step (1) -- Group related requirements and flag conflicts/ambiguities: Why second: Before feeding raw or unorganized text into an AI model, a human analyst needs to review the collected materials, cluster related ideas, and identify glaring contradictions or missing details. Doing this upfront ensures the inputs are structured logically and prepares clean, coherent data for the AI. Step (3) -- Submit consolidated inputs to Claude with a structured extraction prompt: Why third: Now that your materials are gathered, labeled, and pre-screened for obvious conflicts, you feed them into Claude using a well-defined, structured prompt to extract, categorize, and format the requirements systematically. Step (2) -- Validate the structured output against original sources: Why fourth: AI models can hallucinate, misinterpret, or miss subtle details. Therefore, immediately after receiving the structured output from Claude, you must cross-check it against the original source materials to ensure complete accuracy, fidelity, and completeness. Step (5) -- Document the final requirements set with source traceability and status: Why last: Once the AI's output has been rigorously validated and any gaps or conflicts are resolved, you finalize and publish the formal requirements document complete with tracking statuses and source references.20:[\"$\",\"$L23\",null,{\"question\":{\"id\":\"7802f09c-bdb0-4c5d-8846-32cf3275f1bf\",\"examId\":\"cmvl7br5q000fs401v734g4ur\",\"questionNumber\":32,\"content\":\"You are a senior analyst using Claude to analyze requirements from several stakeholder sources. Which is the correct order of steps? (1) Group related requirements and flag conflicts or ambiguities for stakeholder review. (2) Validate the structured output against the original sources for accuracy and completeness. (3) Submit the consolidated inputs to Claude with a structured extraction prompt. (4) Gather and label the source materials so each requirement can be traced. (5) Document the final requirements set with source traceability and status.\",\"questionType\":\"single\",\"isPremium\":false,\"createdAt\":\"$D2026-10-24T02:08:24.635Z\",\"updatedAt\":\"$D2026-10-24T02:08:24.635Z\",\"options\":[{\"id\":\"2c2f7e9b-de70-4cdf-a89c-2cc6ebf308f4\",\"questionId\":\"7802f09c-bdb0-4c5d-8846-32cf3275f1bf\",\"label\":\"A\",\"content\":\"4, 1, 3, 2, 5\",\"orderIndex\":1},{\"id\":\"e7bb55c3-72e7-4b60-a838-a626510dc1ce\",\"questionId\":\"7802f09c-bdb0-4c5d-8846-32cf3275f1bf\",\"label\":\"B\",\"content\":\"4, 3, 1, 2, 5\",\"orderIndex\":2},{\"id\":\"2c9f79ad-2ad6-4acd-85fa-07275b10c1ac\",\"questionId\":\"7802f09c-bdb0-4c5d-8846-32cf3275f1bf\",\"label\":\"C\",\"content\":\"1, 4, 3, 2, 5\",\"orderIndex\":3},{\"id\":\"00c836e2-3bd6-485a-9f92-b12666d6bed3\",\"questionId\":\"7802f09c-bdb0-4c5d-8846-32cf3275f1bf\",\"label\":\"D\",\"content\":\"3, 4, 1, 2, 5\",\"orderIndex\":4}],\"answer\":{\"id\":\"167780d9-86c7-412b-b92f-74a906614540\",\"questionId\":\"7802f09c-bdb0-4c5d-8846-32cf3275f1bf\",\"correctOptionId\":\"2c2f7e9b-de70-4cdf-a89c-2cc6ebf308f4\",\"correctOptionLabels\":\"[\\\"A\\\\",
-    "in_website": true,
-    "website_question_number": 32,
-    "website_url": "https://examfree.org/exam/ccao-f/question-32"
+    "explanation": "The correct answer is A: A. 4, 1, 3, 2, 5."
   },
   {
     "question_number": 33,
@@ -1213,10 +1118,7 @@
     "correct_option_labels": [
       "B"
     ],
-    "explanation": "Multiple distinct outputs (process map, materials, measurement plan) strongly indicate decomposition is needed.",
-    "in_website": true,
-    "website_question_number": 33,
-    "website_url": "https://examfree.org/exam/ccao-f/question-33"
+    "explanation": "Multiple distinct outputs (process map, materials, measurement plan) strongly indicate decomposition is needed."
   },
   {
     "question_number": 34,
@@ -1248,10 +1150,7 @@
     "correct_option_labels": [
       "A"
     ],
-    "explanation": "Diligence means consistently applying policies as a habit, identifying gaps, and taking corrective action over time.",
-    "in_website": true,
-    "website_question_number": 34,
-    "website_url": "https://examfree.org/exam/ccao-f/question-34"
+    "explanation": "Diligence means consistently applying policies as a habit, identifying gaps, and taking corrective action over time."
   },
   {
     "question_number": 35,
@@ -1283,10 +1182,7 @@
     "correct_option_labels": [
       "A"
     ],
-    "explanation": "Sound sequencing: define criteria first, then gather data, then score and rank.",
-    "in_website": true,
-    "website_question_number": 35,
-    "website_url": "https://examfree.org/exam/ccao-f/question-35"
+    "explanation": "Sound sequencing: define criteria first, then gather data, then score and rank."
   },
   {
     "question_number": 36,
@@ -1324,10 +1220,7 @@
       "A",
       "D"
     ],
-    "explanation": "Before generating concepts, define the campaign goal/success metrics (A) and the brand voice/audience (D).",
-    "in_website": true,
-    "website_question_number": 36,
-    "website_url": "https://examfree.org/exam/ccao-f/question-36"
+    "explanation": "Before generating concepts, define the campaign goal/success metrics (A) and the brand voice/audience (D)."
   },
   {
     "question_number": 37,
@@ -1359,10 +1252,7 @@
     "correct_option_labels": [
       "D"
     ],
-    "explanation": "Correct order: assess accuracy (5), identify audience/impact (1), compare to escalation criteria (3), decide (4), document (2).",
-    "in_website": true,
-    "website_question_number": 37,
-    "website_url": "https://examfree.org/exam/ccao-f/question-37"
+    "explanation": "Correct order: assess accuracy (5), identify audience/impact (1), compare to escalation criteria (3), decide (4), document (2)."
   },
   {
     "question_number": 38,
@@ -1394,10 +1284,7 @@
     "correct_option_labels": [
       "A"
     ],
-    "explanation": "Discussion:\nSelected Answer: A",
-    "in_website": true,
-    "website_question_number": 38,
-    "website_url": "https://examfree.org/exam/ccao-f/question-38"
+    "explanation": "Discussion:\nSelected Answer: A"
   },
   {
     "question_number": 39,
@@ -1435,10 +1322,7 @@
       "A",
       "E"
     ],
-    "explanation": "Discussion:\nSelected Answer: A,E - Under the objective Understand ethical implications of AI usage , evaluating HR workflows requires identifying systemic harms, legal compliance liabilities, and threats to employee rights. Option A highlights the ethical danger of autonomous algorithmic decision-making: delegating high-stakes determinations (such as termination, performance ratings, or compensation) to an AI system without accountable human oversight violates fundamental fairness and labor ethics. Option E represents severe algorithmic bias and discrimination: generating outputs that systematically disadvantage candidates or employees based on protected characteristics (e.g., race, gender, age, disability). Both scenarios represent critical ethical risks. Conversely, minor clerical typos in calendar invites (Option B), formatting irregularities in general announcements (Option C), and punctuation style inconsistencies (Option D) are minor operational defects that carry zero ethical or regulatory consequences.1a:[\"$\",\"$L1d\",null,{\"question\":{\"id\":\"4cc53c59-aeda-459f-98ca-2cc2cd3981d1\",\"examId\":\"cmvl7br5q000fs401v734g4ur\",\"questionNumber\":39,\"content\":\"You are an HR specialist sorting potential ethical risks of a Claude-supported workflow. Which two risks pose the highest ethical concern in an HR-adjacent workflow? (Select two.) Each correct answer presents a complete solution.\",\"questionType\":\"multi\",\"isPremium\":false,\"createdAt\":\"$D2026-10-24T02:08:24.635Z\",\"updatedAt\":\"$D2026-10-24T02:08:24.635Z\",\"options\":[{\"id\":\"cd3c9bf9-d759-4cf5-b990-eae00a957794\",\"questionId\":\"4cc53c59-aeda-459f-98ca-2cc2cd3981d1\",\"label\":\"A\",\"content\":\"decisions that materially affect a person's employment without human accountability\",\"orderIndex\":1},{\"id\":\"1e440e57-81da-4661-bd6e-fabcbcefb928\",\"questionId\":\"4cc53c59-aeda-459f-98ca-2cc2cd3981d1\",\"label\":\"B\",\"content\":\"a clerical typo in a routine internal calendar invitation\",\"orderIndex\":2},{\"id\":\"d2f4664c-583c-46c8-af75-b3d49ac11b7d\",\"questionId\":\"4cc53c59-aeda-459f-98ca-2cc2cd3981d1\",\"label\":\"C\",\"content\":\"inconsistent tone and formatting across internal HR communications sent to employees\",\"orderIndex\":3},{\"id\":\"4476300d-6fae-45f5-b241-99e5907561d0\",\"questionId\":\"4cc53c59-aeda-459f-98ca-2cc2cd3981d1\",\"label\":\"D\",\"content\":\"inconsistent use of the company's preferred dash style across documents\",\"orderIndex\":4},{\"id\":\"f0e4f5b3-a1f1-4e51-aa3c-b790e09793e2\",\"questionId\":\"4cc53c59-aeda-459f-98ca-2cc2cd3981d1\",\"label\":\"E\",\"content\":\"outputs that systematically disadvantage members of a protected group\",\"orderIndex\":5}],\"answer\":{\"id\":\"c9e8f544-9f74-412a-9ce1-f19e367bb851\",\"questionId\":\"4cc53c59-aeda-459f-98ca-2cc2cd3981d1\",\"correctOptionId\":\"cd3c9bf9-d759-4cf5-b990-eae00a957794\",\"correctOptionLabels\":\"[\\\"A\\\",\\\"E\\\\",
-    "in_website": true,
-    "website_question_number": 39,
-    "website_url": "https://examfree.org/exam/ccao-f/question-39"
+    "explanation": "Correct answers: A, E. A. decisions that materially affect a person's employment without human accountability; E. outputs that systematically disadvantage members of a protected group."
   },
   {
     "question_number": 40,
@@ -1470,10 +1354,7 @@
     "correct_option_labels": [
       "C"
     ],
-    "explanation": "Discussion:\nSelected Answer: C - Answer C is correct. A defensible fact-check begins with a complete reading of the brief (5), which reveals its overall argument and flags surprising or unusually confident assertions. The reviewer then identifies the concrete factual claims, statistics, and citations that can actually be tested (4). Those items are checked against supplied evidence or trustworthy external sources (1). Any unsupported, contradictory, or inaccurate claim is then recorded with its location and severity (3), creating a usable audit trail. Only after the evidence is assembled should the reviewer decide whether to correct the text, re-prompt Claude, or escalate the issue (2). This produces the sequence 5, 4, 1, 3, 2. Option D reverses the first two activities, while Options A and B attempt verification before a proper claim inventory exists. Anthropic's guidance recommends structured research, explicit success criteria, and verification across sources; the AI Fluency framework's Discernment and Diligence competencies also keep evaluation and accountability with the human reviewer. The PDF marks D, but that order is weaker and should be corrected to C. Anthropic prompting best practices1a:[\"$\",\"$L1d\",null,{\"question\":{\"id\":\"3090ed31-c38f-40dd-9dcb-be53a2d5bf99\",\"examId\":\"cmvl7br5q000fs401v734g4ur\",\"questionNumber\":40,\"content\":\"You are reviewing a Claude-generated competitor brief for unsupported claims. Which is the correct order of review steps? (1) Cross-check each specific claim against the supplied source material or trusted external references. (2) Decide whether to correct, re-prompt, or escalate based on the findings. (3) Document each unsupported or inconsistent claim with its location and severity. (4) Identify the specific factual claims, statistics, and citations in the brief. (5) Read the brief from beginning to end and flag any claims that feel surprising.\",\"questionType\":\"single\",\"isPremium\":false,\"createdAt\":\"$D2026-10-24T02:08:24.635Z\",\"updatedAt\":\"$D2026-10-24T02:08:24.635Z\",\"options\":[{\"id\":\"96ec9d96-71d2-4951-b93f-e426b876dd58\",\"questionId\":\"3090ed31-c38f-40dd-9dcb-be53a2d5bf99\",\"label\":\"A\",\"content\":\"5, 1, 4, 3, 2\",\"orderIndex\":1},{\"id\":\"35705970-25d1-4f03-9fd9-ca48ab972a25\",\"questionId\":\"3090ed31-c38f-40dd-9dcb-be53a2d5bf99\",\"label\":\"B\",\"content\":\"1, 4, 5, 3, 2\",\"orderIndex\":2},{\"id\":\"d1f0a88e-e190-4494-a259-32cbdd4d19e0\",\"questionId\":\"3090ed31-c38f-40dd-9dcb-be53a2d5bf99\",\"label\":\"C\",\"content\":\"5, 4, 1, 3, 2\",\"orderIndex\":3},{\"id\":\"a8f2c32a-7866-49bb-b341-8170498c2601\",\"questionId\":\"3090ed31-c38f-40dd-9dcb-be53a2d5bf99\",\"label\":\"D\",\"content\":\"4, 5, 1, 3, 2\",\"orderIndex\":4}],\"answer\":{\"id\":\"caad8061-ecc0-4171-b129-dba1e6f10c38\",\"questionId\":\"3090ed31-c38f-40dd-9dcb-be53a2d5bf99\",\"correctOptionId\":\"d1f0a88e-e190-4494-a259-32cbdd4d19e0\",\"correctOptionLabels\":\"[\\\"C\\\\",
-    "in_website": true,
-    "website_question_number": 40,
-    "website_url": "https://examfree.org/exam/ccao-f/question-40"
+    "explanation": "The correct answer is C: C. 5, 4, 1, 3, 2."
   },
   {
     "question_number": 41,
@@ -1505,10 +1386,7 @@
     "correct_option_labels": [
       "C"
     ],
-    "explanation": "First review instructions and reference materials against current standards before taking more drastic action.",
-    "in_website": true,
-    "website_question_number": 41,
-    "website_url": "https://examfree.org/exam/ccao-f/question-41"
+    "explanation": "First review instructions and reference materials against current standards before taking more drastic action."
   },
   {
     "question_number": 42,
@@ -1546,14 +1424,7 @@
       "B",
       "E"
     ],
-    "explanation": "Discussion:\nSelected Answer: B,E - Under the objective Organize and curate information for optimal outputs and select appropriate output formats , structuring reference documents effectively within the context window ensures high-fidelity retrieval and accurate source attribution. Option B highlights the standard prompt engineering practice of using distinct structural delimiters (such as XML tags like \\u003c doc_1 \\u003e , \\u003c policy \\u003e , or Markdown code fences). Delimiters allow Claude to distinguish cleanly between different source boundaries, instructions, and inputs, minimizing attribution errors. Option E leverages positional attention dynamics (addressing the \"lost in the middle\" phenomenon), where LLMs tend to recall and attend most accurately to information positioned at the very beginning (primacy effect) or at the end (recency effect) of the context window. Conversely, dumping uncurated text (Option A) adds noise and consumes quota, repeating instructions excessively (Option C) wastes tokens without improving adherence, and blending documents into an unstructured blob (Option D) obscures citation provenance.1b:[\"$\",\"$L1e\",null,{\"question\":{\"id\":\"b9068441-aef4-4258-8d84-66080b08a2a3\",\"examId\":\"cmvl7br5q000fs401v734g4ur\",\"questionNumber\":42,\"content\":\"You are a knowledge manager structuring source material in the context window for a long Claude evaluation task. Which two practices produce a more effective use of the context window? (Select two.) Each correct answer presents a complete solution.\",\"questionType\":\"multi\",\"isPremium\":false,\"createdAt\":\"$D2026-10-24T02:08:24.635Z\",\"updatedAt\":\"$D2026-10-24T02:08:24.635Z\",\"options\":[{\"id\":\"06402a39-0a13-4196-99ce-b85c4ee0da69\",\"questionId\":\"b9068441-aef4-4258-8d84-66080b08a2a3\",\"label\":\"A\",\"content\":\"Paste every available document into context regardless of relevance to the task.\",\"orderIndex\":1},{\"id\":\"6ada3282-9b96-40c4-8990-5172f2f5750a\",\"questionId\":\"b9068441-aef4-4258-8d84-66080b08a2a3\",\"label\":\"B\",\"content\":\"Mark each source clearly with delimiters so the model can attribute claims correctly.\",\"orderIndex\":2},{\"id\":\"c5262179-f7c4-459c-a5a0-dfbb018635ec\",\"questionId\":\"b9068441-aef4-4258-8d84-66080b08a2a3\",\"label\":\"C\",\"content\":\"Repeat the same instruction at the start, middle, and end to reinforce it.\",\"orderIndex\":3},{\"id\":\"18dec6d9-fe99-4ac3-b749-3ab7373099a6\",\"questionId\":\"b9068441-aef4-4258-8d84-66080b08a2a3\",\"label\":\"D\",\"content\":\"Mix sources together in a single block so the model can synthesize them freely.\",\"orderIndex\":4},{\"id\":\"f050bcba-b96c-4c8e-9333-5bdabdb5282d\",\"questionId\":\"b9068441-aef4-4258-8d84-66080b08a2a3\",\"label\":\"E\",\"content\":\"Place the most reference-critical material near the beginning or end of context.\",\"orderIndex\":5}],\"answer\":{\"id\":\"80ab4458-4efb-4f7a-b627-3dd6088a52a1\",\"questionId\":\"b9068441-aef4-4258-8d84-66080b08a2a3\",\"correctOptionId\":\"6ada3282-9b96-40c4-8990-5172f2f5750a\",\"correctOptionLabels\":\"[\\\"B\\\",\\\"E\\\\",
-    "in_website": true,
-    "website_question_number": 42,
-    "website_url": "https://examfree.org/exam/ccao-f/question-42",
-    "website_duplicate_numbers": [
-      42,
-      81
-    ]
+    "explanation": "Correct answers: B, E. B. Mark each source clearly with delimiters so the model can attribute claims correctly.; E. Place the most reference-critical material near the beginning or end of context.."
   },
   {
     "question_number": 43,
@@ -1585,10 +1456,7 @@
     "correct_option_labels": [
       "A"
     ],
-    "explanation": "Correct order: identify persistent references (3), summarize goals/decisions/questions (2), move references to Project knowledge (4), start new chat with summary (1), confirm on-task (5).",
-    "in_website": true,
-    "website_question_number": 43,
-    "website_url": "https://examfree.org/exam/ccao-f/question-43"
+    "explanation": "Correct order: identify persistent references (3), summarize goals/decisions/questions (2), move references to Project knowledge (4), start new chat with summary (1), confirm on-task (5)."
   },
   {
     "question_number": 44,
@@ -1620,10 +1488,7 @@
     "correct_option_labels": [
       "B"
     ],
-    "explanation": "Discussion:\nSelected Answer: B - Description concerns communicating a goal to AI with enough precision to produce useful behavior and an appropriate output. Option B strengthens the information that operationally defines success: the task's scope, intended audience, required format, and relevant constraints. These elements reduce the number of assumptions Claude must make. Option A removes useful context and is likely to make the response more generic. Option C substitutes broad language for a defined specification, increasing ambiguity. Option D confuses prompt length with prompt quality. Additional words improve performance only when they convey relevant instructions, examples, source material, constraints, or decision criteria. A strong revision might define the role Claude should perform, the source material it may use, exclusions, tone, length, required sections, and the purpose of the deliverable. The revised prompt should then be tested against clear criteria rather than assumed to be correct after one run. Anthropic defines Description as effectively describing goals to prompt useful AI behavior and output. Its prompting guidance recommends clear, detailed instructions, relevant context, representative examples, and explicit output requirements. Therefore, B is the only revision that directly addresses the diagnosed specification gaps. Anthropic's AI Fluency framework1b:[\"$\",\"$L1e\",null,{\"question\":{\"id\":\"8142cef2-303f-437d-99f2-b9b9a746b2c7\",\"examId\":\"cmvl7br5q000fs401v734g4ur\",\"questionNumber\":44,\"content\":\"A knowledge worker is applying the AI Fluency Framework Description competency while revising an underperforming prompt. Which revision best reflects Description principles?\",\"questionType\":\"single\",\"isPremium\":false,\"createdAt\":\"$D2026-10-24T02:08:24.635Z\",\"updatedAt\":\"$D2026-10-24T02:08:24.635Z\",\"options\":[{\"id\":\"be94ac91-e626-43fa-bc7d-8a41ec80f4e8\",\"questionId\":\"8142cef2-303f-437d-99f2-b9b9a746b2c7\",\"label\":\"A\",\"content\":\"Remove the existing context from the prompt and submit only the bare task statement, eliminating the audience, format, and constraint information that Description principles call for in a clear specification.\",\"orderIndex\":1},{\"id\":\"2c72852d-60d0-44b4-898b-0090191208fb\",\"questionId\":\"8142cef2-303f-437d-99f2-b9b9a746b2c7\",\"label\":\"B\",\"content\":\"Specify the task scope, required output format, audience, and relevant constraints with sufficient clarity that the prompt produces a useful, reliable output on the next run.\",\"orderIndex\":2},{\"id\":\"a0955011-7bdd-4665-ab85-0e2f676c69e7\",\"questionId\":\"8142cef2-303f-437d-99f2-b9b9a746b2c7\",\"label\":\"C\",\"content\":\"Replace the specific instructions with generic phrasing that broadens the task scope, undoing the specification work that Description principles require for a reliable, useful output.\",\"orderIndex\":3},{\"id\":\"6adb1c3e-23d2-4601-8e7c-ed6631373f17\",\"questionId\":\"8142cef2-303f-437d-99f2-b9b9a746b2c7\",\"label\":\"D\",\"content\":\"Add length to the prompt by inserting filler text that does not specify task scope, output format, audience, or constraints, leaving the original specification gaps unaddressed.\",\"orderIndex\":4}],\"answer\":{\"id\":\"0f336520-52ac-4d68-824f-14a086f50eef\",\"questionId\":\"8142cef2-303f-437d-99f2-b9b9a746b2c7\",\"correctOptionId\":\"2c72852d-60d0-44b4-898b-0090191208fb\",\"correctOptionLabels\":\"[\\\"B\\\\",
-    "in_website": true,
-    "website_question_number": 44,
-    "website_url": "https://examfree.org/exam/ccao-f/question-44"
+    "explanation": "The correct answer is B: B. Specify the task scope, required output format, audience, and relevant constraints with sufficient clarity that the prompt produces a useful, reliable output on the next run.."
   },
   {
     "question_number": 45,
@@ -1661,10 +1526,7 @@
       "C",
       "E"
     ],
-    "explanation": "Discussion:\nSelected Answer: CE",
-    "in_website": true,
-    "website_question_number": 45,
-    "website_url": "https://examfree.org/exam/ccao-f/question-45"
+    "explanation": "Discussion:\nSelected Answer: CE"
   },
   {
     "question_number": 46,
@@ -1696,10 +1558,7 @@
     "correct_option_labels": [
       "C"
     ],
-    "explanation": "Discussion:\nSelected Answer: C",
-    "in_website": true,
-    "website_question_number": 46,
-    "website_url": "https://examfree.org/exam/ccao-f/question-46"
+    "explanation": "Discussion:\nSelected Answer: C"
   },
   {
     "question_number": 47,
@@ -1731,10 +1590,7 @@
     "correct_option_labels": [
       "C"
     ],
-    "explanation": "Locate a primary/authoritative source to resolve the conflict rather than averaging or picking arbitrarily.",
-    "in_website": true,
-    "website_question_number": 47,
-    "website_url": "https://examfree.org/exam/ccao-f/question-47"
+    "explanation": "Locate a primary/authoritative source to resolve the conflict rather than averaging or picking arbitrarily."
   },
   {
     "question_number": 48,
@@ -1766,10 +1622,7 @@
     "correct_option_labels": [
       "C"
     ],
-    "explanation": "Discussion:\nSelected Answer: C",
-    "in_website": true,
-    "website_question_number": 48,
-    "website_url": "https://examfree.org/exam/ccao-f/question-48"
+    "explanation": "Discussion:\nSelected Answer: C"
   },
   {
     "question_number": 49,
@@ -1801,10 +1654,7 @@
     "correct_option_labels": [
       "D"
     ],
-    "explanation": "Discussion:\nSelected Answer: D",
-    "in_website": true,
-    "website_question_number": 49,
-    "website_url": "https://examfree.org/exam/ccao-f/question-49"
+    "explanation": "Discussion:\nSelected Answer: D"
   },
   {
     "question_number": 50,
@@ -1836,10 +1686,7 @@
     "correct_option_labels": [
       "C"
     ],
-    "explanation": "Discussion:\nSelected Answer: C - Answer C is correct. Anthropic identifies Memory importing as an experimental capability that remains under active development. Consequently, Claude may not successfully incorporate every detail transferred from another AI provider. The user should review what Claude learned after the import and manually add important missing information through the available Memory controls. Option A is incorrect because the import process does not guarantee that every supplied detail will become a persistent instruction or memory. Claude extracts information it considers suitable for Memory, with a focus on useful work-related context. Option B is incorrect because importing does not inherently replace or delete every previously stored memory. Option D is also incorrect: imported information is intended to become usable Memory rather than remain permanently isolated from ordinary memories and inaccessible to chats. The interface named in Option C reflects the documented legacy workflow, where users could manage Memory through Settings \\u003e Capabilities. In the newer Claude experience, users normally go to Settings \\u003e Memory and use the memory panel or the \"Tell Claude what to change or remove\" control. Despite that interface change, C remains the only option that accurately describes the experimental nature of imports and the manual fallback. Anthropic: Import and export your Memory1b:[\"$\",\"$L1e\",null,{\"question\":{\"id\":\"93b0861c-bd52-4af0-9c91-ac820245cf62\",\"examId\":\"cmvl7br5q000fs401v734g4ur\",\"questionNumber\":50,\"content\":\"After importing context from another AI platform into Claude's Memory, a knowledge worker notices that some imported details did not appear in subsequent responses. Which explanation is most accurate?\",\"questionType\":\"single\",\"isPremium\":false,\"createdAt\":\"$D2026-10-24T02:08:24.635Z\",\"updatedAt\":\"$D2026-10-24T02:08:24.635Z\",\"options\":[{\"id\":\"a6d1446f-ca18-42ea-a281-c25f68b721b7\",\"questionId\":\"93b0861c-bd52-4af0-9c91-ac820245cf62\",\"label\":\"A\",\"content\":\"The import transfers every detail as a rule, and any missing content reflects a deliberate choice by Claude to omit the information rather than the documented experimental nature of imports.\",\"orderIndex\":1},{\"id\":\"1605ed9a-f327-4a4e-aa87-d2ffe11cea3d\",\"questionId\":\"93b0861c-bd52-4af0-9c91-ac820245cf62\",\"label\":\"B\",\"content\":\"Memory imports overwrite all prior memories on completion, so any details that appear missing must have been deleted by the import process rather than not incorporated during the import itself.\",\"orderIndex\":2},{\"id\":\"5f2856d5-b6fc-443e-9300-6be83b4d9167\",\"questionId\":\"93b0861c-bd52-4af0-9c91-ac820245cf62\",\"label\":\"C\",\"content\":\"Memory imports are experimental, and Claude might not successfully incorporate all imported content; missing details can be added manually through Settings \\u003e Capabilities as a fallback.\",\"orderIndex\":3},{\"id\":\"1940194d-8433-4710-9a0a-78e1ecb0c557\",\"questionId\":\"93b0861c-bd52-4af0-9c91-ac820245cf62\",\"label\":\"D\",\"content\":\"Imported memories are stored separately from regular memories and cannot be referenced in any chat, so missing details reflect an architectural separation rather than imperfect import incorporation.\",\"orderIndex\":4}],\"answer\":{\"id\":\"252bf3d0-f43d-4802-b6a7-daede52e8cd7\",\"questionId\":\"93b0861c-bd52-4af0-9c91-ac820245cf62\",\"correctOptionId\":\"5f2856d5-b6fc-443e-9300-6be83b4d9167\",\"correctOptionLabels\":\"[\\\"C\\\\",
-    "in_website": true,
-    "website_question_number": 50,
-    "website_url": "https://examfree.org/exam/ccao-f/question-50"
+    "explanation": "The correct answer is C: C. Memory imports are experimental, and Claude might not successfully incorporate all imported content; missing details can be added manually through Settings > Capabilities as a fallback.."
   },
   {
     "question_number": 51,
@@ -1871,10 +1718,7 @@
     "correct_option_labels": [
       "D"
     ],
-    "explanation": "Discussion:\nSelected Answer: D The question itself has the clue given telling we have metrics of cycle time and ask is based on what you decide there is bottleneck, obviously it is based on metrics we decide upvoted 1 time Submit Cancel\n\n---\n\nThe question itself has the clue given telling we have metrics of cycle time and ask is based on what you decide there is bottleneck, obviously it is based on metrics we decide\n\n---\n\nSelected Answer: D Why D is correct: The scenario explicitly tells you the available evidence is \"cycle-time data for each step from the past month\" -- so the signal that most directly uses that data is the step with the highest average cycle time. In a linear five-step pipeline (research → draft → internal review → legal review → publication), the step absorbing the most time per item is, by definition, what's extending total time-to-publish. This is measured, objective, and matches the exact dataset the question hands you. upvoted 2 times Submit Cancel\n\n---\n\nWhy D is correct: The scenario explicitly tells you the available evidence is \"cycle-time data for each step from the past month\" -- so the signal that most directly uses that data is the step with the highest average cycle time. In a linear five-step pipeline (research → draft → internal review → legal review → publication), the step absorbing the most time per item is, by definition, what's extending total time-to-publish. This is measured, objective, and matches the exact dataset the question hands you.\n\n---\n\nSelected Answer: C The bottleneck is where work is accumulating. Doesn't matter if the other task takes longer, so long as it is getting cleared. upvoted 1 time Submit Cancel20:[\"$\",\"$L23\",null,{\"question\":{\"id\":\"816162ac-2e0c-4cb6-9aa7-b8d0362f7a48\",\"examId\":\"cmvl7br5q000fs401v734g4ur\",\"questionNumber\":51,\"content\":\"A Claude associate is identifying the bottleneck in a content workflow that takes too long to publish. The workflow has five steps: research, drafting, internal review, legal review, and publication. There is cycle-time data for each step from the past month. Which signal most directly identifies the bottleneck?\",\"questionType\":\"single\",\"isPremium\":false,\"createdAt\":\"$D2026-10-24T02:08:24.635Z\",\"updatedAt\":\"$D2026-10-24T02:08:24.635Z\",\"options\":[{\"id\":\"68de4e52-f401-4a77-b282-5bb11554a07e\",\"questionId\":\"816162ac-2e0c-4cb6-9aa7-b8d0362f7a48\",\"label\":\"A\",\"content\":\"the step where individual contributors report the highest workload based on their weekly status updates\",\"orderIndex\":1},{\"id\":\"892ef00a-9a7e-44a2-8803-f160f886e4be\",\"questionId\":\"816162ac-2e0c-4cb6-9aa7-b8d0362f7a48\",\"label\":\"B\",\"content\":\"the step most recently added to the workflow, based on the assumption that process changes introduce the most friction\",\"orderIndex\":2},{\"id\":\"9104032a-1dea-4b17-ad80-5e4a3281d29a\",\"questionId\":\"816162ac-2e0c-4cb6-9aa7-b8d0362f7a48\",\"label\":\"C\",\"content\":\"the step with the longest queue or the largest backlog of items waiting to enter it\",\"orderIndex\":3},{\"id\":\"6378efe9-cd96-4aab-8b64-9b2d64e0ef78\",\"questionId\":\"816162ac-2e0c-4cb6-9aa7-b8d0362f7a48\",\"label\":\"D\",\"content\":\"the step with the highest average cycle time per item across the past month's runs\",\"orderIndex\":4}],\"answer\":{\"id\":\"d14098ff-86e5-4644-b494-1c7f6233c0fc\",\"questionId\":\"816162ac-2e0c-4cb6-9aa7-b8d0362f7a48\",\"correctOptionId\":\"6378efe9-cd96-4aab-8b64-9b2d64e0ef78\",\"correctOptionLabels\":\"[\\\"D\\\\",
-    "in_website": true,
-    "website_question_number": 51,
-    "website_url": "https://examfree.org/exam/ccao-f/question-51"
+    "explanation": "The correct answer is D: D. the step with the highest average cycle time per item across the past month’s runs."
   },
   {
     "question_number": 52,
@@ -1906,10 +1750,7 @@
     "correct_option_labels": [
       "A"
     ],
-    "explanation": "Discussion:\nSelected Answer: A",
-    "in_website": true,
-    "website_question_number": 52,
-    "website_url": "https://examfree.org/exam/ccao-f/question-52"
+    "explanation": "Discussion:\nSelected Answer: A"
   },
   {
     "question_number": 53,
@@ -1947,10 +1788,7 @@
       "C",
       "E"
     ],
-    "explanation": "A prompt-quality checklist should include relevant context (audience, goal) and a specific task with required deliverable.",
-    "in_website": true,
-    "website_question_number": 53,
-    "website_url": "https://examfree.org/exam/ccao-f/question-53"
+    "explanation": "A prompt-quality checklist should include relevant context (audience, goal) and a specific task with required deliverable."
   },
   {
     "question_number": 54,
@@ -1982,10 +1820,7 @@
     "correct_option_labels": [
       "B"
     ],
-    "explanation": "Discussion:\nSelected Answer: B",
-    "in_website": true,
-    "website_question_number": 54,
-    "website_url": "https://examfree.org/exam/ccao-f/question-54"
+    "explanation": "Discussion:\nSelected Answer: B"
   },
   {
     "question_number": 55,
@@ -2017,10 +1852,7 @@
     "correct_option_labels": [
       "C"
     ],
-    "explanation": "Discussion:\nSelected Answer: C",
-    "in_website": true,
-    "website_question_number": 55,
-    "website_url": "https://examfree.org/exam/ccao-f/question-55"
+    "explanation": "Discussion:\nSelected Answer: C"
   },
   {
     "question_number": 56,
@@ -2058,10 +1890,7 @@
       "C",
       "E"
     ],
-    "explanation": "Discussion:\nSelected Answer: C,E - Under the objective Optimize workflows for efficiency and effectiveness , meaningful operational improvements must deliver measurable gains in throughput, token efficiency, or output reliability. Option C provides major efficiency gains by moving recurring reference documentation into a persistent Claude Project knowledge base, eliminating redundant token overhead and manual copy-pasting across dozens of daily chats. Option E provides vital effectiveness and risk mitigation by establishing a standardized human-in-the-loop quality gate, preventing defective or hallucinated outputs from propagating into downstream operational pipelines. In contrast, renaming workspaces (Option A), re-labeling steps for cosmetic readability (Option B), or shuffling documentation headings (Option D) represent superficial administrative edits that do not improve execution speed, cost, or output quality.",
-    "in_website": true,
-    "website_question_number": 56,
-    "website_url": "https://examfree.org/exam/ccao-f/question-56"
+    "explanation": "Discussion:\nSelected Answer: C,E - Under the objective Optimize workflows for efficiency and effectiveness , meaningful operational improvements must deliver measurable gains in throughput, token efficiency, or output reliability. Option C provides major efficiency gains by moving recurring reference documentation into a persistent Claude Project knowledge base, eliminating redundant token overhead and manual copy-pasting across dozens of daily chats. Option E provides vital effectiveness and risk mitigation by establishing a standardized human-in-the-loop quality gate, preventing defective or hallucinated outputs from propagating into downstream operational pipelines. In contrast, renaming workspaces (Option A), re-labeling steps for cosmetic readability (Option B), or shuffling documentation headings (Option D) represent superficial administrative edits that do not improve execution speed, cost, or output quality."
   },
   {
     "question_number": 57,
@@ -2096,12 +1925,10 @@
       }
     ],
     "correct_option_labels": [
-      "B"
+      "B",
+      "C"
     ],
-    "explanation": "Discussion:\nSelected Answer: BC B\\u0026amp;C B.Approved vendor / Allowlist - You must freeze self-service approval and check that the Connector is on the centrally managed allowlist. The best practice guidance is to publish an allowlist with business owner, data classification, required scopes, token lifetime, and logging destination before authorizing. C.Data classification + permission - You must confirm what data that Connector will expose, what its classification is, and whether this team is allowed to use it. upvoted 1 time Submit Cancel\n\n---\n\nB\\u0026amp;C B.Approved vendor / Allowlist - You must freeze self-service approval and check that the Connector is on the centrally managed allowlist. The best practice guidance is to publish an allowlist with business owner, data classification, required scopes, token lifetime, and logging destination before authorizing. C.Data classification + permission - You must confirm what data that Connector will expose, what its classification is, and whether this team is allowed to use it.\n\n---\n\nSelected Answer: BC B\\u0026amp;C B.Approved vendor / Allowlist - You must freeze self-service approval and check that the Connector is on the centrally managed allowlist. The best practice guidance is to publish an allowlist with business owner, data classification, required scopes, token lifetime, and logging destination before authorizing. C.Data classification + permission - You must confirm what data that Connector will expose, what its classification is, and whether this team is allowed to use it. upvoted 1 time Submit Cancel\n\n---\n\nB\\u0026amp;C B.Approved vendor / Allowlist - You must freeze self-service approval and check that the Connector is on the centrally managed allowlist. The best practice guidance is to publish an allowlist with business owner, data classification, required scopes, token lifetime, and logging destination before authorizing. C.Data classification + permission - You must confirm what data that Connector will expose, what its classification is, and whether this team is allowed to use it.\n\n---\n\nSelected Answer: BC Correct answers: B and C. - B. Confirm the Connector is on the approved-vendor list maintained by IT. -- Ensures the integration meets organizational vendor approval and security requirements. - C. Confirm the data classification of the source and the team's permission to use it. -- Ensures the data is appropriate to connect and the team is authorized to access and use it. Why not the others? Migrating reports, training every team member, and decommissioning legacy connectors may be useful operational tasks, but they are not prerequisites for authorizing a new Connector. Key takeaway: Before authorization, verify vendor approval and data access permissions. upvoted 1 time Submit Cancel1a:[\"$\",\"$L1d\",null,{\"question\":{\"id\":\"67244507-dce9-466c-8bf5-3609bf1fc682\",\"examId\":\"cmvl7br5q000fs401v734g4ur\",\"questionNumber\":57,\"content\":\"You are organizing connected data sources for a team and must complete the planning steps before authorizing any connection. Which two planning steps must be completed BEFORE authorizing a new Connector? (Choose two.) Each correct answer presents part of the solution.\",\"questionType\":\"multi\",\"isPremium\":false,\"createdAt\":\"$D2026-10-24T02:08:24.635Z\",\"updatedAt\":\"$D2026-10-24T02:08:24.635Z\",\"options\":[{\"id\":\"5f8dcdea-664c-452b-b90d-5a288dcdd2ae\",\"questionId\":\"67244507-dce9-466c-8bf5-3609bf1fc682\",\"label\":\"A\",\"content\":\"Migrate every existing report off the prior data source onto the new Connector.\",\"orderIndex\":1},{\"id\":\"e1900fe4-64b4-4e1a-a9cb-46fcb9190973\",\"questionId\":\"67244507-dce9-466c-8bf5-3609bf1fc682\",\"label\":\"B\",\"content\":\"Confirm the Connector is on the approved-vendor list maintained by IT.\",\"orderIndex\":2},{\"id\":\"6b96173b-74e8-402a-aadd-f23fa3b2790b\",\"questionId\":\"67244507-dce9-466c-8bf5-3609bf1fc682\",\"label\":\"C\",\"content\":\"Confirm the data classification of the source and the team's permission to use it.\",\"orderIndex\":3},{\"id\":\"e8540ccd-b1a5-4265-81f8-a2eaaabcd739\",\"questionId\":\"67244507-dce9-466c-8bf5-3609bf1fc682\",\"label\":\"D\",\"content\":\"Train every team member on the new Connector through formal training sessions.\",\"orderIndex\":4},{\"id\":\"be2973db-b9ab-4afd-847d-676e5d5bc13b\",\"questionId\":\"67244507-dce9-466c-8bf5-3609bf1fc682\",\"label\":\"E\",\"content\":\"Decommission any unused legacy connectors that may still be authorized.\",\"orderIndex\":5}],\"answer\":{\"id\":\"f071c74a-6d87-4183-b502-41ab3e6b8761\",\"questionId\":\"67244507-dce9-466c-8bf5-3609bf1fc682\",\"correctOptionId\":\"e1900fe4-64b4-4e1a-a9cb-46fcb9190973\",\"correctOptionLabels\":\"[\\\"B\\\\",
-    "in_website": true,
-    "website_question_number": 57,
-    "website_url": "https://examfree.org/exam/ccao-f/question-57"
+    "explanation": "Before authorizing any connection, first confirm the Connector is on the approved-vendor list (B) and confirm the data classification of the source along with the team's permission to use it (C). These are prerequisite planning steps. Migration, training, and decommissioning come later."
   },
   {
     "question_number": 58,
@@ -2133,10 +1960,7 @@
     "correct_option_labels": [
       "A"
     ],
-    "explanation": "Correct order: identify audience/impact (3), examine content for issues (5), confirm transparency (1), revise or escalate (4), document (2).",
-    "in_website": true,
-    "website_question_number": 58,
-    "website_url": "https://examfree.org/exam/ccao-f/question-58"
+    "explanation": "Correct order: identify audience/impact (3), examine content for issues (5), confirm transparency (1), revise or escalate (4), document (2)."
   },
   {
     "question_number": 59,
@@ -2168,10 +1992,7 @@
     "correct_option_labels": [
       "D"
     ],
-    "explanation": "Discussion:\nSelected Answer: D D is the answer - \\u0026gt; C reads the document before the criteria are fixed, which risks anchoring on an impression rather than the agreed standard. upvoted 1 time Submit Cancel\n\n---\n\nD is the answer - \\u0026gt; C reads the document before the criteria are fixed, which risks anchoring on an impression rather than the agreed standard.\n\n---\n\nSelected Answer: C Correct order: 5, 3, 1, 2, 4 Why this order: This mirrors the verified \"reviewing a competitor brief for unsupported claims\" question, whose confirmed answer order is: read end-to-end first → identify the specifics to check → cross-check against source → document findings → decide last. Applying that same logic here: you first get oriented with a full read, then pin down exactly what you're checking for (the acceptance criteria), then do the detailed comparison against source data and required topics, then record every gap or inaccuracy you found, and only then make the overall call on whether to use, iterate, or escalate -- since that decision should be based on the complete, documented set of findings, not made partway through review. upvoted 2 times Submit Cancel\n\n---\n\nCorrect order: 5, 3, 1, 2, 4 Why this order: This mirrors the verified \"reviewing a competitor brief for unsupported claims\" question, whose confirmed answer order is: read end-to-end first → identify the specifics to check → cross-check against source → document findings → decide last. Applying that same logic here: you first get oriented with a full read, then pin down exactly what you're checking for (the acceptance criteria), then do the detailed comparison against source data and required topics, then record every gap or inaccuracy you found, and only then make the overall call on whether to use, iterate, or escalate -- since that decision should be based on the complete, documented set of findings, not made partway through review.1a:[\"$\",\"$L1d\",null,{\"question\":{\"id\":\"87a6a37b-312b-48f6-b2fa-c95ae38b29c2\",\"examId\":\"cmvl7br5q000fs401v734g4ur\",\"questionNumber\":59,\"content\":\"You are a business analyst evaluating a Claude-generated business case against the agreed acceptance criteria. Which is the correct order of evaluation steps? (1) Compare the business case to the source data and required topics. (2) Document gaps and inaccuracies for follow-up or correction. (3) Restate the acceptance criteria for the business case. (4) Decide whether to use the business case, iterate, or escalate. (5) Read the business case end to end to form an initial impression.\",\"questionType\":\"single\",\"isPremium\":false,\"createdAt\":\"$D2026-10-24T02:08:24.635Z\",\"updatedAt\":\"$D2026-10-24T02:08:24.635Z\",\"options\":[{\"id\":\"293b6d99-f8b6-4e06-a965-07053bf2b71e\",\"questionId\":\"87a6a37b-312b-48f6-b2fa-c95ae38b29c2\",\"label\":\"A\",\"content\":\"3, 1, 5, 2, 4\",\"orderIndex\":1},{\"id\":\"580bd157-aaca-457e-88fc-0f05569dbf0a\",\"questionId\":\"87a6a37b-312b-48f6-b2fa-c95ae38b29c2\",\"label\":\"B\",\"content\":\"1, 3, 5, 2, 4\",\"orderIndex\":2},{\"id\":\"80c2e657-d8fd-4949-a193-964a0768b39f\",\"questionId\":\"87a6a37b-312b-48f6-b2fa-c95ae38b29c2\",\"label\":\"C\",\"content\":\"5, 3, 1, 2, 4\",\"orderIndex\":3},{\"id\":\"0a41302b-0e17-460b-ba90-5ee068386966\",\"questionId\":\"87a6a37b-312b-48f6-b2fa-c95ae38b29c2\",\"label\":\"D\",\"content\":\"3, 5, 1, 2, 4\",\"orderIndex\":4}],\"answer\":{\"id\":\"50661ff1-25cf-4ff8-8c7c-6eb4b6284c10\",\"questionId\":\"87a6a37b-312b-48f6-b2fa-c95ae38b29c2\",\"correctOptionId\":\"0a41302b-0e17-460b-ba90-5ee068386966\",\"correctOptionLabels\":\"[\\\"D\\\\",
-    "in_website": true,
-    "website_question_number": 59,
-    "website_url": "https://examfree.org/exam/ccao-f/question-59"
+    "explanation": "The correct answer is D: D. 3, 5, 1, 2, 4."
   },
   {
     "question_number": 60,
@@ -2203,10 +2024,7 @@
     "correct_option_labels": [
       "A"
     ],
-    "explanation": "Discussion:\nSelected Answer: A",
-    "in_website": true,
-    "website_question_number": 60,
-    "website_url": "https://examfree.org/exam/ccao-f/question-60"
+    "explanation": "Discussion:\nSelected Answer: A"
   },
   {
     "question_number": 61,
@@ -2244,10 +2062,7 @@
       "C",
       "E"
     ],
-    "explanation": "Discussion:\nSelected Answer: CE",
-    "in_website": true,
-    "website_question_number": 61,
-    "website_url": "https://examfree.org/exam/ccao-f/question-61"
+    "explanation": "Discussion:\nSelected Answer: CE"
   },
   {
     "question_number": 62,
@@ -2285,10 +2100,7 @@
       "B",
       "D"
     ],
-    "explanation": "Discussion:\nSelected Answer: B,D - Under the objective Identify, diagnose, and resolve issues with underperforming prompts and/or poor outputs , workflow optimization must be rooted in evidence-based diagnostics before making modifications to system instructions or prompt chains. The diagnostic phase requires two prerequisite steps: establishing a quantitative baseline by measuring quality metrics, latency, token spend, and human intervention frequency across recent historical runs (Option D), and conducting a bottleneck analysis to pinpoint the exact sub-steps responsible for performance degradation, excessive token cost, or quality defects (Option B). Implementing changes without these baseline diagnostics leads to blind iterations. Deployment (Option C) and SOP updates (Option E) are downstream execution phases, while leadership notifications (Option A) occur after solutions are verified.",
-    "in_website": true,
-    "website_question_number": 62,
-    "website_url": "https://examfree.org/exam/ccao-f/question-62"
+    "explanation": "Discussion:\nSelected Answer: B,D - Under the objective Identify, diagnose, and resolve issues with underperforming prompts and/or poor outputs , workflow optimization must be rooted in evidence-based diagnostics before making modifications to system instructions or prompt chains. The diagnostic phase requires two prerequisite steps: establishing a quantitative baseline by measuring quality metrics, latency, token spend, and human intervention frequency across recent historical runs (Option D), and conducting a bottleneck analysis to pinpoint the exact sub-steps responsible for performance degradation, excessive token cost, or quality defects (Option B). Implementing changes without these baseline diagnostics leads to blind iterations. Deployment (Option C) and SOP updates (Option E) are downstream execution phases, while leadership notifications (Option A) occur after solutions are verified."
   },
   {
     "question_number": 63,
@@ -2320,10 +2132,7 @@
     "correct_option_labels": [
       "B"
     ],
-    "explanation": "Discussion:\nSelected Answer: B",
-    "in_website": true,
-    "website_question_number": 63,
-    "website_url": "https://examfree.org/exam/ccao-f/question-63"
+    "explanation": "Discussion:\nSelected Answer: B"
   },
   {
     "question_number": 64,
@@ -2355,10 +2164,7 @@
     "correct_option_labels": [
       "C"
     ],
-    "explanation": "Discussion:\nSelected Answer: C",
-    "in_website": true,
-    "website_question_number": 64,
-    "website_url": "https://examfree.org/exam/ccao-f/question-64"
+    "explanation": "Discussion:\nSelected Answer: C"
   },
   {
     "question_number": 65,
@@ -2390,10 +2196,7 @@
     "correct_option_labels": [
       "D"
     ],
-    "explanation": "Discussion:\nSelected Answer: D",
-    "in_website": true,
-    "website_question_number": 65,
-    "website_url": "https://examfree.org/exam/ccao-f/question-65"
+    "explanation": "Discussion:\nSelected Answer: D"
   },
   {
     "question_number": 66,
@@ -2425,10 +2228,7 @@
     "correct_option_labels": [
       "C"
     ],
-    "explanation": "Discussion:\nSelected Answer: C",
-    "in_website": true,
-    "website_question_number": 66,
-    "website_url": "https://examfree.org/exam/ccao-f/question-66"
+    "explanation": "Discussion:\nSelected Answer: C"
   },
   {
     "question_number": 67,
@@ -2466,10 +2266,7 @@
       "C",
       "E"
     ],
-    "explanation": "Discussion:\nSelected Answer: CE",
-    "in_website": true,
-    "website_question_number": 67,
-    "website_url": "https://examfree.org/exam/ccao-f/question-67"
+    "explanation": "Discussion:\nSelected Answer: CE"
   },
   {
     "question_number": 68,
@@ -2507,10 +2304,7 @@
       "A",
       "C"
     ],
-    "explanation": "Discussion:\nSelected Answer: AC",
-    "in_website": true,
-    "website_question_number": 68,
-    "website_url": "https://examfree.org/exam/ccao-f/question-68"
+    "explanation": "Discussion:\nSelected Answer: AC"
   },
   {
     "question_number": 69,
@@ -2548,10 +2342,7 @@
       "B",
       "C"
     ],
-    "explanation": "Discussion:\nSelected Answer: BC",
-    "in_website": true,
-    "website_question_number": 69,
-    "website_url": "https://examfree.org/exam/ccao-f/question-69"
+    "explanation": "Discussion:\nSelected Answer: BC"
   },
   {
     "question_number": 70,
@@ -2589,10 +2380,7 @@
       "A",
       "E"
     ],
-    "explanation": "Long-context summarization for multi-source reports (A) and tool use for complex calculations (E) are appropriate matches.",
-    "in_website": true,
-    "website_question_number": 70,
-    "website_url": "https://examfree.org/exam/ccao-f/question-70"
+    "explanation": "Long-context summarization for multi-source reports (A) and tool use for complex calculations (E) are appropriate matches."
   },
   {
     "question_number": 71,
@@ -2624,10 +2412,7 @@
     "correct_option_labels": [
       "C"
     ],
-    "explanation": "Discussion:\nSelected Answer: C",
-    "in_website": true,
-    "website_question_number": 71,
-    "website_url": "https://examfree.org/exam/ccao-f/question-71"
+    "explanation": "Discussion:\nSelected Answer: C"
   },
   {
     "question_number": 72,
@@ -2665,10 +2450,7 @@
       "B",
       "C"
     ],
-    "explanation": "Discussion:\nSelected Answer: BC",
-    "in_website": true,
-    "website_question_number": 72,
-    "website_url": "https://examfree.org/exam/ccao-f/question-72"
+    "explanation": "Discussion:\nSelected Answer: BC"
   },
   {
     "question_number": 73,
@@ -2706,10 +2488,7 @@
       "B",
       "E"
     ],
-    "explanation": "Disable Memory contribution (B) or use Incognito mode (E) to prevent retention of confidential pre-announcement figures.",
-    "in_website": true,
-    "website_question_number": 73,
-    "website_url": "https://examfree.org/exam/ccao-f/question-73"
+    "explanation": "Disable Memory contribution (B) or use Incognito mode (E) to prevent retention of confidential pre-announcement figures."
   },
   {
     "question_number": 74,
@@ -2741,10 +2520,7 @@
     "correct_option_labels": [
       "A"
     ],
-    "explanation": "Specific, targeted feedback after each run enables precise improvements that can be validated in subsequent runs.",
-    "in_website": true,
-    "website_question_number": 74,
-    "website_url": "https://examfree.org/exam/ccao-f/question-74"
+    "explanation": "Specific, targeted feedback after each run enables precise improvements that can be validated in subsequent runs."
   },
   {
     "question_number": 75,
@@ -2782,10 +2558,7 @@
       "C",
       "E"
     ],
-    "explanation": "Discussion:\nSelected Answer: C,E - Under the objective Adapt prompting strategies based on task type (e.g., analysis, research, drafting, brainstorming) , prompting architectures must match the operational nature and variability of the task. Option C correctly pairs open, exploratory prompting with divergent brainstorming and early-stage strategy, allowing Claude the flexibility to generate wide-ranging perspectives, identify unexpected market angles, and propose creative concepts. Option E correctly pairs rigid, templated prompting (with explicit constraints, schema definitions, and validation rules) with recurring compliance reporting, where deterministic output structure, consistency, and adherence to regulatory schemas are mandatory. Conversely, applying rigid templates to creative ideation (Option A) constrains creativity, using open exploration for contract redlining (Option B) risks hallucination and missed clauses, and enforcing rigid schemas on informal unformatted feedback (Option D) creates unnecessary rigidity.1b:[\"$\",\"$L1e\",null,{\"question\":{\"id\":\"c6970654-6b84-46ad-b073-c6c174d88350\",\"examId\":\"cmvl7br5q000fs401v734g4ur\",\"questionNumber\":75,\"content\":\"You are an operations lead evaluating prompting strategies that teammates have proposed for various task types. Which two strategies represent appropriate matches between strategy and task type? (Select two.) Each correct answer presents part of the solution.\",\"questionType\":\"multi\",\"isPremium\":false,\"createdAt\":\"$D2026-10-24T02:08:24.635Z\",\"updatedAt\":\"$D2026-10-24T02:08:24.635Z\",\"options\":[{\"id\":\"933aebe8-d20c-42a9-a5f2-02da7deaafc2\",\"questionId\":\"c6970654-6b84-46ad-b073-c6c174d88350\",\"label\":\"A\",\"content\":\"rigid templated prompting for early-stage creative naming and tagline ideation\",\"orderIndex\":1},{\"id\":\"ce79587d-878e-4be8-af48-638be1b06996\",\"questionId\":\"c6970654-6b84-46ad-b073-c6c174d88350\",\"label\":\"B\",\"content\":\"open exploratory prompting for legal contract redlining against a clause library\",\"orderIndex\":2},{\"id\":\"ea119f55-f439-4b89-889e-2b29307642d1\",\"questionId\":\"c6970654-6b84-46ad-b073-c6c174d88350\",\"label\":\"C\",\"content\":\"open exploratory prompting for early-stage strategic brainstorming on a new market\",\"orderIndex\":3},{\"id\":\"5d647d26-79cf-412c-be8c-3f9490e94a4a\",\"questionId\":\"c6970654-6b84-46ad-b073-c6c174d88350\",\"label\":\"D\",\"content\":\"rigid templated prompting for casual customer-feedback summarization with no schema\",\"orderIndex\":4},{\"id\":\"6268ef0f-f2d0-4c29-aed8-1e89ca07cb01\",\"questionId\":\"c6970654-6b84-46ad-b073-c6c174d88350\",\"label\":\"E\",\"content\":\"rigid templated prompting for monthly compliance reports against a fixed schema\",\"orderIndex\":5}],\"answer\":{\"id\":\"957ca247-5cfe-441c-9d48-99cb41609907\",\"questionId\":\"c6970654-6b84-46ad-b073-c6c174d88350\",\"correctOptionId\":\"ea119f55-f439-4b89-889e-2b29307642d1\",\"correctOptionLabels\":\"[\\\"C\\\",\\\"E\\\\",
-    "in_website": true,
-    "website_question_number": 75,
-    "website_url": "https://examfree.org/exam/ccao-f/question-75"
+    "explanation": "Correct answers: C, E. C. open exploratory prompting for early-stage strategic brainstorming on a new market; E. rigid templated prompting for monthly compliance reports against a fixed schema."
   },
   {
     "question_number": 76,
@@ -2817,10 +2590,7 @@
     "correct_option_labels": [
       "C"
     ],
-    "explanation": "Discussion:\nSelected Answer: C",
-    "in_website": true,
-    "website_question_number": 76,
-    "website_url": "https://examfree.org/exam/ccao-f/question-76"
+    "explanation": "Discussion:\nSelected Answer: C"
   },
   {
     "question_number": 77,
@@ -2852,10 +2622,7 @@
     "correct_option_labels": [
       "C"
     ],
-    "explanation": "Discussion:\nSelected Answer: C",
-    "in_website": true,
-    "website_question_number": 77,
-    "website_url": "https://examfree.org/exam/ccao-f/question-77"
+    "explanation": "Discussion:\nSelected Answer: C"
   },
   {
     "question_number": 78,
@@ -2887,10 +2654,7 @@
     "correct_option_labels": [
       "C"
     ],
-    "explanation": "Discussion:\nSelected Answer: C",
-    "in_website": true,
-    "website_question_number": 78,
-    "website_url": "https://examfree.org/exam/ccao-f/question-78"
+    "explanation": "Discussion:\nSelected Answer: C"
   },
   {
     "question_number": 79,
@@ -2928,10 +2692,7 @@
       "A",
       "B"
     ],
-    "explanation": "Redacted/anonymized content (A, B) is appropriate; sensitive personal data like accommodation notes, salary figures, and employee IDs should not be included.",
-    "in_website": true,
-    "website_question_number": 79,
-    "website_url": "https://examfree.org/exam/ccao-f/question-79"
+    "explanation": "Redacted/anonymized content (A, B) is appropriate; sensitive personal data like accommodation notes, salary figures, and employee IDs should not be included."
   },
   {
     "question_number": 80,
@@ -2963,10 +2724,7 @@
     "correct_option_labels": [
       "D"
     ],
-    "explanation": "Discussion:\nSelected Answer: D",
-    "in_website": true,
-    "website_question_number": 80,
-    "website_url": "https://examfree.org/exam/ccao-f/question-80"
+    "explanation": "Discussion:\nSelected Answer: D"
   },
   {
     "question_number": 81,
@@ -2998,10 +2756,7 @@
     "correct_option_labels": [
       "A"
     ],
-    "explanation": "Discussion:\nSelected Answer: A",
-    "in_website": true,
-    "website_question_number": 82,
-    "website_url": "https://examfree.org/exam/ccao-f/question-82"
+    "explanation": "Discussion:\nSelected Answer: A"
   },
   {
     "question_number": 82,
@@ -3033,10 +2788,7 @@
     "correct_option_labels": [
       "D"
     ],
-    "explanation": "Discussion:\nSelected Answer: D",
-    "in_website": true,
-    "website_question_number": 83,
-    "website_url": "https://examfree.org/exam/ccao-f/question-83"
+    "explanation": "Discussion:\nSelected Answer: D"
   },
   {
     "question_number": 83,
@@ -3068,10 +2820,7 @@
     "correct_option_labels": [
       "B"
     ],
-    "explanation": "Discussion:\nSelected Answer: B",
-    "in_website": true,
-    "website_question_number": 84,
-    "website_url": "https://examfree.org/exam/ccao-f/question-84"
+    "explanation": "Discussion:\nSelected Answer: B"
   },
   {
     "question_number": 84,
@@ -3103,10 +2852,7 @@
     "correct_option_labels": [
       "A"
     ],
-    "explanation": "Tracing each claim to a credible source separates verification from mere plausibility.",
-    "in_website": true,
-    "website_question_number": 85,
-    "website_url": "https://examfree.org/exam/ccao-f/question-85"
+    "explanation": "Tracing each claim to a credible source separates verification from mere plausibility."
   },
   {
     "question_number": 85,
@@ -3138,10 +2884,7 @@
     "correct_option_labels": [
       "B"
     ],
-    "explanation": "Discussion:\nSelected Answer: B",
-    "in_website": true,
-    "website_question_number": 86,
-    "website_url": "https://examfree.org/exam/ccao-f/question-86"
+    "explanation": "Discussion:\nSelected Answer: B"
   },
   {
     "question_number": 86,
@@ -3173,10 +2916,7 @@
     "correct_option_labels": [
       "A"
     ],
-    "explanation": "First identify where Claude adds value and where human handoffs occur before piloting or documenting.",
-    "in_website": true,
-    "website_question_number": 87,
-    "website_url": "https://examfree.org/exam/ccao-f/question-87"
+    "explanation": "First identify where Claude adds value and where human handoffs occur before piloting or documenting."
   },
   {
     "question_number": 87,
@@ -3208,10 +2948,7 @@
     "correct_option_labels": [
       "A"
     ],
-    "explanation": "Discussion:\nSelected Answer: A",
-    "in_website": true,
-    "website_question_number": 88,
-    "website_url": "https://examfree.org/exam/ccao-f/question-88"
+    "explanation": "Discussion:\nSelected Answer: A"
   },
   {
     "question_number": 88,
@@ -3243,10 +2980,7 @@
     "correct_option_labels": [
       "D"
     ],
-    "explanation": "Discussion:\nSelected Answer: D",
-    "in_website": true,
-    "website_question_number": 89,
-    "website_url": "https://examfree.org/exam/ccao-f/question-89"
+    "explanation": "Discussion:\nSelected Answer: D"
   },
   {
     "question_number": 89,
@@ -3284,10 +3018,7 @@
       "B",
       "D"
     ],
-    "explanation": "Discussion:\nSelected Answer: BD",
-    "in_website": true,
-    "website_question_number": 90,
-    "website_url": "https://examfree.org/exam/ccao-f/question-90"
+    "explanation": "Discussion:\nSelected Answer: BD"
   },
   {
     "question_number": 90,
@@ -3319,10 +3050,7 @@
     "correct_option_labels": [
       "D"
     ],
-    "explanation": "Discussion:\nSelected Answer: D",
-    "in_website": true,
-    "website_question_number": 91,
-    "website_url": "https://examfree.org/exam/ccao-f/question-91"
+    "explanation": "Discussion:\nSelected Answer: D"
   },
   {
     "question_number": 91,
@@ -3360,10 +3088,7 @@
       "B",
       "D"
     ],
-    "explanation": "Discussion:\nSelected Answer: BD",
-    "in_website": true,
-    "website_question_number": 92,
-    "website_url": "https://examfree.org/exam/ccao-f/question-92"
+    "explanation": "Discussion:\nSelected Answer: BD"
   },
   {
     "question_number": 92,
@@ -3395,10 +3120,7 @@
     "correct_option_labels": [
       "C"
     ],
-    "explanation": "Discussion:\nSelected Answer: C",
-    "in_website": true,
-    "website_question_number": 93,
-    "website_url": "https://examfree.org/exam/ccao-f/question-93"
+    "explanation": "Discussion:\nSelected Answer: C"
   },
   {
     "question_number": 93,
@@ -3436,10 +3158,7 @@
       "A",
       "B"
     ],
-    "explanation": "Discussion:\nSelected Answer: AB",
-    "in_website": true,
-    "website_question_number": 94,
-    "website_url": "https://examfree.org/exam/ccao-f/question-94"
+    "explanation": "Discussion:\nSelected Answer: AB"
   },
   {
     "question_number": 94,
@@ -3471,10 +3190,7 @@
     "correct_option_labels": [
       "B"
     ],
-    "explanation": "First classify content and identify sensitive fields before redacting or submitting.",
-    "in_website": true,
-    "website_question_number": 95,
-    "website_url": "https://examfree.org/exam/ccao-f/question-95"
+    "explanation": "First classify content and identify sensitive fields before redacting or submitting."
   },
   {
     "question_number": 95,
@@ -3506,10 +3222,7 @@
     "correct_option_labels": [
       "B"
     ],
-    "explanation": "Discussion:\nSelected Answer: B - Answer B is correct. Evaluation begins by restating the agreed acceptance criteria (3), because the reviewer needs an explicit standard before judging the business case. The reviewer then reads the document from beginning to end (5) to understand its argument, scope, and apparent completeness. After that initial pass, the reviewer performs an evidence-based comparison against the source data and required topics (1). Discovered omissions, inaccuracies, and criterion failures are documented for correction or follow-up (2). Only when those findings are available should the reviewer decide whether the business case can be used, needs another iteration, or must be escalated (4). The sequence is therefore 3, 5, 1, 2, 4. Option A compares details before completing the holistic reading; Option C reads before re-establishing the evaluation standard; Option D starts detailed comparison without a clear rubric. Anthropic's evaluation guidance states that successful Claude applications begin with specific, measurable, achievable, and relevant success criteria and normally require multidimensional evaluation. It also emphasizes task-specific tests and clear rubrics. Applying that logic to a business document means establishing the criteria first, gathering evidence second, recording defects third, and making the disposition decision last. Anthropic evaluation guidance1a:[\"$\",\"$L1d\",null,{\"question\":{\"id\":\"9f684797-1995-4736-864b-01e4925ad578\",\"examId\":\"cmvl7br5q000fs401v734g4ur\",\"questionNumber\":96,\"content\":\"You are a business analyst evaluating a Claude-generated business case against the agreed acceptance criteria. Which is the correct order of evaluation steps? (1) Compare the business case with the source data and required topics. (2) Document gaps and inaccuracies for follow-up or correction. (3) Restate the acceptance criteria for the business case. (4) Decide whether to use the business case, iterate, or escalate. (5) Read the business case from beginning to end to form an initial impression.\",\"questionType\":\"single\",\"isPremium\":false,\"createdAt\":\"$D2026-10-24T02:08:24.635Z\",\"updatedAt\":\"$D2026-10-24T02:08:24.635Z\",\"options\":[{\"id\":\"9a4f1e24-677f-462c-b0e4-634bb8e951d8\",\"questionId\":\"9f684797-1995-4736-864b-01e4925ad578\",\"label\":\"A\",\"content\":\"3, 1, 5, 2, 4\",\"orderIndex\":1},{\"id\":\"76548312-6d77-40bf-bc3b-0f68a7b86f80\",\"questionId\":\"9f684797-1995-4736-864b-01e4925ad578\",\"label\":\"B\",\"content\":\"3, 5, 1, 2, 4\",\"orderIndex\":2},{\"id\":\"b4996ee7-8334-4af2-b1fa-90125c89a48a\",\"questionId\":\"9f684797-1995-4736-864b-01e4925ad578\",\"label\":\"C\",\"content\":\"5, 3, 1, 2, 4\",\"orderIndex\":3},{\"id\":\"64f18cfc-e787-4d98-bbf9-4df8626df50c\",\"questionId\":\"9f684797-1995-4736-864b-01e4925ad578\",\"label\":\"D\",\"content\":\"1, 3, 5, 2, 4\",\"orderIndex\":4}],\"answer\":{\"id\":\"882f214f-d3db-4375-b9f3-bfc143a00784\",\"questionId\":\"9f684797-1995-4736-864b-01e4925ad578\",\"correctOptionId\":\"76548312-6d77-40bf-bc3b-0f68a7b86f80\",\"correctOptionLabels\":\"[\\\"B\\\\",
-    "in_website": true,
-    "website_question_number": 96,
-    "website_url": "https://examfree.org/exam/ccao-f/question-96"
+    "explanation": "The correct answer is B: B. 3, 5, 1, 2, 4."
   },
   {
     "question_number": 96,
@@ -3541,10 +3254,7 @@
     "correct_option_labels": [
       "C"
     ],
-    "explanation": "Discussion:\nSelected Answer: C",
-    "in_website": true,
-    "website_question_number": 97,
-    "website_url": "https://examfree.org/exam/ccao-f/question-97"
+    "explanation": "Discussion:\nSelected Answer: C"
   },
   {
     "question_number": 97,
@@ -3582,10 +3292,7 @@
       "A",
       "B"
     ],
-    "explanation": "Discussion:\nSelected Answer: A,B - A Skill from an unfamiliar party must be treated as untrusted until its origin and behavior are reviewed. Option A verifies provenance and confirms that the Skill is permitted by the organization's governance process. Option B applies least privilege by examining what the Skill can access or execute and determining whether those capabilities are necessary for its stated task. Public availability, popularity, or favorable reviews do not establish security. A Skill can contain instructions, scripts, dependencies, external calls, or other resources capable of causing unintended actions or exposing data. Therefore, Options C and D substitute reputation for technical and organizational validation. Option E is also unsafe because Skills may execute code or access resources available in the surrounding environment; assumed workflow boundaries are not a reliable security control. Anthropic warns that malicious or compromised Skills can create prompt-injection, unauthorized-access, and data-exfiltration risks. Its guidance instructs users to install Skills only from trusted sources and to inspect bundled files, scripts, dependencies, network calls, and requested operations before enabling them. Organizational allowlists and permission reviews provide complementary controls: one establishes trust in the source, while the other limits what the Skill may do. Anthropic's Skill security guidance1b:[\"$\",\"$L1f\",null,{\"question\":{\"id\":\"d59e7fd1-5db1-424f-8bb1-4e093871dfca\",\"examId\":\"cmvl7br5q000fs401v734g4ur\",\"questionNumber\":98,\"content\":\"A Claude associate is evaluating whether to enable a Skill that was provided by an unfamiliar third party. Which two checks best support a sound trust decision? (Select two.)\",\"questionType\":\"multi\",\"isPremium\":false,\"createdAt\":\"$D2026-10-24T02:08:24.635Z\",\"updatedAt\":\"$D2026-10-24T02:08:24.635Z\",\"options\":[{\"id\":\"a46b7be0-f176-4727-ae63-134231f1279f\",\"questionId\":\"d59e7fd1-5db1-424f-8bb1-4e093871dfca\",\"label\":\"A\",\"content\":\"Verify the source of the Skill against the organization's approved-Skill list before enabling it within Claude.ai or any Project the team uses for its work.\",\"orderIndex\":1},{\"id\":\"a43336ae-88e9-4eef-9aa5-0759f3aa080d\",\"questionId\":\"d59e7fd1-5db1-424f-8bb1-4e093871dfca\",\"label\":\"B\",\"content\":\"Review the permissions and capabilities the Skill requests and confirm that the requested access is appropriate for the task the Skill is intended to perform.\",\"orderIndex\":2},{\"id\":\"9ddfba0b-88e5-407f-98a1-2b845eb54f76\",\"questionId\":\"d59e7fd1-5db1-424f-8bb1-4e093871dfca\",\"label\":\"C\",\"content\":\"Treat the Skill's appearance in a public listing as sufficient validation, without confirming the source, requested permissions, or alignment with the organization's approved-Skill list.\",\"orderIndex\":3},{\"id\":\"e759827e-378e-4b07-80b0-60c485e70a96\",\"questionId\":\"d59e7fd1-5db1-424f-8bb1-4e093871dfca\",\"label\":\"D\",\"content\":\"Enable the Skill immediately on the basis of strong external reviews, even though its source has not been validated and its permissions remain unverified.\",\"orderIndex\":4},{\"id\":\"bf442524-daf6-43e0-8937-f72e1207bcf5\",\"questionId\":\"d59e7fd1-5db1-424f-8bb1-4e093871dfca\",\"label\":\"E\",\"content\":\"Skip permission review on the assumption that the Skill cannot exceed the boundaries of the workflow, even though Skills can request access that the task does not require.\",\"orderIndex\":5}],\"answer\":{\"id\":\"22d444d2-d910-43b0-ad9c-9c08035de63d\",\"questionId\":\"d59e7fd1-5db1-424f-8bb1-4e093871dfca\",\"correctOptionId\":\"a46b7be0-f176-4727-ae63-134231f1279f\",\"correctOptionLabels\":\"[\\\"A\\\",\\\"B\\\\",
-    "in_website": true,
-    "website_question_number": 98,
-    "website_url": "https://examfree.org/exam/ccao-f/question-98"
+    "explanation": "Correct answers: A, B. A. Verify the source of the Skill against the organization's approved-Skill list before enabling it within Claude.ai or any Project the team uses for its work.; B. Review the permissions and capabilities the Skill requests and confirm that the requested access is appropriate for the task the Skill is intended to perform.."
   },
   {
     "question_number": 98,
@@ -3617,10 +3324,7 @@
     "correct_option_labels": [
       "A"
     ],
-    "explanation": "Discussion:\nSelected Answer: A",
-    "in_website": true,
-    "website_question_number": 99,
-    "website_url": "https://examfree.org/exam/ccao-f/question-99"
+    "explanation": "Discussion:\nSelected Answer: A"
   },
   {
     "question_number": 99,
@@ -3652,10 +3356,7 @@
     "correct_option_labels": [
       "D"
     ],
-    "explanation": "A conclusion that contradicts the evidence in the body fundamentally undermines clarity because the reader cannot determine what the document actually argues.",
-    "in_website": true,
-    "website_question_number": 100,
-    "website_url": "https://examfree.org/exam/ccao-f/question-100"
+    "explanation": "A conclusion that contradicts the evidence in the body fundamentally undermines clarity because the reader cannot determine what the document actually argues."
   },
   {
     "question_number": 100,
@@ -3687,10 +3388,7 @@
     "correct_option_labels": [
       "C"
     ],
-    "explanation": "Verify by locating the primary source (the original study) rather than relying on secondary trade-press repetition.",
-    "in_website": true,
-    "website_question_number": 101,
-    "website_url": "https://examfree.org/exam/ccao-f/question-101"
+    "explanation": "Verify by locating the primary source (the original study) rather than relying on secondary trade-press repetition."
   },
   {
     "question_number": 101,
@@ -3722,10 +3420,7 @@
     "correct_option_labels": [
       "A"
     ],
-    "explanation": "Discussion:\nSelected Answer: A",
-    "in_website": true,
-    "website_question_number": 102,
-    "website_url": "https://examfree.org/exam/ccao-f/question-102"
+    "explanation": "Discussion:\nSelected Answer: A"
   },
   {
     "question_number": 102,
@@ -3757,10 +3452,7 @@
     "correct_option_labels": [
       "C"
     ],
-    "explanation": "Discussion:\nSelected Answer: C",
-    "in_website": true,
-    "website_question_number": 103,
-    "website_url": "https://examfree.org/exam/ccao-f/question-103"
+    "explanation": "Discussion:\nSelected Answer: C"
   },
   {
     "question_number": 103,
@@ -3792,10 +3484,7 @@
     "correct_option_labels": [
       "A"
     ],
-    "explanation": "Discussion:\nSelected Answer: A",
-    "in_website": true,
-    "website_question_number": 104,
-    "website_url": "https://examfree.org/exam/ccao-f/question-104"
+    "explanation": "Discussion:\nSelected Answer: A"
   },
   {
     "question_number": 104,
@@ -3833,10 +3522,7 @@
       "C",
       "E"
     ],
-    "explanation": "Targeted iteration addressing specific weaknesses (C) and validating against original criteria (E) are accurate practices.",
-    "in_website": true,
-    "website_question_number": 105,
-    "website_url": "https://examfree.org/exam/ccao-f/question-105"
+    "explanation": "Targeted iteration addressing specific weaknesses (C) and validating against original criteria (E) are accurate practices."
   },
   {
     "question_number": 105,
@@ -3875,10 +3561,7 @@
       "B",
       "C"
     ],
-    "explanation": "Discussion:\nSelected Answer: A,B,C - Options A, B, and C are correct. The source document incorrectly instructed the reader to select two and omitted Option B, even though Anthropic explicitly recognizes tone and style as valid evaluation dimensions. The question has therefore been corrected to \"Select three.\" Factual accuracy measures whether claims faithfully reflect the supplied sources. Style consistency evaluates whether the brief follows the organization's established voice, terminology, and audience expectations. Format and length compliance determine whether Claude followed explicit deliverable constraints. Together, these criteria cover factual fidelity, audience suitability, and instruction adherence. Option D is not a sound criterion because an external industry word-count benchmark may have no relationship to the actual business need. The relevant measure is compliance with the requested length and sufficient coverage of the required material. Option E is also invalid as written: an executive summary is required only if the task specification, template, or audience needs call for one. Automatically demanding it would evaluate an unstated requirement. Anthropic's evaluation documentation identifies task fidelity, relevance, tone and style, context utilization, and other task-specific success criteria as valid dimensions. It also stresses that criteria should be specific, measurable, achievable, and relevant. See Anthropic's official evaluation guidance .1b:[\"$\",\"$L1e\",null,{\"question\":{\"id\":\"755a878c-6987-4ac4-8fcd-c15836753d1c\",\"examId\":\"cmvl7br5q000fs401v734g4ur\",\"questionNumber\":106,\"content\":\"You are validating evaluation criteria proposed for a Claude-generated business brief. Which three criteria are valid for evaluating a Claude-generated brief? (Select three.) Each correct answer presents part of the solution.\",\"questionType\":\"multi\",\"isPremium\":false,\"createdAt\":\"$D2026-10-24T02:08:24.635Z\",\"updatedAt\":\"$D2026-10-24T02:08:24.635Z\",\"options\":[{\"id\":\"de0a7a59-0689-4f61-89b8-284b8e6cec00\",\"questionId\":\"755a878c-6987-4ac4-8fcd-c15836753d1c\",\"label\":\"A\",\"content\":\"Factual accuracy of the claims against the supplied source material\",\"orderIndex\":1},{\"id\":\"60bcfddc-e99b-407e-9b20-207494eedb06\",\"questionId\":\"755a878c-6987-4ac4-8fcd-c15836753d1c\",\"label\":\"B\",\"content\":\"Consistency of the writing style with the organization's established tone guidelines\",\"orderIndex\":2},{\"id\":\"df19495d-e43f-463f-ac3c-d0eda4cbf0b2\",\"questionId\":\"755a878c-6987-4ac4-8fcd-c15836753d1c\",\"label\":\"C\",\"content\":\"Alignment of the output with the requested format and length constraints\",\"orderIndex\":3},{\"id\":\"6e86dc82-8437-42a5-8e41-825337cede86\",\"questionId\":\"755a878c-6987-4ac4-8fcd-c15836753d1c\",\"label\":\"D\",\"content\":\"Total word count of the output relative to general industry benchmarks for business briefs\",\"orderIndex\":4},{\"id\":\"05936aa1-f5b1-40c0-9390-459e08d96957\",\"questionId\":\"755a878c-6987-4ac4-8fcd-c15836753d1c\",\"label\":\"E\",\"content\":\"Presence of an executive-summary section regardless of whether one was requested\",\"orderIndex\":5}],\"answer\":{\"id\":\"793a24bc-05fb-4c40-80c1-3d62ce798baa\",\"questionId\":\"755a878c-6987-4ac4-8fcd-c15836753d1c\",\"correctOptionId\":\"de0a7a59-0689-4f61-89b8-284b8e6cec00\",\"correctOptionLabels\":\"[\\\"A\\\",\\\"B\\\",\\\"C\\\\",
-    "in_website": true,
-    "website_question_number": 106,
-    "website_url": "https://examfree.org/exam/ccao-f/question-106"
+    "explanation": "Correct answers: A, B, C. A. Factual accuracy of the claims against the supplied source material; B. Consistency of the writing style with the organization's established tone guidelines; C. Alignment of the output with the requested format and length constraints."
   },
   {
     "question_number": 106,
@@ -3910,10 +3593,7 @@
     "correct_option_labels": [
       "D"
     ],
-    "explanation": "Discussion:\nSelected Answer: D",
-    "in_website": true,
-    "website_question_number": 107,
-    "website_url": "https://examfree.org/exam/ccao-f/question-107"
+    "explanation": "Discussion:\nSelected Answer: D"
   },
   {
     "question_number": 107,
@@ -3951,10 +3631,7 @@
       "B",
       "E"
     ],
-    "explanation": "Discussion:\nSelected Answer: B,E - Option B creates a recoverable checkpoint before maintenance. Exporting the current Memory allows the manager to restore important context if a necessary entry is accidentally removed or rewritten incorrectly. Option E performs the actual quality maintenance by removing stale or inaccurate information and adding durable context that the workflow still requires. Deleting everything, as proposed in Option A, discards valid context and forces the system to reconstruct it imperfectly from later activity. Option C assumes that the absence of a reported problem proves every stored entry remains accurate; stale Memory may affect future tasks even when current outputs appear acceptable. Option D eliminates useful continuity instead of correcting the specific quality problems. Anthropic allows users to view, edit, and export Memory. Its documentation states that exported Memory can serve as a backup or be transferred to another service. Users can also add information that Claude has not automatically retained. A responsible maintenance cycle should therefore back up the current state, inspect entries for accuracy and relevance, remove obsolete details, add missing durable context, and verify future outputs. This preserves continuity while reducing the risk that outdated assumptions contaminate later sessions. Anthropic's Memory import and export guidance1b:[\"$\",\"$L1e\",null,{\"question\":{\"id\":\"1d690257-7335-4756-b327-a85931045733\",\"examId\":\"cmvl7br5q000fs401v734g4ur\",\"questionNumber\":108,\"content\":\"A manager is deciding what changes to make while conducting a Memory maintenance review for a long- running workflow. Which two actions best support Memory quality over time? (Select two.)\",\"questionType\":\"multi\",\"isPremium\":false,\"createdAt\":\"$D2026-10-24T02:08:24.635Z\",\"updatedAt\":\"$D2026-10-24T02:08:24.635Z\",\"options\":[{\"id\":\"f72c2188-d040-436d-8e28-3e380382eda9\",\"questionId\":\"1d690257-7335-4756-b327-a85931045733\",\"label\":\"A\",\"content\":\"Delete all memories as the maintenance action to ensure a clean slate, then allow Claude to rebuild context organically through subsequent workflow runs.\",\"orderIndex\":1},{\"id\":\"c76b2d0a-637a-4bd6-adc6-4e106f953f33\",\"questionId\":\"1d690257-7335-4756-b327-a85931045733\",\"label\":\"B\",\"content\":\"Export the current memories as a backup before making changes, so prior context can be restored if a maintenance edit unintentionally removes information the workflow still depends on.\",\"orderIndex\":2},{\"id\":\"7d4565ff-5a2c-4ce2-ab83-9aa72ed88a79\",\"questionId\":\"1d690257-7335-4756-b327-a85931045733\",\"label\":\"C\",\"content\":\"Leave all memories untouched on the basis that the workflow has been running consistently and no output-quality issues have been reported.\",\"orderIndex\":3},{\"id\":\"ccd395eb-edb2-45c7-8c43-756a0846b6a8\",\"questionId\":\"1d690257-7335-4756-b327-a85931045733\",\"label\":\"D\",\"content\":\"Disable Memory entirely to eliminate the risk of stale entries surfacing in future workflow runs.\",\"orderIndex\":4},{\"id\":\"41773c14-34a1-4d07-b6cf-c67cbed4c964\",\"questionId\":\"1d690257-7335-4756-b327-a85931045733\",\"label\":\"E\",\"content\":\"Identify and edit or delete entries that are stale, inaccurate, or no longer relevant, and add context Claude has not automatically captured but the workflow continues to need.\",\"orderIndex\":5}],\"answer\":{\"id\":\"aa5a4cbd-0b65-4917-99d3-e85d09791ae4\",\"questionId\":\"1d690257-7335-4756-b327-a85931045733\",\"correctOptionId\":\"c76b2d0a-637a-4bd6-adc6-4e106f953f33\",\"correctOptionLabels\":\"[\\\"B\\\",\\\"E\\\\",
-    "in_website": true,
-    "website_question_number": 108,
-    "website_url": "https://examfree.org/exam/ccao-f/question-108"
+    "explanation": "Correct answers: B, E. B. Export the current memories as a backup before making changes, so prior context can be restored if a maintenance edit unintentionally removes information the workflow still depends on.; E. Identify and edit or delete entries that are stale, inaccurate, or no longer relevant, and add context Claude has not automatically captured but the workflow continues to need.."
   },
   {
     "question_number": 108,
@@ -3986,10 +3663,7 @@
     "correct_option_labels": [
       "D"
     ],
-    "explanation": "Code Execution performs accurate calculations and generates charts, with verification against source data.",
-    "in_website": true,
-    "website_question_number": 109,
-    "website_url": "https://examfree.org/exam/ccao-f/question-109"
+    "explanation": "Code Execution performs accurate calculations and generates charts, with verification against source data."
   },
   {
     "question_number": 109,
@@ -4021,10 +3695,7 @@
     "correct_option_labels": [
       "C"
     ],
-    "explanation": "Discussion:\nSelected Answer: C",
-    "in_website": true,
-    "website_question_number": 110,
-    "website_url": "https://examfree.org/exam/ccao-f/question-110"
+    "explanation": "Discussion:\nSelected Answer: C"
   },
   {
     "question_number": 110,
@@ -4056,10 +3727,7 @@
     "correct_option_labels": [
       "A"
     ],
-    "explanation": "A structured prompt requesting categorized output (must-haves, nice-to-haves, open questions, conflicts) produces the most usable structured output.",
-    "in_website": true,
-    "website_question_number": 111,
-    "website_url": "https://examfree.org/exam/ccao-f/question-111"
+    "explanation": "A structured prompt requesting categorized output (must-haves, nice-to-haves, open questions, conflicts) produces the most usable structured output."
   },
   {
     "question_number": 111,
@@ -4091,10 +3759,7 @@
     "correct_option_labels": [
       "C"
     ],
-    "explanation": "Discussion:\nSelected Answer: C",
-    "in_website": true,
-    "website_question_number": 112,
-    "website_url": "https://examfree.org/exam/ccao-f/question-112"
+    "explanation": "Discussion:\nSelected Answer: C"
   },
   {
     "question_number": 112,
@@ -4126,10 +3791,7 @@
     "correct_option_labels": [
       "D"
     ],
-    "explanation": "Discussion:\nSelected Answer: D",
-    "in_website": true,
-    "website_question_number": 113,
-    "website_url": "https://examfree.org/exam/ccao-f/question-113"
+    "explanation": "Discussion:\nSelected Answer: D"
   },
   {
     "question_number": 113,
@@ -4161,10 +3823,7 @@
     "correct_option_labels": [
       "B"
     ],
-    "explanation": "When policy explicitly prohibits entering investigation information into AI tools, refrain and seek an approved alternative.",
-    "in_website": true,
-    "website_question_number": 114,
-    "website_url": "https://examfree.org/exam/ccao-f/question-114"
+    "explanation": "When policy explicitly prohibits entering investigation information into AI tools, refrain and seek an approved alternative."
   },
   {
     "question_number": 114,
@@ -4196,10 +3855,7 @@
     "correct_option_labels": [
       "C"
     ],
-    "explanation": "First summarize the prior conversation into a concise current-state statement before starting fresh.",
-    "in_website": true,
-    "website_question_number": 115,
-    "website_url": "https://examfree.org/exam/ccao-f/question-115"
+    "explanation": "First summarize the prior conversation into a concise current-state statement before starting fresh."
   },
   {
     "question_number": 115,
@@ -4231,10 +3887,7 @@
     "correct_option_labels": [
       "A"
     ],
-    "explanation": "Discussion:\nSelected Answer: A",
-    "in_website": true,
-    "website_question_number": 116,
-    "website_url": "https://examfree.org/exam/ccao-f/question-116"
+    "explanation": "Discussion:\nSelected Answer: A"
   },
   {
     "question_number": 116,
@@ -4272,10 +3925,7 @@
       "B",
       "D"
     ],
-    "explanation": "Discussion:\nSelected Answer: BD",
-    "in_website": true,
-    "website_question_number": 117,
-    "website_url": "https://examfree.org/exam/ccao-f/question-117"
+    "explanation": "Discussion:\nSelected Answer: BD"
   },
   {
     "question_number": 117,
@@ -4307,10 +3957,7 @@
     "correct_option_labels": [
       "C"
     ],
-    "explanation": "Discussion:\nSelected Answer: C - Option C is correct because completeness must be evaluated systematically against every explicit requirement in the authoritative source. The reviewer should create a traceability matrix that lists all twelve RFP requirements and identifies where each requirement is addressed in the Claude-generated summary. The review should confirm not only that each requirement appears, but also that its essential conditions, qualifications, and vendor response are represented accurately. Matching headings, as proposed in Option A, cannot establish completeness. A section may have the correct title while omitting material requirements or misrepresenting the vendor's response. Option B is inadequate because checking only three requirements could miss important omissions involving security controls, pricing conditions, or service-level obligations. Option D evaluates coherence rather than coverage. A summary can read smoothly and persuasively while excluding inconvenient or contradictory information. A robust evaluation should assess accuracy, completeness, relevance, and traceability separately. Any requirement that is absent, only partially represented, or unsupported by the proposal should be recorded and corrected before the summary is used in vendor evaluation. This requirement-by-requirement mapping prevents Claude's fluent presentation from being mistaken for evidence that the complete RFP has been covered.1b:[\"$\",\"$L1e\",null,{\"question\":{\"id\":\"91705879-ad05-4985-815c-b7780aa164a4\",\"examId\":\"cmvl7br5q000fs401v734g4ur\",\"questionNumber\":118,\"content\":\"A procurement manager is evaluating a Claude-generated vendor proposal summary against the original RFP. The RFP lists twelve numbered requirements across pricing, security, and service levels. How should the summary be checked for completeness?\",\"questionType\":\"single\",\"isPremium\":false,\"createdAt\":\"$D2026-10-24T02:08:24.635Z\",\"updatedAt\":\"$D2026-10-24T02:08:24.635Z\",\"options\":[{\"id\":\"8a42d404-e70f-405d-93f6-78a79c639795\",\"questionId\":\"91705879-ad05-4985-815c-b7780aa164a4\",\"label\":\"A\",\"content\":\"Compare the section headings in the summary with the section headings in the RFP, since matching headings indicate matching content.\",\"orderIndex\":1},{\"id\":\"f03d45eb-d04b-455b-92c7-ce3225126bf8\",\"questionId\":\"91705879-ad05-4985-815c-b7780aa164a4\",\"label\":\"B\",\"content\":\"Spot-check three random requirements from the RFP against the summary, since random sampling is the standard completeness check for summaries.\",\"orderIndex\":2},{\"id\":\"67d69798-9ec8-4a34-89de-0697f3fce19b\",\"questionId\":\"91705879-ad05-4985-815c-b7780aa164a4\",\"label\":\"C\",\"content\":\"Map each numbered requirement in the RFP to a section of the summary and confirm that every requirement is represented.\",\"orderIndex\":3},{\"id\":\"b5bed313-47cf-458e-86ef-ceebfba7f02c\",\"questionId\":\"91705879-ad05-4985-815c-b7780aa164a4\",\"label\":\"D\",\"content\":\"Read the summary end to end and confirm that it forms a coherent response to the RFP, since coherent summaries typically reflect coverage of the source.\",\"orderIndex\":4}],\"answer\":{\"id\":\"7d5d9802-b124-4ce4-b676-3d6984a01026\",\"questionId\":\"91705879-ad05-4985-815c-b7780aa164a4\",\"correctOptionId\":\"67d69798-9ec8-4a34-89de-0697f3fce19b\",\"correctOptionLabels\":\"[\\\"C\\\\",
-    "in_website": true,
-    "website_question_number": 118,
-    "website_url": "https://examfree.org/exam/ccao-f/question-118"
+    "explanation": "The correct answer is C: C. Map each numbered requirement in the RFP to a section of the summary and confirm that every requirement is represented.."
   },
   {
     "question_number": 118,
@@ -4342,10 +3989,7 @@
     "correct_option_labels": [
       "D"
     ],
-    "explanation": "Option D provides all necessary parameters explicitly (audience, regions, length, tone, key messages) while using the prior newsletter only as a reference point for tone.",
-    "in_website": true,
-    "website_question_number": 119,
-    "website_url": "https://examfree.org/exam/ccao-f/question-119"
+    "explanation": "Option D provides all necessary parameters explicitly (audience, regions, length, tone, key messages) while using the prior newsletter only as a reference point for tone."
   },
   {
     "question_number": 119,
@@ -4383,10 +4027,7 @@
       "A",
       "E"
     ],
-    "explanation": "Discussion:\nSelected Answer: AE",
-    "in_website": true,
-    "website_question_number": 120,
-    "website_url": "https://examfree.org/exam/ccao-f/question-120"
+    "explanation": "Discussion:\nSelected Answer: AE"
   },
   {
     "question_number": 120,
@@ -4418,10 +4059,7 @@
     "correct_option_labels": [
       "D"
     ],
-    "explanation": "Discussion:\nSelected Answer: D",
-    "in_website": true,
-    "website_question_number": 121,
-    "website_url": "https://examfree.org/exam/ccao-f/question-121"
+    "explanation": "Discussion:\nSelected Answer: D"
   },
   {
     "question_number": 121,
@@ -4453,10 +4091,7 @@
     "correct_option_labels": [
       "B"
     ],
-    "explanation": "Correct order: (3) Identify the audience, decision impact, and reversibility of the outputs, (5) Identify the data types involved and whether sensitive data is implicated, (1) Compare the use case against the organization's policies and the relevant regulatory considerations, (4) Decide whether the use case proceeds, requires modification, or is declined, (2) Document the assessment outcome and the rationale for traceability.",
-    "in_website": true,
-    "website_question_number": 122,
-    "website_url": "https://examfree.org/exam/ccao-f/question-122"
+    "explanation": "Correct order: (3) Identify the audience, decision impact, and reversibility of the outputs, (5) Identify the data types involved and whether sensitive data is implicated, (1) Compare the use case against the organization's policies and the relevant regulatory considerations, (4) Decide whether the use case proceeds, requires modification, or is declined, (2) Document the assessment outcome and the rationale for traceability."
   },
   {
     "question_number": 122,
@@ -4488,10 +4123,7 @@
     "correct_option_labels": [
       "D"
     ],
-    "explanation": "When Claude skips a required question, the root cause is most likely an underspecified task statement. Explicitly enumerating all required questions and requiring an answer to each directly addresses this gap.",
-    "in_website": true,
-    "website_question_number": 123,
-    "website_url": "https://examfree.org/exam/ccao-f/question-123"
+    "explanation": "When Claude skips a required question, the root cause is most likely an underspecified task statement. Explicitly enumerating all required questions and requiring an answer to each directly addresses this gap."
   },
   {
     "question_number": 123,
@@ -4523,10 +4155,7 @@
     "correct_option_labels": [
       "A"
     ],
-    "explanation": "Before setting up a Connector for a shared data source, you must first confirm appropriate access permissions and ensure compliance with data governance policies. This prevents unauthorized data exposure.",
-    "in_website": true,
-    "website_question_number": 124,
-    "website_url": "https://examfree.org/exam/ccao-f/question-124"
+    "explanation": "Before setting up a Connector for a shared data source, you must first confirm appropriate access permissions and ensure compliance with data governance policies. This prevents unauthorized data exposure."
   },
   {
     "question_number": 124,
@@ -4558,10 +4187,7 @@
     "correct_option_labels": [
       "A"
     ],
-    "explanation": "When interview questions will be used verbatim across all candidates, fairness and bias review is the most critical step. Questions must be relevant to the role and free from bias against any protected group to ensure equitable hiring practices.",
-    "in_website": true,
-    "website_question_number": 125,
-    "website_url": "https://examfree.org/exam/ccao-f/question-125"
+    "explanation": "When interview questions will be used verbatim across all candidates, fairness and bias review is the most critical step. Questions must be relevant to the role and free from bias against any protected group to ensure equitable hiring practices."
   },
   {
     "question_number": 125,
@@ -4593,10 +4219,7 @@
     "correct_option_labels": [
       "D"
     ],
-    "explanation": "First define the specific research questions before gathering or validating information.",
-    "in_website": true,
-    "website_question_number": 126,
-    "website_url": "https://examfree.org/exam/ccao-f/question-126"
+    "explanation": "First define the specific research questions before gathering or validating information."
   },
   {
     "question_number": 126,
@@ -4628,10 +4251,7 @@
     "correct_option_labels": [
       "A"
     ],
-    "explanation": "Projects function as isolated containers for managing project-specific knowledge, instructions, and histories. Separate Projects with distinct configurations prevent cross-tenant contamination.",
-    "in_website": true,
-    "website_question_number": 127,
-    "website_url": "https://examfree.org/exam/ccao-f/question-127"
+    "explanation": "Projects function as isolated containers for managing project-specific knowledge, instructions, and histories. Separate Projects with distinct configurations prevent cross-tenant contamination."
   },
   {
     "question_number": 127,
@@ -4663,10 +4283,7 @@
     "correct_option_labels": [
       "B"
     ],
-    "explanation": "For a recurring task that does not require deep reasoning and runs at moderate volume, the fastest, most cost-effective tier (Haiku) is the appropriate choice. This balances speed, cost, and sufficient quality for straightforward meeting summarization.",
-    "in_website": true,
-    "website_question_number": 128,
-    "website_url": "https://examfree.org/exam/ccao-f/question-128"
+    "explanation": "For a recurring task that does not require deep reasoning and runs at moderate volume, the fastest, most cost-effective tier (Haiku) is the appropriate choice. This balances speed, cost, and sufficient quality for straightforward meeting summarization."
   },
   {
     "question_number": 128,
@@ -4704,10 +4321,7 @@
       "D",
       "E"
     ],
-    "explanation": "Synthesizing literature reviews (D) and drafting status updates from notes (E) are well-suited for Claude support.",
-    "in_website": true,
-    "website_question_number": 129,
-    "website_url": "https://examfree.org/exam/ccao-f/question-129"
+    "explanation": "Synthesizing literature reviews (D) and drafting status updates from notes (E) are well-suited for Claude support."
   },
   {
     "question_number": 129,
@@ -4745,10 +4359,7 @@
       "C",
       "E"
     ],
-    "explanation": "Drafting audience-aware emails under review (C) and synthesizing summaries across documents (E) fit Claude's strengths.",
-    "in_website": true,
-    "website_question_number": 130,
-    "website_url": "https://examfree.org/exam/ccao-f/question-130"
+    "explanation": "Drafting audience-aware emails under review (C) and synthesizing summaries across documents (E) fit Claude's strengths."
   },
   {
     "question_number": 130,
@@ -4780,10 +4391,7 @@
     "correct_option_labels": [
       "A"
     ],
-    "explanation": "Unsourced claims, even those labeled 'well-known,' must be treated as unverified. Either find an authoritative source to support the claim or remove it from the output.",
-    "in_website": true,
-    "website_question_number": 131,
-    "website_url": "https://examfree.org/exam/ccao-f/question-131"
+    "explanation": "Unsourced claims, even those labeled 'well-known,' must be treated as unverified. Either find an authoritative source to support the claim or remove it from the output."
   },
   {
     "question_number": 131,
@@ -4815,10 +4423,7 @@
     "correct_option_labels": [
       "C"
     ],
-    "explanation": "Artifacts are designed for standalone, editable content that teams can iterate on and share.",
-    "in_website": true,
-    "website_question_number": 133,
-    "website_url": "https://examfree.org/exam/ccao-f/question-133"
+    "explanation": "Artifacts are designed for standalone, editable content that teams can iterate on and share."
   },
   {
     "question_number": 132,
@@ -4850,10 +4455,7 @@
     "correct_option_labels": [
       "A"
     ],
-    "explanation": "A prompt that only names a topic without specifying the task, audience, or required output structure gives Claude no guidance on what to produce, leading to vague or off-target responses.",
-    "in_website": true,
-    "website_question_number": 134,
-    "website_url": "https://examfree.org/exam/ccao-f/question-134"
+    "explanation": "A prompt that only names a topic without specifying the task, audience, or required output structure gives Claude no guidance on what to produce, leading to vague or off-target responses."
   },
   {
     "question_number": 133,
@@ -4885,10 +4487,7 @@
     "correct_option_labels": [
       "A"
     ],
-    "explanation": "First try summarizing the current state and continuing with a focused follow-up before more drastic measures.",
-    "in_website": true,
-    "website_question_number": 135,
-    "website_url": "https://examfree.org/exam/ccao-f/question-135"
+    "explanation": "First try summarizing the current state and continuing with a focused follow-up before more drastic measures."
   },
   {
     "question_number": 134,
@@ -4920,10 +4519,7 @@
     "correct_option_labels": [
       "A"
     ],
-    "explanation": "The context window is the total amount of text (measured in tokens) that Claude can consider at once, including conversation history, system prompts, and attached documents. It is finite, not unlimited.",
-    "in_website": true,
-    "website_question_number": 136,
-    "website_url": "https://examfree.org/exam/ccao-f/question-136"
+    "explanation": "The context window is the total amount of text (measured in tokens) that Claude can consider at once, including conversation history, system prompts, and attached documents. It is finite, not unlimited."
   },
   {
     "question_number": 135,
@@ -4955,10 +4551,7 @@
     "correct_option_labels": [
       "C"
     ],
-    "explanation": "For breadth-before-narrowing, request multiple distinct options with trade-offs without committing to a recommendation yet.",
-    "in_website": true,
-    "website_question_number": 137,
-    "website_url": "https://examfree.org/exam/ccao-f/question-137"
+    "explanation": "For breadth-before-narrowing, request multiple distinct options with trade-offs without committing to a recommendation yet."
   },
   {
     "question_number": 136,
@@ -4990,10 +4583,7 @@
     "correct_option_labels": [
       "A"
     ],
-    "explanation": "Providing steps in a numbered list in exact order makes the required sequence unambiguous.",
-    "in_website": true,
-    "website_question_number": 138,
-    "website_url": "https://examfree.org/exam/ccao-f/question-138"
+    "explanation": "Providing steps in a numbered list in exact order makes the required sequence unambiguous."
   },
   {
     "question_number": 137,
@@ -5025,10 +4615,7 @@
     "correct_option_labels": [
       "C"
     ],
-    "explanation": "Option C provides the most structured guidance, giving Claude clear sequential instructions for the email's components.",
-    "in_website": true,
-    "website_question_number": 139,
-    "website_url": "https://examfree.org/exam/ccao-f/question-139"
+    "explanation": "Option C provides the most structured guidance, giving Claude clear sequential instructions for the email's components."
   },
   {
     "question_number": 138,
@@ -5060,10 +4647,7 @@
     "correct_option_labels": [
       "D"
     ],
-    "explanation": "Without written requirements, there is no way to track that earlier fixes are preserved across revision rounds.",
-    "in_website": true,
-    "website_question_number": 140,
-    "website_url": "https://examfree.org/exam/ccao-f/question-140"
+    "explanation": "Without written requirements, there is no way to track that earlier fixes are preserved across revision rounds."
   },
   {
     "question_number": 139,
@@ -5101,10 +4685,7 @@
       "A",
       "E"
     ],
-    "explanation": "A and E are the strongest signals: bundling distinct deliverables for different audiences (A) and dependencies where later work depends on earlier accuracy (E) both indicate the request should be decomposed.",
-    "in_website": true,
-    "website_question_number": 141,
-    "website_url": "https://examfree.org/exam/ccao-f/question-141"
+    "explanation": "A and E are the strongest signals: bundling distinct deliverables for different audiences (A) and dependencies where later work depends on earlier accuracy (E) both indicate the request should be decomposed."
   },
   {
     "question_number": 140,
@@ -5136,10 +4717,7 @@
     "correct_option_labels": [
       "A"
     ],
-    "explanation": "Option A directly addresses readability while preserving accuracy - shorter sentences and everyday words make the content accessible without removing steps.",
-    "in_website": true,
-    "website_question_number": 142,
-    "website_url": "https://examfree.org/exam/ccao-f/question-142"
+    "explanation": "Option A directly addresses readability while preserving accuracy - shorter sentences and everyday words make the content accessible without removing steps."
   },
   {
     "question_number": 141,
@@ -5171,10 +4749,7 @@
     "correct_option_labels": [
       "A"
     ],
-    "explanation": "The output is accurate but misses the point - it explains what cancellation rates are generally rather than addressing why they rose sharply in the last quarter.",
-    "in_website": true,
-    "website_question_number": 143,
-    "website_url": "https://examfree.org/exam/ccao-f/question-143"
+    "explanation": "The output is accurate but misses the point - it explains what cancellation rates are generally rather than addressing why they rose sharply in the last quarter."
   },
   {
     "question_number": 142,
@@ -5206,10 +4781,7 @@
     "correct_option_labels": [
       "A"
     ],
-    "explanation": "Only finding the exact sentence in the source confirms it is a genuine direct quotation rather than a paraphrase or fabrication.",
-    "in_website": true,
-    "website_question_number": 144,
-    "website_url": "https://examfree.org/exam/ccao-f/question-144"
+    "explanation": "Only finding the exact sentence in the source confirms it is a genuine direct quotation rather than a paraphrase or fabrication."
   },
   {
     "question_number": 143,
@@ -5241,10 +4813,7 @@
     "correct_option_labels": [
       "B"
     ],
-    "explanation": "Defining the scope (which suppliers and criteria) before generating output ensures consistency and avoids wasted effort.",
-    "in_website": true,
-    "website_question_number": 145,
-    "website_url": "https://examfree.org/exam/ccao-f/question-145"
+    "explanation": "Defining the scope (which suppliers and criteria) before generating output ensures consistency and avoids wasted effort."
   },
   {
     "question_number": 144,
@@ -5276,10 +4845,7 @@
     "correct_option_labels": [
       "B"
     ],
-    "explanation": "Verifying citations against original sources is the essential validation step before publishing any Claude-generated content with factual claims.",
-    "in_website": true,
-    "website_question_number": 146,
-    "website_url": "https://examfree.org/exam/ccao-f/question-146"
+    "explanation": "Verifying citations against original sources is the essential validation step before publishing any Claude-generated content with factual claims."
   },
   {
     "question_number": 145,
@@ -5311,10 +4877,7 @@
     "correct_option_labels": [
       "D"
     ],
-    "explanation": "The thumbs-down control records the problem for the platform, while fixing the draft addresses the immediate work.",
-    "in_website": true,
-    "website_question_number": 147,
-    "website_url": "https://examfree.org/exam/ccao-f/question-147"
+    "explanation": "The thumbs-down control records the problem for the platform, while fixing the draft addresses the immediate work."
   },
   {
     "question_number": 146,
@@ -5346,10 +4909,7 @@
     "correct_option_labels": [
       "A"
     ],
-    "explanation": "For a one-off brainstorm that won't be revisited, letting the conversation condense naturally is appropriate - no special preservation action is needed.",
-    "in_website": true,
-    "website_question_number": 148,
-    "website_url": "https://examfree.org/exam/ccao-f/question-148"
+    "explanation": "For a one-off brainstorm that won't be revisited, letting the conversation condense naturally is appropriate - no special preservation action is needed."
   },
   {
     "question_number": 147,
@@ -5387,10 +4947,7 @@
       "C",
       "D"
     ],
-    "explanation": "Research mode provides cited multi-step searching for public sources, and artifacts enable team editing outside the chat.",
-    "in_website": true,
-    "website_question_number": 149,
-    "website_url": "https://examfree.org/exam/ccao-f/question-149"
+    "explanation": "Research mode provides cited multi-step searching for public sources, and artifacts enable team editing outside the chat."
   },
   {
     "question_number": 148,
@@ -5428,10 +4985,7 @@
       "B",
       "C"
     ],
-    "explanation": "Match the tier to the task: fastest/cheapest for high-volume classification (C), deepest reasoning for complex contract analysis (B).",
-    "in_website": true,
-    "website_question_number": 150,
-    "website_url": "https://examfree.org/exam/ccao-f/question-150"
+    "explanation": "Match the tier to the task: fastest/cheapest for high-volume classification (C), deepest reasoning for complex contract analysis (B)."
   },
   {
     "question_number": 149,
@@ -5469,10 +5023,7 @@
       "A",
       "D"
     ],
-    "explanation": "A and D accurately describe the tier differences: deepest tier for hard problems (A), mid tier as the capable default (D).",
-    "in_website": true,
-    "website_question_number": 151,
-    "website_url": "https://examfree.org/exam/ccao-f/question-151"
+    "explanation": "A and D accurately describe the tier differences: deepest tier for hard problems (A), mid tier as the capable default (D)."
   },
   {
     "question_number": 150,
@@ -5504,10 +5055,7 @@
     "correct_option_labels": [
       "D"
     ],
-    "explanation": "Define success criteria first, test with the default tier, and only escalate tier if the output falls short of the definition.",
-    "in_website": true,
-    "website_question_number": 152,
-    "website_url": "https://examfree.org/exam/ccao-f/question-152"
+    "explanation": "Define success criteria first, test with the default tier, and only escalate tier if the output falls short of the definition."
   },
   {
     "question_number": 151,
@@ -5539,10 +5087,7 @@
     "correct_option_labels": [
       "C"
     ],
-    "explanation": "The key consideration is the presence of human review - unchecked automated output needs higher quality because there is no safety net.",
-    "in_website": true,
-    "website_question_number": 153,
-    "website_url": "https://examfree.org/exam/ccao-f/question-153"
+    "explanation": "The key consideration is the presence of human review - unchecked automated output needs higher quality because there is no safety net."
   },
   {
     "question_number": 152,
@@ -5574,10 +5119,7 @@
     "correct_option_labels": [
       "D"
     ],
-    "explanation": "Restating solution requests as desired outcomes helps identify the actual need behind the request, and flagging unclear entries highlights where more information is needed.",
-    "in_website": true,
-    "website_question_number": 154,
-    "website_url": "https://examfree.org/exam/ccao-f/question-154"
+    "explanation": "Restating solution requests as desired outcomes helps identify the actual need behind the request, and flagging unclear entries highlights where more information is needed."
   },
   {
     "question_number": 153,
@@ -5609,10 +5151,7 @@
     "correct_option_labels": [
       "B"
     ],
-    "explanation": "Vague feedback ('not quite right') needs to be made specific first - concrete examples of what went wrong and what was expected enable diagnosis.",
-    "in_website": true,
-    "website_question_number": 155,
-    "website_url": "https://examfree.org/exam/ccao-f/question-155"
+    "explanation": "Vague feedback ('not quite right') needs to be made specific first - concrete examples of what went wrong and what was expected enable diagnosis."
   },
   {
     "question_number": 154,
@@ -5644,10 +5183,7 @@
     "correct_option_labels": [
       "B"
     ],
-    "explanation": "Above all, the announcement should clarify roles: what changes with Claude, what stays with each person, and where human review remains required.",
-    "in_website": true,
-    "website_question_number": 156,
-    "website_url": "https://examfree.org/exam/ccao-f/question-156"
+    "explanation": "Above all, the announcement should clarify roles: what changes with Claude, what stays with each person, and where human review remains required."
   },
   {
     "question_number": 155,
@@ -5685,10 +5221,7 @@
       "B",
       "E"
     ],
-    "explanation": "Using Research mode with citation verification (B) and having Claude draft the research plan for team refinement (E) are sound research approaches.",
-    "in_website": true,
-    "website_question_number": 157,
-    "website_url": "https://examfree.org/exam/ccao-f/question-157"
+    "explanation": "Using Research mode with citation verification (B) and having Claude draft the research plan for team refinement (E) are sound research approaches."
   },
   {
     "question_number": 156,
@@ -5726,10 +5259,7 @@
       "B",
       "D"
     ],
-    "explanation": "For sceptical stakeholders, showing where human review remains (B) and providing measured pilot results (D) build credibility without overpromising.",
-    "in_website": true,
-    "website_question_number": 158,
-    "website_url": "https://examfree.org/exam/ccao-f/question-158"
+    "explanation": "For sceptical stakeholders, showing where human review remains (B) and providing measured pilot results (D) build credibility without overpromising."
   },
   {
     "question_number": 157,
@@ -5761,10 +5291,7 @@
     "correct_option_labels": [
       "D"
     ],
-    "explanation": "Reference material belongs in project knowledge (where it can be looked up), while behavioral rules belong in project instructions (where they guide every response).",
-    "in_website": true,
-    "website_question_number": 159,
-    "website_url": "https://examfree.org/exam/ccao-f/question-159"
+    "explanation": "Reference material belongs in project knowledge (where it can be looked up), while behavioral rules belong in project instructions (where they guide every response)."
   },
   {
     "question_number": 158,
@@ -5796,10 +5323,7 @@
     "correct_option_labels": [
       "A"
     ],
-    "explanation": "When shared project knowledge changes, members need to be informed so they understand that previous answers may be based on outdated information.",
-    "in_website": true,
-    "website_question_number": 160,
-    "website_url": "https://examfree.org/exam/ccao-f/question-160"
+    "explanation": "When shared project knowledge changes, members need to be informed so they understand that previous answers may be based on outdated information."
   },
   {
     "question_number": 159,
@@ -5837,10 +5361,7 @@
       "A",
       "E"
     ],
-    "explanation": "Connect the Drive folder for frequently changing content (A), and upload the static annual report to project knowledge (E).",
-    "in_website": true,
-    "website_question_number": 161,
-    "website_url": "https://examfree.org/exam/ccao-f/question-161"
+    "explanation": "Connect the Drive folder for frequently changing content (A), and upload the static annual report to project knowledge (E)."
   },
   {
     "question_number": 160,
@@ -5872,10 +5393,7 @@
     "correct_option_labels": [
       "A"
     ],
-    "explanation": "Sharing a project org-wide with sensitive data like salary bands means anyone with access can extract that information through ordinary queries.",
-    "in_website": true,
-    "website_question_number": 162,
-    "website_url": "https://examfree.org/exam/ccao-f/question-162"
+    "explanation": "Sharing a project org-wide with sensitive data like salary bands means anyone with access can extract that information through ordinary queries."
   },
   {
     "question_number": 161,
@@ -5907,10 +5425,7 @@
     "correct_option_labels": [
       "C"
     ],
-    "explanation": "Giving an agent unsupervised authority over email and production database modifications removes human oversight from actions that are hard to reverse.",
-    "in_website": true,
-    "website_question_number": 163,
-    "website_url": "https://examfree.org/exam/ccao-f/question-163"
+    "explanation": "Giving an agent unsupervised authority over email and production database modifications removes human oversight from actions that are hard to reverse."
   },
   {
     "question_number": 162,
@@ -5942,10 +5457,7 @@
     "correct_option_labels": [
       "C"
     ],
-    "explanation": "Team-plan owners can disable the chat rating feature organisation-wide in settings, preventing any rating data from leaving the organisation.",
-    "in_website": true,
-    "website_question_number": 164,
-    "website_url": "https://examfree.org/exam/ccao-f/question-164"
+    "explanation": "Team-plan owners can disable the chat rating feature organisation-wide in settings, preventing any rating data from leaving the organisation."
   },
   {
     "question_number": 163,
@@ -5977,10 +5489,7 @@
     "correct_option_labels": [
       "B"
     ],
-    "explanation": "While incognito chats aren't used for training, the organisation's data handling policies for regulated data still apply regardless of chat mode.",
-    "in_website": true,
-    "website_question_number": 165,
-    "website_url": "https://examfree.org/exam/ccao-f/question-165"
+    "explanation": "While incognito chats aren't used for training, the organisation's data handling policies for regulated data still apply regardless of chat mode."
   },
   {
     "question_number": 164,
@@ -6012,10 +5521,7 @@
     "correct_option_labels": [
       "D"
     ],
-    "explanation": "First establish what the firm's AI policy requires for this type of client-facing deliverable, then comply with those requirements before sending.",
-    "in_website": true,
-    "website_question_number": 166,
-    "website_url": "https://examfree.org/exam/ccao-f/question-166"
+    "explanation": "First establish what the firm's AI policy requires for this type of client-facing deliverable, then comply with those requirements before sending."
   },
   {
     "question_number": 165,
@@ -6047,10 +5553,7 @@
     "correct_option_labels": [
       "C"
     ],
-    "explanation": "The admissions decision (who gets a place) is a high-stakes determination that should remain with human staff; Claude can assist with drafting the notification letters.",
-    "in_website": true,
-    "website_question_number": 167,
-    "website_url": "https://examfree.org/exam/ccao-f/question-167"
+    "explanation": "The admissions decision (who gets a place) is a high-stakes determination that should remain with human staff; Claude can assist with drafting the notification letters."
   },
   {
     "question_number": 166,
@@ -6082,10 +5585,7 @@
     "correct_option_labels": [
       "C"
     ],
-    "explanation": "The correct order: check policy/consent first, then remove unnecessary PII, then run and review the summary, then document what was removed.",
-    "in_website": true,
-    "website_question_number": 168,
-    "website_url": "https://examfree.org/exam/ccao-f/question-168"
+    "explanation": "The correct order: check policy/consent first, then remove unnecessary PII, then run and review the summary, then document what was removed."
   },
   {
     "question_number": 167,
@@ -6117,10 +5617,7 @@
     "correct_option_labels": [
       "C"
     ],
-    "explanation": "The root cause is an underspecified prompt. Listing exact categories, output format, and selection criteria in the prompt addresses the cause rather than treating symptoms.",
-    "in_website": true,
-    "website_question_number": 169,
-    "website_url": "https://examfree.org/exam/ccao-f/question-169"
+    "explanation": "The root cause is an underspecified prompt. Listing exact categories, output format, and selection criteria in the prompt addresses the cause rather than treating symptoms."
   },
   {
     "question_number": 168,
@@ -6152,10 +5649,7 @@
     "correct_option_labels": [
       "C"
     ],
-    "explanation": "Correct sequence: decide needs first, put everything in the opening message, work through follow-ups in the same chat, then open a new chat for the next task.",
-    "in_website": true,
-    "website_question_number": 170,
-    "website_url": "https://examfree.org/exam/ccao-f/question-170"
+    "explanation": "Correct sequence: decide needs first, put everything in the opening message, work through follow-ups in the same chat, then open a new chat for the next task."
   },
   {
     "question_number": 169,
@@ -6187,10 +5681,7 @@
     "correct_option_labels": [
       "C"
     ],
-    "explanation": "A. An instruction in every message is a per-message reminder rather than a change to the setup.\nB. An empty project addresses knowledge documents, not the tools and connections that stay enabled.\nC. Correct. Turning off tools and connectors that a task does not need is a recognised way to keep routine work efficient, and they can be re-enabled when the next task needs them.\nD. Removing them permanently costs her the reconnection work every time the other tasks come round.",
-    "in_website": true,
-    "website_question_number": 171,
-    "website_url": "https://examfree.org/exam/ccao-f/question-171"
+    "explanation": "A. An instruction in every message is a per-message reminder rather than a change to the setup.\nB. An empty project addresses knowledge documents, not the tools and connections that stay enabled.\nC. Correct. Turning off tools and connectors that a task does not need is a recognised way to keep routine work efficient, and they can be re-enabled when the next task needs them.\nD. Removing them permanently costs her the reconnection work every time the other tasks come round."
   },
   {
     "question_number": 170,
@@ -6228,10 +5719,7 @@
       "A",
       "C"
     ],
-    "explanation": "A. Correct. Vague feedback cannot be acted on; specific failing examples turn an impression into something diagnosable.\nB. Changing shared instructions before the cause is known risks fixing the wrong thing for everyone at once.\nC. Correct on separate grounds: only the source shows whether the risk was absent from the log, buried, or genuinely dropped.\nD. A score captures sentiment but still never says which risks went missing, or why they went missing.\nE. A format change may help presentation, but it cannot add a risk the digest never captured.",
-    "in_website": true,
-    "website_question_number": 172,
-    "website_url": "https://examfree.org/exam/ccao-f/question-172"
+    "explanation": "A. Correct. Vague feedback cannot be acted on; specific failing examples turn an impression into something diagnosable.\nB. Changing shared instructions before the cause is known risks fixing the wrong thing for everyone at once.\nC. Correct on separate grounds: only the source shows whether the risk was absent from the log, buried, or genuinely dropped.\nD. A score captures sentiment but still never says which risks went missing, or why they went missing.\nE. A format change may help presentation, but it cannot add a risk the digest never captured."
   },
   {
     "question_number": 171,
@@ -6263,10 +5751,7 @@
     "correct_option_labels": [
       "C"
     ],
-    "explanation": "Targeted edits addressing only the specific feedback preserve the accepted parts and avoid introducing unintended changes.",
-    "in_website": false,
-    "website_question_number": null,
-    "website_url": null
+    "explanation": "Targeted edits addressing only the specific feedback preserve the accepted parts and avoid introducing unintended changes."
   },
   {
     "question_number": 172,
@@ -6298,10 +5783,7 @@
     "correct_option_labels": [
       "B"
     ],
-    "explanation": "Explicit criteria for both Claude's output and the reviewer's checks ensure clarity and consistency in the hand-off.",
-    "in_website": false,
-    "website_question_number": null,
-    "website_url": null
+    "explanation": "Explicit criteria for both Claude's output and the reviewer's checks ensure clarity and consistency in the hand-off."
   },
   {
     "question_number": 173,
@@ -6333,10 +5815,7 @@
     "correct_option_labels": [
       "D"
     ],
-    "explanation": "The recommendation selectively uses sources to support its conclusion while omitting contradictory information. It should be re-prompted to address all material facts.",
-    "in_website": false,
-    "website_question_number": null,
-    "website_url": null
+    "explanation": "The recommendation selectively uses sources to support its conclusion while omitting contradictory information. It should be re-prompted to address all material facts."
   },
   {
     "question_number": 174,
@@ -6368,10 +5847,7 @@
     "correct_option_labels": [
       "A"
     ],
-    "explanation": "First identify which policy provisions apply before comparing, deciding, or documenting.",
-    "in_website": false,
-    "website_question_number": null,
-    "website_url": null
+    "explanation": "First identify which policy provisions apply before comparing, deciding, or documenting."
   },
   {
     "question_number": 175,
@@ -6403,10 +5879,7 @@
     "correct_option_labels": [
       "D"
     ],
-    "explanation": "The Gmail connector allows Claude to search, read, and draft replies, but each action requires explicit user approval and the user sends manually.",
-    "in_website": false,
-    "website_question_number": null,
-    "website_url": null
+    "explanation": "The Gmail connector allows Claude to search, read, and draft replies, but each action requires explicit user approval and the user sends manually."
   },
   {
     "question_number": 176,
@@ -6438,10 +5911,7 @@
     "correct_option_labels": [
       "A"
     ],
-    "explanation": "Balance value and limitations by describing strengths, naming limitations managed by human review, and tying both to outcomes.",
-    "in_website": false,
-    "website_question_number": null,
-    "website_url": null
+    "explanation": "Balance value and limitations by describing strengths, naming limitations managed by human review, and tying both to outcomes."
   },
   {
     "question_number": 177,
@@ -6473,10 +5943,7 @@
     "correct_option_labels": [
       "C"
     ],
-    "explanation": "Description principles require accurate framing of capabilities, limitations, and human oversight, calibrated to audience familiarity.",
-    "in_website": false,
-    "website_question_number": null,
-    "website_url": null
+    "explanation": "Description principles require accurate framing of capabilities, limitations, and human oversight, calibrated to audience familiarity."
   },
   {
     "question_number": 178,
@@ -6508,10 +5975,7 @@
     "correct_option_labels": [
       "D"
     ],
-    "explanation": "The root cause is the prompt not constraining Claude to use only facts from the supplied source, allowing hallucination of facts not present in the source.",
-    "in_website": false,
-    "website_question_number": null,
-    "website_url": null
+    "explanation": "The root cause is the prompt not constraining Claude to use only facts from the supplied source, allowing hallucination of facts not present in the source."
   },
   {
     "question_number": 179,
@@ -6543,10 +6007,7 @@
     "correct_option_labels": [
       "B"
     ],
-    "explanation": "Given the consistent correction rate in historical audits, fully autonomous approval is not appropriate. Risk-based triage (B) keeps human oversight on higher-risk decisions while allowing automation of clear-cut cases.",
-    "in_website": false,
-    "website_question_number": null,
-    "website_url": null
+    "explanation": "Given the consistent correction rate in historical audits, fully autonomous approval is not appropriate. Risk-based triage (B) keeps human oversight on higher-risk decisions while allowing automation of clear-cut cases."
   },
   {
     "question_number": 180,
@@ -6584,10 +6045,7 @@
       "A",
       "D"
     ],
-    "explanation": "Defining clear inputs/outputs (A) ensures workflow hand-offs are predictable, and documenting invocation steps with remaining human review (D) maintains accountability and reliability.",
-    "in_website": false,
-    "website_question_number": null,
-    "website_url": null
+    "explanation": "Defining clear inputs/outputs (A) ensures workflow hand-offs are predictable, and documenting invocation steps with remaining human review (D) maintains accountability and reliability."
   },
   {
     "question_number": 181,
@@ -6625,9 +6083,6 @@
       "A",
       "E"
     ],
-    "explanation": "Standardized input format (A) ensures consistency across runs, and a human verification step (E) catches errors the sandbox cannot detect, such as logical mistakes or incorrect calculations.",
-    "in_website": false,
-    "website_question_number": null,
-    "website_url": null
+    "explanation": "Standardized input format (A) ensures consistency across runs, and a human verification step (E) catches errors the sandbox cannot detect, such as logical mistakes or incorrect calculations."
   }
 ]

@@ -1,6 +1,6 @@
 # Claude Certification Preparation Platform
 
-> 🚀 **Enterprise React + Vite preparation platform for Anthropic Claude Certifications** (`CCAO-F`, `CCA-F`, `CCA-P`) featuring **305 authentic questions**, official blueprint topic weightings, 120-minute timed simulator, diagnostic scorecard, interactive Question Bank, and a 100% passing automated test suite.
+> 🚀 **Enterprise React + Vite preparation platform for Anthropic Claude Certifications** (`CCAO-F`, `CCA-F`, `CCA-P`) featuring **376 authentic questions**, official blueprint topic weightings, 120-minute timed simulator, diagnostic scorecard, interactive Question Bank, and a 100% passing automated test suite.
 
 > **Important:** This is an independent learning resource, not an official Anthropic product. The practice questions and explanations are created for educational self-assessment. Verify current exam objectives, certification names, policies, and product behavior against official Anthropic documentation.
 
@@ -10,21 +10,21 @@
 
 Question distribution in the exam simulator is governed by **certification blueprint topic weightings** (`src/utils/examEngine.js`) to accurately mirror real exam conditions:
 
-### 1. CCAO-F: Claude Certified Associate — Foundations (110 Qs)
+### 1. CCAO-F: Claude Certified Associate — Foundations (181 Qs)
 *Target: 60 questions sampled per exam attempt*
 
 | Domain / Concept | Blueprint Weight | Target Quota | Core Topics |
 | :--- | :---: | :---: | :--- |
 | **Prompt Clarity & Constraints** | 12% | 7 Qs | Task specification, constraints, audience, tone, boundary counts |
-| **System Prompts & Role Framing** | 12% | 7 Qs | System prompts, behavioral boundaries, persona framing |
-| **Hallucinations & Citations** | 10% | 6 Qs | Verification against source text, grounding, factual citations |
-| **RAG & Retrieval Augmentation** | 10% | 6 Qs | Chunking strategies, semantic search, hybrid retrieval |
-| **Context Windows & Needle in Haystack** | 10% | 6 Qs | Placement of instructions, 200k window nuances, attention drift |
-| **Claude Models & Modalities** | 10% | 6 Qs | Model selection trade-offs (Haiku 3.5, Sonnet 3.7, Opus) |
-| **Evaluation & Iterative Prompting** | 10% | 6 Qs | Golden datasets, pass/fail rubrics, downstream verification |
-| **Prompt Caching & Latency** | 10% | 6 Qs | Cache breakpoints, ephemeral context reuse, TTFT reduction |
-| **Temperature & Sampling Parameters** | 8% | 5 Qs | Determinism vs creativity, top-p, temperature calibrations |
-| **Structured Outputs & XML Protocol** | 8% | 5 Qs | Schema enforcement, `<tags>`, JSON mode, XML parsing |
+| **Project Configuration & Maintenance** | 12% | 7 Qs | Custom instructions, project knowledge, connectors, memory |
+| **Context Windows & Models** | 10% | 6 Qs | Token budget, model tiers (Opus vs Sonnet vs Haiku), latency vs cost |
+| **Data Privacy & Redaction** | 10% | 6 Qs | PII, confidential data, redaction, opt-out, data retention |
+| **Primary-Source Verification & Hallucinations** | 10% | 6 Qs | Grounding, source document cross-check, citations, fact-checking |
+| **Iteration, Feedback & Diminishing Returns** | 10% | 6 Qs | Prompt refinement, 8+ rounds of diminishing returns, regression |
+| **Workflow Decomposition & Formatting** | 10% | 6 Qs | Task decomposition, dependency ordering, intermediate structured formats |
+| **Human Oversight, Ethical Risks & AI Fluency** | 10% | 6 Qs | AI Fluency Framework, high-stakes decisions, human-in-the-loop |
+| **Code Execution for Exact Calculations** | 8% | 5 Qs | Deterministic arithmetic, Python analysis sandbox, spreadsheets |
+| **Recovering Degraded Conversations** | 8% | 5 Qs | Context drift, session recovery, fresh focused chat transitions |
 | **Total** | **100%** | **60 Qs** | *100% Blueprint Representation* |
 
 ---
