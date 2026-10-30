@@ -36,3 +36,7 @@ cca_f_raw.txt
 cca_p_intro.txt
 extracted_raw.txt
 page_*.txt
+
+# Python cache
+__pycache__/
+*.pyc
