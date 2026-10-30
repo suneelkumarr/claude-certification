@@ -9,7 +9,8 @@
     "preview": "vite preview",
     "test": "vitest run",
     "test:watch": "vitest",
-    "test:content": "node scripts/validate-content.mjs"
+    "test:content": "node scripts/validate-content.mjs",
+    "deploy": "npm run build && wrangler pages deploy dist --project-name=claude-certification"
   },
   "dependencies": {
     "canvas-confetti": "^1.9.4",
