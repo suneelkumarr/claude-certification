@@ -77,6 +77,18 @@ export default function ExamView({ exam, onSwitchToStudy }) {
     }
   });
 
+  // Persist an absolute deadline so refreshing the page does not pause the exam clock.
+  const [deadlineAt, setDeadlineAt] = useState(() => {
+    try {
+      const saved = JSON.parse(localStorage.getItem(savedSessionKey) || 'null');
+      return typeof saved?.deadlineAt === 'number'
+        ? saved.deadlineAt
+        : Date.now() + (typeof saved?.remainingSeconds === 'number' ? saved.remainingSeconds : TOTAL_SECONDS) * 1000;
+    } catch {
+      return Date.now() + TOTAL_SECONDS * 1000;
+    }
+  });
+
   const [showSubmitModal, setShowSubmitModal] = useState(false);
   const [mobilePaletteOpen, setMobilePaletteOpen] = useState(false);
   const [reviewFilter, setReviewFilter] = useState('all'); // 'all', 'correct', 'wrong'
@@ -90,13 +102,14 @@ export default function ExamView({ exam, onSwitchToStudy }) {
         currentIndex,
         userResponses,
         remainingSeconds,
+        deadlineAt,
         savedAt: Date.now()
       };
       localStorage.setItem(savedSessionKey, JSON.stringify(sessionData));
     } else if (phase === 'report' || phase === 'intro') {
       localStorage.removeItem(savedSessionKey);
     }
-  }, [phase, examQuestions, currentIndex, userResponses, remainingSeconds, savedSessionKey]);
+  }, [phase, examQuestions, currentIndex, userResponses, remainingSeconds, deadlineAt, savedSessionKey]);
 
   // Pick weighted questions across all concepts using examEngine
   const initExamQuestions = () => {
@@ -105,27 +118,29 @@ export default function ExamView({ exam, onSwitchToStudy }) {
     setCurrentIndex(0);
     setUserResponses({});
     setRemainingSeconds(TOTAL_SECONDS);
+    setDeadlineAt(Date.now() + TOTAL_SECONDS * 1000);
     setPhase('running');
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  // Timer countdown hook
+  // Timer countdown uses the absolute deadline so background tabs and refreshes
+  // do not accidentally grant extra exam time.
   useEffect(() => {
-    let timer = null;
-    if (phase === 'running' && remainingSeconds > 0) {
-      timer = setInterval(() => {
-        setRemainingSeconds(prev => {
-          if (checkTimerExpiration(prev - 1)) {
-            clearInterval(timer);
-            handleFinishExam();
-            return 0;
-          }
-          return prev - 1;
-        });
-      }, 1000);
-    }
+    if (phase !== 'running') return undefined;
+
+    const tick = () => {
+      const secondsLeft = Math.max(0, Math.ceil((deadlineAt - Date.now()) / 1000));
+      setRemainingSeconds(secondsLeft);
+
+      if (checkTimerExpiration(secondsLeft)) {
+        handleFinishExam();
+      }
+    };
+
+    tick();
+    const timer = setInterval(tick, 1000);
     return () => clearInterval(timer);
-  }, [phase, remainingSeconds]);
+  }, [phase, deadlineAt]);
 
   // Handle option select in exam using pure state updater
   const handleSelectOption = (idx, letter, isMulti) => {
@@ -214,7 +229,7 @@ export default function ExamView({ exam, onSwitchToStudy }) {
             textTransform: 'uppercase'
           }}>
             <Zap size={14} />
-            <span>Official Anthropic Timed Certification Simulation</span>
+            <span>Independent Practice Exam Simulation</span>
           </div>
 
           <h1 style={{
@@ -234,7 +249,7 @@ export default function ExamView({ exam, onSwitchToStudy }) {
             fontSize: '1rem',
             lineHeight: 1.65
           }}>
-            Yeh simulator pool mein se <strong>randomly 60 questions</strong> select karta hai, jisme sabhi <strong>{exam.concepts.length} core concepts</strong> ka equal proportion hota hai. Real exam timing aur passing threshold ke sath live test dein!
+            Yeh simulator pool mein se <strong>randomly 60 questions</strong> select karta hai, jisme sabhi <strong>{exam.concepts.length} core concepts</strong> ka equal proportion hota hai. Practice timing aur score benchmark ke saath apni preparation test karein. Yeh official exam simulation nahi hai.
           </p>
 
           {/* 4 Feature Highlights Grid */}
@@ -254,7 +269,7 @@ export default function ExamView({ exam, onSwitchToStudy }) {
             }}>
               <div style={{ fontSize: '1.6rem', marginBottom: '0.4rem' }}>⏳</div>
               <div style={{ fontWeight: 800, color: '#f8fafc', fontSize: '0.98rem', marginBottom: '0.2rem' }}>120 Minutes Timer</div>
-              <div style={{ fontSize: '0.82rem', color: 'var(--text-muted)', lineHeight: 1.5 }}>Real exam countdown with automatic submit at 00:00.</div>
+              <div style={{ fontSize: '0.82rem', color: 'var(--text-muted)', lineHeight: 1.5 }}>Countdown with automatic submission at 00:00.</div>
             </div>
 
             <div style={{
@@ -277,8 +292,8 @@ export default function ExamView({ exam, onSwitchToStudy }) {
               boxShadow: 'var(--shadow-sm)'
             }}>
               <div style={{ fontSize: '1.6rem', marginBottom: '0.4rem' }}>🎯</div>
-              <div style={{ fontWeight: 800, color: '#f8fafc', fontSize: '0.98rem', marginBottom: '0.2rem' }}>70% Passing Gate</div>
-              <div style={{ fontSize: '0.82rem', color: 'var(--text-muted)', lineHeight: 1.5 }}>Minimum 42 / 60 correct answers required to pass benchmark.</div>
+              <div style={{ fontWeight: 800, color: '#f8fafc', fontSize: '0.98rem', marginBottom: '0.2rem' }}>70% Practice Benchmark</div>
+              <div style={{ fontSize: '0.82rem', color: 'var(--text-muted)', lineHeight: 1.5 }}>42 / 60 correct answers reaches this practice benchmark; this is not an official passing score.</div>
             </div>
 
             <div style={{

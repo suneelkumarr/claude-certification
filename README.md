@@ -2,11 +2,13 @@
 
 > 🚀 **Enterprise React + Vite preparation platform for Anthropic Claude Certifications** (`CCAO-F`, `CCA-F`, `CCA-P`) featuring **305 authentic questions**, official blueprint topic weightings, 120-minute timed simulator, diagnostic scorecard, interactive Question Bank, and a 100% passing automated test suite.
 
+> **Important:** This is an independent learning resource, not an official Anthropic product. The practice questions and explanations are created for educational self-assessment. Verify current exam objectives, certification names, policies, and product behavior against official Anthropic documentation.
+
 ---
 
-## 🎯 Certifications & Official Topic Weightings
+## 🎯 Certifications & Blueprint Topic Weightings
 
-The simulator does not sample questions arbitrarily. Question distribution is governed by **official exam blueprint topic weightings** (`src/utils/examEngine.js`) to accurately mirror real exam conditions:
+Question distribution in the exam simulator is governed by **certification blueprint topic weightings** (`src/utils/examEngine.js`) to accurately mirror real exam conditions:
 
 ### 1. CCAO-F: Claude Certified Associate — Foundations (110 Qs)
 *Target: 60 questions sampled per exam attempt*
@@ -47,51 +49,50 @@ The simulator does not sample questions arbitrarily. Question distribution is go
 
 | Domain / Concept | Blueprint Weight | Target Quota | Core Topics |
 | :--- | :---: | :---: | :--- |
-| **Defense-in-Depth Guardrails & Safety Architecture** | 18% | 11 Qs | Input sanitization, jailbreak mitigation, output red-teaming |
-| **Contextual Retrieval & Multi-Tenant RAG** | 18% | 11 Qs | Chunk enrichment, tenant isolation, vector search metadata |
-| **AI Fluency, Governance & Stakeholder Alignment** | 15% | 9 Qs | Calibrated capabilities, limitations disclosure, human oversight |
-| **Production Evaluation Pipelines & Golden Sets** | 15% | 9 Qs | Automated grading, LLM-as-a-judge, regression benchmarks |
-| **System Prompts, Prefill & Structured XML** | 12% | 7 Qs | Strict output schema prefill, role boundary separation |
-| **Tool Use Governance & Sandboxing** | 12% | 7 Qs | Least-privilege permissions, human-in-the-loop approvals |
-| **Claude Code, CLI Workflows & DevEx** | 10% | 6 Qs | Interactive CLI workflows, test synthesis, code execution |
+| **Enterprise AI Governance & Compliance** | 15% | 9 Qs | Audit logging, access control, regulatory compliance |
+| **Defense-in-Depth Guardrails & Security** | 18% | 11 Qs | Prompt injection defense, secret redacting, safety classifiers |
+| **Contextual RAG & Multi-Tenant Retrieval** | 18% | 11 Qs | Tenant isolation, vector filtering, hybrid re-ranking |
+| **Evaluation Pipelines & LLM-as-a-Judge** | 15% | 9 Qs | Automated benchmarks, rubric grading, regression suites |
+| **System Prompts & Assistant Prefilling** | 12% | 7 Qs | Enforcing prefixes, prefill steering, boundary protection |
+| **Tool Governance & MCP Architecture** | 12% | 7 Qs | Tool permissions, sandboxed execution, MCP lifecycle |
+| **Claude Code & Enterprise DevEx** | 10% | 6 Qs | CLI workflows, repository indexing, safe tool permissions |
 | **Total** | **100%** | **60 Qs** | *100% Blueprint Representation* |
 
 ---
 
-## ⚙️ Question Sampling & Fallback Engine (`src/utils/examEngine.js`)
+## 🛠️ Platform Features
 
-When generating a 60-question simulator exam:
-1. **Weighted Allocation**: Quotas are calculated proportionally using `calculateConceptQuotas()`.
-2. **Deficit Handling & Graceful Fallback**: If a topic pool has fewer questions than its weight quota (or 0 questions in edge test scenarios), all available questions are taken and the remaining deficit is proportionally satisfied from the remaining unselected questions across other topics.
-3. **Zero Duplicates Guarantee**: Unique IDs and numbers are tracked in a hash set to ensure strictly zero duplicate questions across the entire exam.
-4. **Final Domain Shuffle**: Questions are shuffled via Fisher-Yates algorithm so questions from the same domain are not presented in consecutive blocks.
+- **Study Mode**: Topic-led explanations, Hinglish support, analogies, examples, and option-by-option failure breakdowns.
+- **Timed Practice Simulator**: 120-minute countdown with persistent absolute deadlines across tab switches and refreshes, question palette navigation, review flags, and instant pass/fail diagnostic scorecards.
+- **Question Bank**: Instant full-text search across all questions, filterable by track and concept, with expandable answer keys and detailed reasoning.
+- **Automated Validation**: Automated Vitest test suite and question bank integrity validator.
 
 ---
 
-## 🧪 Automated Testing Suite (`tests/examEngine.test.js`)
+## 🧪 Automated Testing & Validation
 
-The test suite is built on **Vitest** and covers 23 comprehensive unit and integration tests across 7 critical exam workflows:
+The codebase includes an automated test suite verifying exam engine logic and data integrity:
 
 ```bash
+# Run Vitest unit & integration test suite
 npm test
+
+# Run question bank content validation
+npm run test:content
 ```
 
-### Verified Test Matrix
-- ✅ **Topic Quota Calculation**: Validates exact quota distribution matching blueprint percentages summing to 60.
-- ✅ **Empty Topic Pools & Small Pool Fallback**: Asserts fallback logic handles empty pools without crashing and satisfies deficits cleanly.
-- ✅ **Zero Duplicate Prevention**: Runs 100 randomized sampling iterations verifying 100% uniqueness.
-- ✅ **Single-Select & Multiple-Select Answers**: Validates option toggles, selections, and array normalization.
-- ✅ **Unanswered & Skipped Questions**: Confirms unanswered questions are accurately counted and do not throw runtime exceptions.
-- ✅ **Passing Threshold & Score Calculation**: Asserts score calculation, strict 70% boundary conditions, and diagnostic per-topic performance.
-- ✅ **Question Palette Navigation**: Asserts navigation boundary protection (prevents indices < 0 or > max).
-- ✅ **Timer Expiration**: Tests auto-submit triggers when countdown reaches zero.
+### Coverage Highlights:
+- ✅ **Weighted Sampling Engine**: Guarantees sampling matches topic weights without missing concepts.
+- ✅ **Deterministic Scoring**: Strict 70% passing threshold, multi-select grading, and per-topic diagnostic breakdown.
+- ✅ **Navigation & Boundaries**: Boundary checks preventing invalid index access.
+- ✅ **Deadline & Timer Persistence**: Preserves active time across tab switches and refreshes.
 
 ---
 
 ## 📦 Content Provenance & Non-Dogmatic Rationale
 
-- **Source Materials**: All 305 questions and initial answer keys are extracted directly from official Anthropic preparation guide PDFs (`ccao-f-premium.pdf`, `cca-f-premium.pdf`, `cca-p-premium.pdf`).
-- **Context-Grounded Explanations**: Avoids dogmatic shortcuts ("hamesha yahi use karo"). Each question contains scenario-specific trade-offs explaining:
+- **Source Materials**: Practice questions are organized from certification preparation materials (`ccao-f-premium.pdf`, `cca-f-premium.pdf`, `cca-p-premium.pdf`, and online question banks).
+- **Context-Grounded Explanations**: Avoids dogmatic shortcuts. Each question explains scenario-specific trade-offs:
   - Deterministic calculations vs. LLM linguistic text generation (Code Execution).
   - Ideation breadth vs. premature decision convergence.
   - Multi-agent state isolation vs. tight coupling.
@@ -102,14 +103,14 @@ npm test
 
 ## 💻 Tech Stack & Production Architecture
 
-- **Framework**: React 18, Vite 6
+- **Framework**: React 19, Vite 6
 - **Testing**: Vitest 5
 - **Icons**: Lucide React
 - **Confetti**: Canvas Confetti
 - **Design System**: Vanilla CSS (`src/index.css`) with Cosmic Dark Glassmorphism, 44px accessible touch targets, and WCAG AA/AAA compliance.
 - **Production Asset Pipeline**:
   - Active source code is exclusively housed under [`src/`](file:///d:/claude-cerifications/src).
-  - Legacy prototype files (`app.js`, `quiz.js`, `style.css`, etc.) created during early development are preserved in [`legacy-prototype/`](file:///d:/claude-cerifications/legacy-prototype) for historical traceability and are excluded from production builds.
+  - Legacy prototype files are preserved in [`legacy-prototype/`](file:///d:/claude-cerifications/legacy-prototype) for historical reference and excluded from production builds.
 
 ---
 
@@ -131,6 +132,9 @@ npm install
 # Run automated tests
 npm test
 
+# Validate content integrity
+npm run test:content
+
 # Start local development server
 npm run dev
 ```
@@ -143,26 +147,16 @@ npm run preview
 
 ---
 
-## 🌐 Supported Browsers
+## 🔍 Quality Checks
 
-The application is thoroughly tested and optimized for modern standards-compliant browsers:
-- **Google Chrome**: Version 110+ (Desktop & Android)
-- **Mozilla Firefox**: Version 115+
-- **Apple Safari**: Version 16.4+ (macOS & iOS)
-- **Microsoft Edge**: Version 110+
-
----
-
-## ⚠️ Known Notes & Limitations
-
-1. **Cloudflare Pages Production URL**:
-   - Production domain: **[https://claude-certification.pages.dev](https://claude-certification.pages.dev)**
-   - *Note*: Deployment hash subdomains (e.g., `f101e720.claude-certification.pages.dev`) create two-level subdomains (`*.*.pages.dev`), which trigger `ERR_SSL_VERSION_OR_CIPHER_MISMATCH` because standard Cloudflare wildcard SSL certificates secure single-level subdomains. Always use the primary apex `claude-certification.pages.dev`.
-2. **Session Persistence**:
-   - Active exams persist in `localStorage` under `active_exam_session_<examId>`. If you accidentally close your tab or refresh, your timer and answered questions are automatically restored.
-   - Submitting an exam or clicking reset cleans up the local session storage.
+Before submitting changes:
+1. Run `npm test` and `npm run test:content`.
+2. Run `npm run build` to verify production bundling.
+3. Test exam mode with single-select and multi-select answers, mark-for-review, timer persistence, and score calculation.
+4. Review against the [Content Quality Policy](docs/CONTENT_QUALITY.md).
 
 ---
 
 ## 📄 License
-MIT License. Created for Anthropic Claude Certification preparation.
+
+This project is released under the [MIT License](LICENSE).

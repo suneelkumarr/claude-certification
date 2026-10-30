@@ -477,6 +477,7 @@ export const QUESTIONS_DATA = [
       "D": "asking clarifying questions when feedback is ambiguous before acting on it",
       "E": "declining to revise Claude-generated sections on the basis that the model's output should be trusted as written"
     },
+        "isMulti": true,
     "correctAnswer": "C and D",
     "explanation": "Productive feedback handling requires traceability (map feedback to change) and clarification of ambiguity. Blind incorporation of contradictions or refusing to revise defeats the human-in-the-loop value.",
     "whyCorrect": "Productive feedback handling requires traceability (map feedback to change) and clarification of ambiguity. Blind incorporation of contradictions or refusing to revise defeats the human-in-the-loop value. Isiliye correct answer C and D hai.",
@@ -541,6 +542,7 @@ export const QUESTIONS_DATA = [
       "D": "Layer prompt-level guardrails with runtime content checks rather than relying on either alone.",
       "E": "Rely on a single hardened system prompt that enumerates every disallowed behavior."
     },
+        "isMulti": true,
     "correctAnswer": "B and D",
     "explanation": "Defense-in-depth requires both schema validation of structured outputs and layered (prompt + runtime) checks. Single-prompt reliance or unrestricted overrides create single points of failure.",
     "whyCorrect": "Defense-in-depth requires both schema validation of structured outputs and layered (prompt + runtime) checks. Single-prompt reliance or unrestricted overrides create single points of failure. Isiliye correct answer B and D hai.",
@@ -584,6 +586,7 @@ export const QUESTIONS_DATA = [
       "D": "selecting the Claude model tier based on the architect's prior project experience before stakeholder input is collected",
       "E": "generating an initial prototype and iterating based on user reaction"
     },
+        "isMulti": true,
     "correctAnswer": "B and C",
     "explanation": "Structured discovery surfaces constraints early via workshops and defines measurable success/failure gates. Deferring constraints or pre-selecting models without stakeholder input violates good discovery practice.",
     "whyCorrect": "Structured discovery surfaces constraints early via workshops and defines measurable success/failure gates. Deferring constraints or pre-selecting models without stakeholder input violates good discovery practice. Isiliye correct answer B and C hai.",
@@ -669,6 +672,7 @@ export const QUESTIONS_DATA = [
       "D": "Inventory the vendor-provided compliance tooling and confirm which compliance affordances are in place.",
       "E": "Document the identified gaps along with recommended remediations and residual risk for sign-off."
     },
+        "isMulti": true,
     "correctAnswer": "C and D",
     "explanation": "Before mapping flows to clauses you must confirm the regulation actually applies (C) and know what tooling/controls already exist (D). Gap analysis and remediation come after the mapping.",
     "whyCorrect": "Before mapping flows to clauses you must confirm the regulation actually applies (C) and know what tooling/controls already exist (D). Gap analysis and remediation come after the mapping. Isiliye correct answer C and D hai.",
@@ -712,6 +716,7 @@ export const QUESTIONS_DATA = [
       "D": "Define the quality bar, latency tolerance, and expected volume for the workload.",
       "E": "Retest the model choice when a new model version becomes available."
     },
+        "isMulti": true,
     "correctAnswer": "A and D",
     "explanation": "You must first define the success criteria (quality/latency/volume) and shortlist candidates that match the profile. Empirical sampling comes after those definitions; rollout sign-off and later retesting are downstream.",
     "whyCorrect": "You must first define the success criteria (quality/latency/volume) and shortlist candidates that match the profile. Empirical sampling comes after those definitions; rollout sign-off and later retesting are downstream. Isiliye correct answer A and D hai.",
@@ -755,6 +760,7 @@ export const QUESTIONS_DATA = [
       "D": "Package 2 → security and compliance reviewer",
       "E": "Package 1 → engineering implementation team"
     },
+        "isMulti": true,
     "correctAnswer": "B and C",
     "explanation": "Threat model / residual risk / control mapping belong to security & compliance. Capability list and roadmap dependencies belong to the product manager who owns sequencing. Executive sponsors typically need outcome-level, not detailed risk registers.",
     "whyCorrect": "Threat model / residual risk / control mapping belong to security & compliance. Capability list and roadmap dependencies belong to the product manager who owns sequencing. Executive sponsors typically need outcome-level, not detailed risk registers. Isiliye correct answer B and C hai.",
@@ -798,6 +804,7 @@ export const QUESTIONS_DATA = [
       "D": "AI-generated pull requests should be rejected as a default policy across the engineering organization.",
       "E": "The 50-line threshold should be raised to 200 lines instead to capture more changes overall."
     },
+        "isMulti": true,
     "correctAnswer": "A and B",
     "explanation": "Diligence requires verification of AI output; removing review eliminates that control. Line count is an unreliable risk proxy—small diffs can still introduce critical defects.",
     "whyCorrect": "Diligence requires verification of AI output; removing review eliminates that control. Line count is an unreliable risk proxy—small diffs can still introduce critical defects. Isiliye correct answer A and B hai.",
@@ -820,6 +827,7 @@ export const QUESTIONS_DATA = [
       "D": "Embed the procedure text into each workflow's system prompt at integration time.",
       "E": "Have each workflow team rewrite the procedure for that team's specific context."
     },
+        "isMulti": true,
     "correctAnswer": "A and B",
     "explanation": "A single Skill owned by compliance and referenced by every workflow guarantees identical application and central update. Embedding, per-team rewriting, or pure retrieval risk divergence when the procedure changes.",
     "whyCorrect": "A single Skill owned by compliance and referenced by every workflow guarantees identical application and central update. Embedding, per-team rewriting, or pure retrieval risk divergence when the procedure changes. Isiliye correct answer A and B hai.",
@@ -863,6 +871,7 @@ export const QUESTIONS_DATA = [
       "D": "Define the service-level objectives (SLOs) and the error budgets the deployment will be held to.",
       "E": "Tune the alert thresholds based on observed normal-state distributions to reduce false positives."
     },
+        "isMulti": true,
     "correctAnswer": "C and D",
     "explanation": "Before any instrumentation you must know what to measure (metrics + slices) and what success looks like (SLOs + error budgets). Dashboards, runbooks, and threshold tuning come after data exists.",
     "whyCorrect": "Before any instrumentation you must know what to measure (metrics + slices) and what success looks like (SLOs + error budgets). Dashboards, runbooks, and threshold tuning come after data exists. Isiliye correct answer C and D hai.",
@@ -885,6 +894,7 @@ export const QUESTIONS_DATA = [
       "D": "Limit session length to reduce the volume of queries processed per user per day.",
       "E": "Log all model responses to a SIEM and route flagged records to a compliance reviewer."
     },
+        "isMulti": true,
     "correctAnswer": "A and B",
     "explanation": "Prompt-level refusal categories plus an output classifier form a layered hard stop. Temperature, session limits, and post-hoc logging do not prevent the prohibited content from being generated and returned.",
     "whyCorrect": "Prompt-level refusal categories plus an output classifier form a layered hard stop. Temperature, session limits, and post-hoc logging do not prevent the prohibited content from being generated and returned. Isiliye correct answer A and B hai.",
@@ -1054,6 +1064,7 @@ export const QUESTIONS_DATA = [
       "D": "The unconsidered criteria represent a scope gap in the assistant's input space directly.",
       "E": "The survey response rate may not be statistically representative of all the specialists."
     },
+        "isMulti": true,
     "correctAnswer": "B and D",
     "explanation": "Discernment requires distinguishing acceptance (what users did) from correctness (what should have been recommended). Frequent overrides after consulting missing criteria signal a real scope gap that acceptance rate alone cannot mask.",
     "whyCorrect": "Discernment requires distinguishing acceptance (what users did) from correctness (what should have been recommended). Frequent overrides after consulting missing criteria signal a real scope gap that acceptance rate alone cannot mask. Isiliye correct answer B and D hai.",
@@ -1076,6 +1087,7 @@ export const QUESTIONS_DATA = [
       "D": "Sample recent summaries to estimate the fabrication frequency across the population.",
       "E": "Communicate to users that the assistant does not fabricate output as a matter of design."
     },
+        "isMulti": true,
     "correctAnswer": "B and D",
     "explanation": "Diligence requires checking whether grounding controls are present and measuring how often the failure actually occurs. Immediate global disable or temperature changes without diagnosis, and claims that fabrication never happens, are premature.",
     "whyCorrect": "Diligence requires checking whether grounding controls are present and measuring how often the failure actually occurs. Immediate global disable or temperature changes without diagnosis, and claims that fabrication never happens, are premature. Isiliye correct answer B and D hai.",
@@ -1161,6 +1173,7 @@ export const QUESTIONS_DATA = [
       "D": "Tool descriptions overlap across multiple claim categories within the agent's tool set.",
       "E": "Several tools have not been invoked across the most recent 90 days of traffic."
     },
+        "isMulti": true,
     "correctAnswer": "B and D",
     "explanation": "When tools map to distinct domains and descriptions overlap, decomposition into specialized agents is the cleaner fix. A router adds latency and still leaves the underlying confusion of an oversized, overlapping tool set.",
     "whyCorrect": "When tools map to distinct domains and descriptions overlap, decomposition into specialized agents is the cleaner fix. A router adds latency and still leaves the underlying confusion of an oversized, overlapping tool set. Isiliye correct answer B and D hai.",
@@ -1183,6 +1196,7 @@ export const QUESTIONS_DATA = [
       "D": "Increase the context window size to allow more retrieved chunks per query.",
       "E": "Inspect system-prompt grounding instructions to determine whether citation constraints remain intact."
     },
+        "isMulti": true,
     "correctAnswer": "B and E",
     "explanation": "A sudden contradiction of retrieved sources after a model upgrade or prompt change points to either a model-version mismatch or a broken grounding instruction. Temperature, embedding, or window changes do not explain the new contradiction behavior.",
     "whyCorrect": "A sudden contradiction of retrieved sources after a model upgrade or prompt change points to either a model-version mismatch or a broken grounding instruction. Temperature, embedding, or window changes do not explain the new contradiction behavior. Isiliye correct answer B and E hai.",
@@ -1205,6 +1219,7 @@ export const QUESTIONS_DATA = [
       "D": "Truncate the policy preamble to remove non-essential clauses from the prompt.",
       "E": "Switch the workload to a smaller, faster Claude model tier across all queries."
     },
+        "isMulti": true,
     "correctAnswer": "B and C",
     "explanation": "Caching the static preamble and the frequently-retrieved sales chunks removes the dominant repeated cost without changing the model or the information available for projection, preserving accuracy.",
     "whyCorrect": "Caching the static preamble and the frequently-retrieved sales chunks removes the dominant repeated cost without changing the model or the information available for projection, preserving accuracy. Isiliye correct answer B and C hai.",
@@ -1227,6 +1242,7 @@ export const QUESTIONS_DATA = [
       "D": "Decide whether to promote, reject, or iterate the candidate based on the analysis.",
       "E": "Determine the minimum detectable effect size and the sample size needed for power."
     },
+        "isMulti": true,
     "correctAnswer": "A and E",
     "explanation": "Before random assignment you must lock the hypothesis, the success metric, the effect size you care about, and the sample size required to detect it. Analysis decisions and interim stopping rules come after the experiment design is complete.",
     "whyCorrect": "Before random assignment you must lock the hypothesis, the success metric, the effect size you care about, and the sample size required to detect it. Analysis decisions and interim stopping rules come after the experiment design is complete. Isiliye correct answer A and E hai.",
@@ -1333,6 +1349,7 @@ export const QUESTIONS_DATA = [
       "D": "Move credentials out of the prompt context and resolve them from a server-side secret store.",
       "E": "Enforce RBAC at the retrieval layer before content enters the model context."
     },
+        "isMulti": true,
     "correctAnswer": "A and B",
     "explanation": "Per-user OAuth tokens eliminate the shared-key problem; actor attribution in tool-call logs closes the missing identity gap. The other options address different security concerns.",
     "whyCorrect": "Per-user OAuth tokens eliminate the shared-key problem; actor attribution in tool-call logs closes the missing identity gap. The other options address different security concerns. Isiliye correct answer A and B hai.",
@@ -1481,6 +1498,7 @@ export const QUESTIONS_DATA = [
       "D": "Publish the aggregated metrics to a dashboard and gate releases on threshold checks.",
       "E": "Define the metrics and slices the framework will report across representative, edge, and adversarial cases."
     },
+        "isMulti": true,
     "correctAnswer": "A and E",
     "explanation": "Before any scoring run you must define what you will measure (metrics + slices) and have a labeled dataset that covers those slices. Rubric refinement, scoring, and dashboards come after the first evaluation pass.",
     "whyCorrect": "Before any scoring run you must define what you will measure (metrics + slices) and have a labeled dataset that covers those slices. Rubric refinement, scoring, and dashboards come after the first evaluation pass. Isiliye correct answer A and E hai.",
@@ -1524,6 +1542,7 @@ export const QUESTIONS_DATA = [
       "D": "throughput measured as successful requests processed per minute",
       "E": "role-based access-control enforcement rate measured on a red-team dataset"
     },
+        "isMulti": true,
     "correctAnswer": "C and E",
     "explanation": "Per-query token cost tracks the cost ceiling; RBAC enforcement rate on a red-team set verifies that patient data is never surfaced to unauthorized roles. Latency, BLEU, and throughput address other concerns.",
     "whyCorrect": "Per-query token cost tracks the cost ceiling; RBAC enforcement rate on a red-team set verifies that patient data is never surfaced to unauthorized roles. Latency, BLEU, and throughput address other concerns. Isiliye correct answer C and E hai.",
@@ -1546,6 +1565,7 @@ export const QUESTIONS_DATA = [
       "D": "Route straightforward query types to a smaller, faster Claude model and reserve the full model for complex cases.",
       "E": "Increase max_tokens to reduce the frequency of truncated responses requiring follow-up calls."
     },
+        "isMulti": true,
     "correctAnswer": "A and D",
     "explanation": "Prompt caching of the static prefix and tiered routing to a lighter model both cut tokens and wall-clock time. Expanding the prompt or fetching the full corpus increases both cost and latency.",
     "whyCorrect": "Prompt caching of the static prefix and tiered routing to a lighter model both cut tokens and wall-clock time. Expanding the prompt or fetching the full corpus increases both cost and latency. Isiliye correct answer A and D hai.",
@@ -1610,6 +1630,7 @@ export const QUESTIONS_DATA = [
       "D": "Per-user OAuth tokens are exchanged with scope-restricted permissions and refreshed within the active session.",
       "E": "Tool calls execute server-side under a least-privilege service principal scoped to the requested action."
     },
+        "isMulti": true,
     "correctAnswer": "B and C",
     "explanation": "RBAC after the model has already seen restricted data is too late; credentials in the prompt can leak. TLS, scoped OAuth, and least-privilege tool execution are sound practices.",
     "whyCorrect": "RBAC after the model has already seen restricted data is too late; credentials in the prompt can leak. TLS, scoped OAuth, and least-privilege tool execution are sound practices. Isiliye correct answer B and C hai.",
@@ -1653,6 +1674,7 @@ export const QUESTIONS_DATA = [
       "D": "Capture lessons learned at the end of each phase and surface them as inputs to the next phase.",
       "E": "Maintain a stakeholder register and notify the listed parties at every phase transition event."
     },
+        "isMulti": true,
     "correctAnswer": "A and D",
     "explanation": "Carrying the evaluation framework forward and feeding lessons learned into subsequent phases preserve institutional knowledge and measurement consistency. Rigid locking and pure archival do not actively improve continuity.",
     "whyCorrect": "Carrying the evaluation framework forward and feeding lessons learned into subsequent phases preserve institutional knowledge and measurement consistency. Rigid locking and pure archival do not actively improve continuity. Isiliye correct answer A and D hai.",
@@ -1675,6 +1697,7 @@ export const QUESTIONS_DATA = [
       "D": "Confirm that latency and throughput remain consistent across regions and user populations.",
       "E": "Confirm that vendor licensing terms permit the planned production use of the model."
     },
+        "isMulti": true,
     "correctAnswer": "B and C",
     "explanation": "Ethics review focuses on retained human accountability for high-impact decisions and avoidance of unsupported generalizations about people. Confidence thresholds, performance consistency, and licensing are important but belong to other review categories.",
     "whyCorrect": "Ethics review focuses on retained human accountability for high-impact decisions and avoidance of unsupported generalizations about people. Confidence thresholds, performance consistency, and licensing are important but belong to other review categories. Isiliye correct answer B and C hai.",
@@ -1718,6 +1741,7 @@ export const QUESTIONS_DATA = [
       "D": "whether the underlying transport supports encryption in transit between the integrated services",
       "E": "whether the integration must be portable across multiple AI clients in the ecosystem"
     },
+        "isMulti": true,
     "correctAnswer": "C and E",
     "explanation": "Interaction shape (stateless/latency vs stateful/long-running) and cross-client portability are primary drivers of protocol choice. Naming conventions, prior experience, and TLS are secondary or orthogonal concerns.",
     "whyCorrect": "Interaction shape (stateless/latency vs stateful/long-running) and cross-client portability are primary drivers of protocol choice. Naming conventions, prior experience, and TLS are secondary or orthogonal concerns. Isiliye correct answer C and E hai.",
@@ -1782,6 +1806,7 @@ export const QUESTIONS_DATA = [
       "D": "Latency and token usage on every span are emitted to the central metrics pipeline.",
       "E": "Model identity and version on each turn are not recorded with the turn artifacts."
     },
+        "isMulti": true,
     "correctAnswer": "A and E",
     "explanation": "Missing correlation IDs across agent/tool boundaries and missing model identity/version break end-to-end diagnosis. Redaction, span export, and metrics emission are positive practices.",
     "whyCorrect": "Missing correlation IDs across agent/tool boundaries and missing model identity/version break end-to-end diagnosis. Redaction, span export, and metrics emission are positive practices. Isiliye correct answer A and E hai.",
@@ -1804,6 +1829,7 @@ export const QUESTIONS_DATA = [
       "D": "unit tests targeting individual prompt-template rendering logic only",
       "E": "integration tests that verify end-to-end pipeline behavior across all components"
     },
+        "isMulti": true,
     "correctAnswer": "A and E",
     "explanation": "Adversarial tests exercise safety under attack; integration tests verify that components work together correctly end-to-end. Regression, smoke, and narrow unit tests are useful but do not cover the two requested dimensions.",
     "whyCorrect": "Adversarial tests exercise safety under attack; integration tests verify that components work together correctly end-to-end. Regression, smoke, and narrow unit tests are useful but do not cover the two requested dimensions. Isiliye correct answer A and E hai.",
@@ -1847,6 +1873,7 @@ export const QUESTIONS_DATA = [
       "D": "The fairness team's review process likely missed at least some of the protected groups studied.",
       "E": "Approval rate parity does not by itself assess error rate parity across protected groups."
     },
+        "isMulti": true,
     "correctAnswer": "A and E",
     "explanation": "Matching a potentially biased human process does not prove fairness; approval-rate parity alone omits error-rate (false-positive/false-negative) parity. Both gaps must be reported before a fairness claim is accepted.",
     "whyCorrect": "Matching a potentially biased human process does not prove fairness; approval-rate parity alone omits error-rate (false-positive/false-negative) parity. Both gaps must be reported before a fairness claim is accepted. Isiliye correct answer A and E hai.",
@@ -1953,6 +1980,7 @@ export const QUESTIONS_DATA = [
       "D": "Switch the entire workload to a smaller model that tends to produce shorter outputs.",
       "E": "Remove the JSON schema from the prompt so the model is free to respond in any format."
     },
+        "isMulti": true,
     "correctAnswer": "A and B",
     "explanation": "Raising the token ceiling reduces truncation frequency; a schema validator plus continuation recovers the rare remaining cases. Temperature or model changes do not guarantee completeness.",
     "whyCorrect": "Raising the token ceiling reduces truncation frequency; a schema validator plus continuation recovers the rare remaining cases. Temperature or model changes do not guarantee completeness. Isiliye correct answer A and B hai.",
@@ -2080,6 +2108,7 @@ export const QUESTIONS_DATA = [
       "D": "Length of the system prompt in tokens.",
       "E": "Number of unique users who opened the assistant at least once."
     },
+        "isMulti": true,
     "correctAnswer": "A and C",
     "explanation": "Satisfaction alone does not measure correctness or safety. Task-completion against a gold set and independent safety-violation rate close those gaps.",
     "whyCorrect": "Satisfaction alone does not measure correctness or safety. Task-completion against a gold set and independent safety-violation rate close those gaps. Isiliye correct answer A and C hai.",
@@ -2144,6 +2173,7 @@ export const QUESTIONS_DATA = [
       "D": "Marketing copy describing the service for external press releases.",
       "E": "Preferred coffee order for the on-call rotation."
     },
+        "isMulti": true,
     "correctAnswer": "A and B",
     "explanation": "On-call engineers need the current version identity and a tested rollback procedure. Contributor lists and marketing copy are not operational requirements.",
     "whyCorrect": "On-call engineers need the current version identity and a tested rollback procedure. Contributor lists and marketing copy are not operational requirements. Isiliye correct answer A and B hai.",
@@ -2376,6 +2406,7 @@ export const QUESTIONS_DATA = [
       "D": "Switch every request to the largest model tier.",
       "E": "Disable all caching."
     },
+        "isMulti": true,
     "correctAnswer": "A and B",
     "explanation": "Caching the static few-shot block and pruning to the minimal effective set both attack the new cost driver without sacrificing quality.",
     "whyCorrect": "Caching the static few-shot block and pruning to the minimal effective set both attack the new cost driver without sacrificing quality. Isiliye correct answer A and B hai.",
@@ -2629,6 +2660,7 @@ export const QUESTIONS_DATA = [
       "D": "Disable all monitoring to reduce load.",
       "E": "Restart the service every hour whether or not it is healthy."
     },
+        "isMulti": true,
     "correctAnswer": "A and C",
     "explanation": "High availability requires proactive health checks, failover, and a fast, tested recovery path. Relying only on the provider or disabling monitoring leaves the SLO unprotected.",
     "whyCorrect": "High availability requires proactive health checks, failover, and a fast, tested recovery path. Relying only on the provider or disabling monitoring leaves the SLO unprotected. Isiliye correct answer A and C hai.",
@@ -2756,6 +2788,7 @@ export const QUESTIONS_DATA = [
       "D": "The system prompt is too long.",
       "E": "Users are intentionally trying to break the system."
     },
+        "isMulti": true,
     "correctAnswer": "A and C",
     "explanation": "Mismatch between test and production distributions, or contaminated/leaky labels, are the most common reasons a high offline score fails to translate to production. THANK YOUBest wishes for your exam. You have put in the effort. Stay focused, trust your preparation, and take the next step with confidence. Review key topics Stay calm and focused Believe in your progress Practice • Learn • Succeed",
     "whyCorrect": "Mismatch between test and production distributions, or contaminated/leaky labels, are the most common reasons a high offline score fails to translate to production. THANK YOUBest wishes for your exam. You have put in the effort. Stay focused, trust your preparation, and take the next step with confidence. Review key topics Stay calm and focused Believe in your progress Practice • Learn • Succeed Isiliye correct answer A and C hai.",

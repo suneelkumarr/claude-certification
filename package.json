@@ -8,7 +8,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "test:content": "node scripts/validate-content.mjs"
   },
   "dependencies": {
     "canvas-confetti": "^1.9.4",
